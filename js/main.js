@@ -1,3 +1,5 @@
+// https://code.visualstudio.com/docs/languages/typescript
+
 import { recipes } from './recipes.js';
 
 const list = document.querySelector('#recipeList');
