@@ -1,13 +1,14 @@
 // https://code.visualstudio.com/docs/languages/typescript
-
-import { recipes } from './recipes.js';
+const res = await fetch("./recipes.json");
+const json = await res.json();
 
 const list = document.querySelector('#recipeList');
+console.log('list', list);
 
 const recipeTemplate = (recipe) => {
-    console.log('123', list, recipe);
+    console.log('recipe', recipe);
 };
 
-recipes.forEach(recipe => {
+json.forEach(recipe => {
     recipeTemplate(recipe);
 });
