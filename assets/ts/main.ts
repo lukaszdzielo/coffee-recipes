@@ -45,5 +45,13 @@ const recipeTemplate = (recipe: object) => {
 
 })();
 
+class App {
+    constructor() {
+        console.log('test');
+
+    }
+}
+new App();
+
 
 
