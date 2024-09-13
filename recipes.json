@@ -9,14 +9,18 @@
             "Podwójne espresso / czarna kawa",
             "5-6 kostek lodu"
         ],
-        "preparation": "Truskawki, lody waniliowe, mleko i parę kostek lodu zmiksuj do uzyskania gładkiego, puszystego musu. Do szklanki wlej aromatyczne podwójne espresso bądź czarną kawę ze świeżo zmielonych ziaren, a następnie przełóż wcześniej przygotowany mus do szklanki, żeby uzyskać efekt kilku warstw (możesz też zmiksować wszystko razem). Nie zapomnij również o dekoracji z bitej śmietany i truskawki!"
+        "preparation": "Korzystajmy, póki jeszcze są… przepyszne, słodkie, soczyste truskawki, które swoim aromatem wprost kuszą do przygotowania orzeźwiającego Frappe na upalne dni. Truskawki, lody waniliowe, mleko i parę kostek lodu zmiksuj do uzyskania gładkiego, puszystego musu. Do szklanki wlej aromatyczne podwójne espresso bądź czarną kawę ze świeżo zmielonych ziaren, a następnie przełóż wcześniej przygotowany mus do szklanki, żeby uzyskać efekt kilku warstw (możesz też zmiksować wszystko razem). Nie zapomnij również o dekoracji z bitej śmietany i truskawki!"
     },
     "chocolate-banana-frappe": {
         "ebook": 2018,
         "name": "Czekoladowe Frappe z bananem",
         "ingredients": [
-            "xxx"
+            " 1/2 banana",
+            "20ml miodu",
+            "1 gałka lodów czekoladowych",
+            "Podwójne espresso / czarna kawa",
+            "5-6 kostek lodu"
         ],
-        "preparation": "yyy"
+        "preparation": "To połączenie banana, miodu i lodów czekoladowych zawsze dobrze smakuje, a po dodaniu kostek lodu i zmiksowaniu wszystkich składników staje się niesamowicie orzeźwiające. Do przygotowania tego Frappe będziemy potrzebować podwójne espresso lub czarną kawę z mieszanki charakteryzującej się niską kwasowością i czekoladowym posmakiem."
     }
 }
