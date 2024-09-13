@@ -15,12 +15,25 @@
         "ebook": 2018,
         "name": "Czekoladowe Frappe z bananem",
         "ingredients": [
-            " 1/2 banana",
+            "1/2 banana",
             "20ml miodu",
             "1 gałka lodów czekoladowych",
             "Podwójne espresso / czarna kawa",
             "5-6 kostek lodu"
         ],
         "preparation": "To połączenie banana, miodu i lodów czekoladowych zawsze dobrze smakuje, a po dodaniu kostek lodu i zmiksowaniu wszystkich składników staje się niesamowicie orzeźwiające. Do przygotowania tego Frappe będziemy potrzebować podwójne espresso lub czarną kawę z mieszanki charakteryzującej się niską kwasowością i czekoladowym posmakiem."
+    }
+    "chocolate-banana-frappe": {
+        "ebook": 2018,
+        "name": "Migdałowa Mokka",
+        "ingredients": [
+            "10ml syropu migdałowego",
+            "150ml mleka",
+            "10ml sosu czekoladowego / 6 kostek rozpuszczonej czekolady deserowej",
+            "Espresso / czarna kawa",
+            "Bita śmietana",
+            "Płatki migdałów do dekoracji"
+        ],
+        "preparation": "Do przygotowania tego pysznego drinka kawowego potrzebujesz espresso ze świeżo zmielonych ziaren. Jego niepowtarzalny smak zostanie podkreślony po dodaniu syropu migdałowego i sosu czekoladowego (jeśli nie masz sosu czekoladowego, możesz po prostu rozpuścić ok. 1/2 tabliczki czekolady). Całość dopełnij spienionym mlekiem i udekoruj bita śmietaną oraz pokruszonymi migdałami."
     }
 }
