@@ -1,7 +1,7 @@
-[
-    {
+{
+    "Strawberry Frappe": {
         "ebook": 2018,
-        "name": "Frapper truskawkowe",
+        "name": "Frappe truskawkowe",
         "ingredients": [
             "5 truskawek do zmiksowania na gładko",
             "100ml mleka",
@@ -10,5 +10,13 @@
             "5-6 kostek lodu"
         ],
         "preparation": "Truskawki, lody waniliowe, mleko i parę kostek lodu zmiksuj do uzyskania gładkiego, puszystego musu. Do szklanki wlej aromatyczne podwójne espresso bądź czarną kawę ze świeżo zmielonych ziaren, a następnie przełóż wcześniej przygotowany mus do szklanki, żeby uzyskać efekt kilku warstw (możesz też zmiksować wszystko razem). Nie zapomnij również o dekoracji z bitej śmietany i truskawki!"
+    },
+    "chocolate-banana-frappe": {
+        "ebook": 2018,
+        "name": "Czekoladowe Frappe z bananem",
+        "ingredients": [
+            "xxx"
+        ],
+        "preparation": "yyy"
     }
-]
+}
