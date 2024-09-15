@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="card">
+    <div class="card" v-on:click="console.log(recipe)">
         {{ recipe.name }}
     </div>
 </template>
