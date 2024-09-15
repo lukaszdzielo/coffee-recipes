@@ -39,16 +39,16 @@ const recipeTemplate = (recipe: any) => {
 };
 
 async function init() {
-  const res = await fetch("./recipes.json");
-  const json = await res.json();
+  // const res = await fetch("./recipes.json");
+  // const json = await res.json();
 
   console.log('lang', navigator.language);
 
-  for (const kye in json) {
-    if (list && json[kye]) {
-      list.innerHTML += recipeTemplate(json[kye]);
-    }
-  }
+  // for (const kye in json) {
+  //   if (list && json[kye]) {
+  //     list.innerHTML += recipeTemplate(json[kye]);
+  //   }
+  // }
 };
 
 init();
