@@ -32,8 +32,9 @@ export default {
 </script> -->
 
 <template>
-  <List></List>
-  <!-- <Card></Card> -->
+  <div class="container">
+    <List></List>
+  </div>
 </template>
 
 <style scoped></style>
