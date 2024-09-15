@@ -35,5 +35,17 @@
             "Płatki migdałów do dekoracji"
         ],
         "preparation": "Do przygotowania tego pysznego drinka kawowego potrzebujesz espresso ze świeżo zmielonych ziaren. Jego niepowtarzalny smak zostanie podkreślony po dodaniu syropu migdałowego i sosu czekoladowego (jeśli nie masz sosu czekoladowego, możesz po prostu rozpuścić ok. 1/2 tabliczki czekolady). Całość dopełnij spienionym mlekiem i udekoruj bita śmietaną oraz pokruszonymi migdałami."
+    },
+    "sweet-cherry": {
+        "ebook": 2018,
+        "name": "Sweet Cherry",
+        "ingredients": [
+            " 7ml syropu wiśniowego /2 łyżki konfitury wiśniowej",
+            "150ml mleka",
+            "10ml sosu z białej czekolady / 6 kostek rozpuszczonej białej czekolady",
+            "Podwójne espresso / czarna kawa",
+            "5-6 kostek lodu"
+        ],
+        "preparation": " Z jednej strony orzeźwiająca kwasowość wiśni, z drugiej słodka biała czekolada, a to wszystko połączone z pobudzającym espresso. Do blendera dodaj 5-6 kostek lodu, mleko, syrop wiśniowy, sos z białej czekolady i na koniec dodaj świeżo zaparzone espresso albo czarną kawę. Całość miksujemy do uzyskania gęstej konsystencji i przelewamy do szklanki. Jeśli masz ochotę, to możesz użyć naturalnych składników - rozpuść białą czekoladę i dodaj do niej konfiturę wiśniową. Zmiksuj, aż wszystkie składniki będą dokładnie rozdrobnione i połączone."
     }
 }
