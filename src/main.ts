@@ -3,7 +3,7 @@
 // https://code.visualstudio.com/docs/languages/typescript
 
 // const list = document.querySelector('#recipeList');
-const dataUrl = "recipes.json";
+const dataUrl = "/recipes.json";
 
 // const recipeTemplate = (recipe: any) => {
 //   const { name, preparation } = recipe;
@@ -15,10 +15,11 @@ const dataUrl = "recipes.json";
 // };
 
 async function init() {
+  console.log('lang', navigator.language);
+
   const res = await fetch(dataUrl);
   const json = await res.json();
 
-  console.log('lang', navigator.language);
   console.log('lang', res, json);
 
   // for (const kye in json) {
