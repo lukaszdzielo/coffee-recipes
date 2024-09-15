@@ -1,57 +1,27 @@
 // // https://code.visualstudio.com/docs/languages/typescript
-// const res = await fetch("./recipes.json");
-// const json = await res.json();
-
-// const list = document.querySelector('#recipeList');
-// console.log('list', list);
-
-// const recipeTemplate = (recipe) => {
-//     console.log('recipe', recipe);
-// };
-
-// json.forEach(recipe => {
-//     recipeTemplate(recipe);
-// });
-
 
 const list = document.querySelector('#recipeList');
 
-const recipeTemplate = (recipe: object) => {
-    console.log('recipe', recipe);
+const recipeTemplate = (recipe: any) => {
+    const { name, preparation } = recipe;
+
+    return `<div class="recipe">
+    ${(name) && `<div class="recipe__name">${name}</div>`}
+    ${preparation && `<div class="recipe__preparation">${preparation}</div>`}
+    </div>`
 };
 
-(async function myFunction() {
+async function init() {
     const res = await fetch("./recipes.json");
     const json = await res.json();
 
+    console.log('lang', navigator.language);
 
-    console.log('?', json, typeof json);
     for (const kye in json) {
-        console.log('?', kye);
-
-        if (list) {
-            list.innerHTML += `<div>${kye}</div>`;
-            // list.appendChild('<div>asd</div>')
+        if (list && json[kye]) {
+            list.innerHTML += recipeTemplate(json[kye]);
         }
     }
+};
 
-    // for ((recipe: object) of json) {
-    //     console.log('recipe', recipe);
-    // }
-
-    // json.forEach((recipe: object) => {
-    //     recipeTemplate(recipe);
-    // });
-
-})();
-
-class App {
-    constructor() {
-        console.log('test');
-
-    }
-}
-new App();
-
-
-
+init();
