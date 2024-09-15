@@ -27,19 +27,19 @@
 // https://www.typescriptlang.org/
 // https://code.visualstudio.com/docs/languages/typescript
 
-const list = document.querySelector('#recipeList');
+// const list = document.querySelector('#recipeList');
 
-const recipeTemplate = (recipe: any) => {
-  const { name, preparation } = recipe;
+// const recipeTemplate = (recipe: any) => {
+//   const { name, preparation } = recipe;
 
-  return `<div class="recipe">
-    ${(name) && `<div class="recipe__name">${name}</div>`}
-    ${preparation && `<div class="recipe__preparation">${preparation}</div>`}
-    </div>`
-};
+//   return `<div class="recipe">
+//     ${(name) && `<div class="recipe__name">${name}</div>`}
+//     ${preparation && `<div class="recipe__preparation">${preparation}</div>`}
+//     </div>`
+// };
 
 async function init() {
-  // const res = await fetch("./recipes.json");
+  // const res = await fetch("/recipes.json");
   // const json = await res.json();
 
   console.log('lang', navigator.language);
