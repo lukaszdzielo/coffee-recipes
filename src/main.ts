@@ -3,7 +3,7 @@
 // https://code.visualstudio.com/docs/languages/typescript
 
 // const list = document.querySelector('#recipeList');
-const dataUrl = "/recipes.json";
+const dataUrl = "recipes.json";
 
 // const recipeTemplate = (recipe: any) => {
 //   const { name, preparation } = recipe;
