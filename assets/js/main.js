@@ -1,7 +1,5 @@
 "use strict";
 // // https://code.visualstudio.com/docs/languages/typescript
-// const res = await fetch("./recipes.json");
-// const json = await res.json();
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -11,41 +9,25 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-// const list = document.querySelector('#recipeList');
-// console.log('list', list);
-// const recipeTemplate = (recipe) => {
-//     console.log('recipe', recipe);
-// };
-// json.forEach(recipe => {
-//     recipeTemplate(recipe);
-// });
 const list = document.querySelector('#recipeList');
 const recipeTemplate = (recipe) => {
-    console.log('recipe', recipe);
+    const { name, preparation } = recipe;
+    return `<div class="recipe">
+    ${(name) && `<div class="recipe__name">${name}</div>`}
+    ${preparation && `<div class="recipe__preparation">${preparation}</div>`}
+    </div>`;
 };
-(function myFunction() {
+function init() {
     return __awaiter(this, void 0, void 0, function* () {
         const res = yield fetch("./recipes.json");
         const json = yield res.json();
-        console.log('?', json, typeof json);
+        console.log('lang', navigator.language);
         for (const kye in json) {
-            console.log('?', kye);
-            if (list) {
-                list.innerHTML += `<div>${kye}</div>`;
-                // list.appendChild('<div>asd</div>')
+            if (list && json[kye]) {
+                list.innerHTML += recipeTemplate(json[kye]);
             }
         }
-        // for ((recipe: object) of json) {
-        //     console.log('recipe', recipe);
-        // }
-        // json.forEach((recipe: object) => {
-        //     recipeTemplate(recipe);
-        // });
     });
-})();
-class App {
-    constructor() {
-        console.log('test');
-    }
 }
-new App();
+;
+init();
