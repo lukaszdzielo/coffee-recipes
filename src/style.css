@@ -1,3 +1,7 @@
+[v-cloak] {
+  display: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
