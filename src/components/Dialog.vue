@@ -1,22 +1,15 @@
 <script lang="ts">
 export default {
-    data() {
-        return {
-            // show: true,
-        }
-    },
-    methods: {
-
-    }
+    props: ['recipe'],
 }
 </script>
 
 <template>
-    <!-- :open="show" -->
-    <dialog class="recipeDialog" open>
-        <button class="recipeDialog__close">show</button>
-        <div class="recipeDialog__name">name</div>
-        <div class="recipeDialog__ingredients">ingredients</div>
-        <div class="recipeDialog__preparation">preparation</div>
+
+    <dialog class="recipeDialog" :open="!!Object.keys(recipe).length">
+        <button class="recipeDialog__close" @click="$emit('close')">Close</button>
+        <div v-show="recipe.name" class="recipeDialog__name">{{ recipe.name }}</div>
+        <div v-show="recipe.ingredients" class="recipeDialog__ingredients">{{ recipe.ingredients }}</div>
+        <div v-show="recipe.preparation" class="recipeDialog__preparation">{{ recipe.preparation }}</div>
     </dialog>
 </template>
