@@ -40,8 +40,7 @@ export default {
 
 <template>
     <div class="list">
-        <Card v-for="(recipe, slug) in recipes" :slug="slug" :name="recipe.name" :thumbnail="recipe.thumbnail"
-            @open="openModal" />
+        <Card v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal" />
     </div>
     <Dialog :recipe="dialogRecipe" @close="closeDialog" />
 </template>

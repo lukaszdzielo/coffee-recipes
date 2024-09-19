@@ -1,23 +1,13 @@
 <script lang="ts">
 export default {
-    props: {
-        slug: {
-            type: String,
-        },
-        name: {
-            type: String,
-        },
-        thumbnail: {
-            type: String,
-        },
-    },
+    props: ['data', 'slug']
 }
 </script>
 
 <template>
-    <div class="card" @click="$emit('open', slug)">
-        <img v-if="thumbnail" :src="thumbnail" :alt="name">
-        <div class="card__content">{{ name }}</div>
+    <div class="card" @click="$emit('open', data.slug)">
+        <img v-if="data.thumbnail" :src="data.thumbnail" :alt="data.name">
+        <div class="card__content">{{ data.name }}</div>
     </div>
 </template>
 
