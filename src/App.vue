@@ -1,17 +1,13 @@
 <script setup lang="ts">
 import List from './components/List.vue';
-// import Card from './components/Card.vue'; 
 </script>
 
-<!-- <script lang="ts">
+<script lang="ts">
 
 export default {
-  props: {
-
-  },
   data() {
     return {
-      recipes: "",
+      recipes: {},
     }
   },
   created() {
@@ -22,18 +18,17 @@ export default {
       try {
         const response = await fetch('recipes.json');
         this.recipes = await response.json();
-
       } catch (error) {
         console.error(error);
       }
     }
   }
 }
-</script> -->
+</script>
 
 <template>
   <div class="container">
-    <List></List>
+    <List :recipes="recipes" />
   </div>
 </template>
 
