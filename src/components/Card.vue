@@ -25,6 +25,7 @@ export default {
 .card {
     border: 1px solid black;
     border-radius: 8px;
+    cursor: pointer;
 
     & .card__content {
         padding: 8px 12px;
