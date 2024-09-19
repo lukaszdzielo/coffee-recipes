@@ -1,30 +1,17 @@
 <script setup lang="ts">
 import Card from './Card.vue';
+import Dialog from './Dialog.vue';
 </script>
 
 <script lang="ts">
 export default {
-    props: {
+    props: ['recipes'],
 
-    },
     data() {
         return {
-            recipes: {},
+            dialogData: {},
         }
     },
-    created() {
-        this.fetchData();
-    },
-    methods: {
-        async fetchData() {
-            try {
-                const response = await fetch('recipes.json');
-                this.recipes = await response.json();
-            } catch (error) {
-                console.error(error);
-            }
-        }
-    }
 }
 </script>
 
@@ -32,4 +19,5 @@ export default {
     <div class="list">
         <Card :recipe="recipe" v-for="recipe in recipes" />
     </div>
+    <Dialog />
 </template>
