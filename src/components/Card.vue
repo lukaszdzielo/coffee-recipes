@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="card" @click="$emit('open', data.slug)">
+    <div class="card" @click="$emit('open', data)">
         <img v-if="data.thumbnail" :src="data.thumbnail" :alt="data.name">
         <div class="card__content">{{ data.name }}</div>
     </div>

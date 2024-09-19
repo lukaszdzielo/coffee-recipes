@@ -28,8 +28,10 @@ export default {
                 console.error(error);
             }
         },
-        openModal(recipeSlug: String) {
-            this.dialogRecipe = this.recipes[recipeSlug];
+        openModal(recipeSlug) {
+            console.log('??', recipeSlug);
+
+            this.dialogRecipe = recipeSlug;
         },
         closeDialog() {
             this.dialogRecipe = {};
