@@ -28,9 +28,7 @@ export default {
                 console.error(error);
             }
         },
-        openModal(recipeSlug) {
-            console.log('??', recipeSlug);
-
+        openModal(recipeSlug: {}) {
             this.dialogRecipe = recipeSlug;
         },
         closeDialog() {
