@@ -22,6 +22,7 @@ export default {
     }
 
     img {
+        display: block;
         width: 100%;
         max-width: 100%;
     }
