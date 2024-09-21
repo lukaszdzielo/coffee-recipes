@@ -20,5 +20,10 @@ export default {
     & .card__content {
         padding: 8px 12px;
     }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 </style>

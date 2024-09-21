@@ -1,7 +1,7 @@
 {
     "strawberry-frappe": {
         "ebook": 2018,
-        "thumbnail": "asd",
+        "thumbnail": "./strawberry-frappe-thumbnail.jpg",
         "name": "Frappe truskawkowe",
         "ingredients": [
             "5 truskawek do zmiksowania na gładko",
@@ -14,7 +14,7 @@
     },
     "chocolate-banana-frappe": {
         "ebook": 2018,
-        "thumbnail": "x",
+        "thumbnail": "./chocolate-banana-frappe-thumbnail.jpg",
         "name": "Czekoladowe Frappe z bananem",
         "ingredients": [
             "1/2 banana",
@@ -27,7 +27,7 @@
     },
     "almond-mocha": {
         "ebook": 2018,
-        "thumbnail": "x",
+        "thumbnail": "./almond-mocha-thumbnail.jpg",
         "name": "Migdałowa Mokka",
         "ingredients": [
             "10ml syropu migdałowego",
@@ -41,7 +41,7 @@
     },
     "sweet-cherry": {
         "ebook": 2018,
-        "thumbnail": "x",
+        "thumbnail": "./sweet-cherry-thumbnail.jpg",
         "name": "Sweet Cherry",
         "ingredients": [
             " 7ml syropu wiśniowego /2 łyżki konfitury wiśniowej",
