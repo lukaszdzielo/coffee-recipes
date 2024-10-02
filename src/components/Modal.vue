@@ -5,8 +5,7 @@ export default {
 </script>
 
 <template>
-
-    <dialog class="recipeDialog" :open="!!Object.keys(recipe).length">
+    <dialog class="recipeDialog">
         <button class="recipeDialog__close" @click="$emit('close')">Close</button>
         <div v-show="recipe.name" class="recipeDialog__name">{{ recipe.name }}</div>
         <ul v-show="recipe.ingredients" class="recipeDialog__ingredients">
