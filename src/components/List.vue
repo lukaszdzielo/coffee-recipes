@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Card from './Card.vue';
-import Dialog from './Dialog.vue';
+import Dialog from './Modal.vue';
 </script>
 
 <script lang="ts">
@@ -14,10 +14,15 @@ export default {
         return {
             recipes: {},
             dialogRecipe: {},
+            modalRecipe: document.querySelector('dialog'),
         }
     },
     created() {
         this.fetchData();
+
+    },
+    mounted() {
+        this.modalRecipe = document.querySelector('dialog');
     },
     methods: {
         async fetchData() {
@@ -28,10 +33,12 @@ export default {
                 console.error(error);
             }
         },
-        openModal(recipeSlug: {}) {
+        openModal(recipeSlug: { name: String }) {
             this.dialogRecipe = recipeSlug;
+            this.modalRecipe?.showModal();
         },
         closeDialog() {
+            this.modalRecipe?.close();
             this.dialogRecipe = {};
         },
     }
