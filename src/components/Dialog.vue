@@ -9,7 +9,9 @@ export default {
     <dialog class="recipeDialog" :open="!!Object.keys(recipe).length">
         <button class="recipeDialog__close" @click="$emit('close')">Close</button>
         <div v-show="recipe.name" class="recipeDialog__name">{{ recipe.name }}</div>
-        <div v-show="recipe.ingredients" class="recipeDialog__ingredients">{{ recipe.ingredients }}</div>
+        <ul v-show="recipe.ingredients" class="recipeDialog__ingredients">
+            <li v-for="ingredient of recipe.ingredients">{{ ingredient }}</li>
+        </ul>
         <div v-show="recipe.preparation" class="recipeDialog__preparation">{{ recipe.preparation }}</div>
     </dialog>
 </template>
