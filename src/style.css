@@ -11,8 +11,11 @@
 body {
   margin: 0;
   padding: 16px 0;
+  background-color: #BDBDBD;
+  color: #212121;
   font-family: sans-serif;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 h6,
