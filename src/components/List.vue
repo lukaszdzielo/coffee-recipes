@@ -52,11 +52,12 @@ export default {
     <Dialog :recipe="dialogRecipe" @close="closeDialog" />
 </template>
 
-<style>
+<style scoped>
 .list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+    margin-top: 16px;
 
     @media (min-width: 576px) {
         grid-template-columns: repeat(3, 1fr);

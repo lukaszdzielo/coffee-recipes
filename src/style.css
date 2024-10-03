@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  padding: 16px 0;
+  padding: 0;
   background-color: #BDBDBD;
   color: #212121;
   font-family: sans-serif;
@@ -34,7 +34,9 @@ h1,
 }
 
 .container {
+  --container-mw: 100%;
   width: 100%;
+  max-width: var(--container-mw);
   margin-right: auto;
   margin-left: auto;
   padding-inline: 16px;
@@ -43,31 +45,31 @@ h1,
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    --container-mw: 540px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    --container-mw: 720px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    --container-mw: 960px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    --container-mw: 1140px;
   }
 }
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px;
+    --container-mw: 1320px;
   }
 }
 

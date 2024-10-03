@@ -17,7 +17,7 @@ export default {
     </div>
 </template>
 
-<style>
+<style scoped>
 .recipeCard {
     display: flex;
     flex-direction: column;
