@@ -22,7 +22,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 8px;
     background-color: #E0E0E0;
     font-size: 14px;
@@ -30,7 +30,7 @@ export default {
 
     img {
         display: block;
-        border-radius: 8px;
+        border-radius: 4px;
         width: 100%;
         max-width: 100%;
     }
