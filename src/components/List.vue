@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Card from './RecipeCard.vue';
-import Dialog from './Modal.vue';
+import Dialog from './RecipeModal.vue';
 </script>
 
 <script lang="ts">
