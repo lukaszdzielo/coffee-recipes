@@ -54,7 +54,7 @@
     },
     "pear-with-vanilla": {
         "ebook": 2018,
-        "thumbnail": "",
+        "thumbnail": "./pear-with-vanilla-thumbnail.jpg",
         "name": "Gruszka z Wanilią",
         "ingredients": [
             "10ml syropu waniliowego",
@@ -67,7 +67,7 @@
     },
     "chilli-mango": {
         "ebook": 2018,
-        "thumbnail": "",
+        "thumbnail": "./chilli-mango-thumbnail.jpg",
         "name": "Chilli Mango",
         "ingredients": [
             "1/3 mango w puszce / pół świeżego mango (do przygotowania musu)",
@@ -79,7 +79,7 @@
     },
     "peppermint-chai-latte": {
         "ebook": 2018,
-        "thumbnail": "",
+        "thumbnail": "./peppermint-chai-latte-thumbnail.jpg",
         "name": "Peppermint Chai Latte",
         "ingredients": [
             "20g Drink Me Chai Peppermint®",
@@ -91,7 +91,7 @@
     },
     "spiced-raspberry": {
         "ebook": 2018,
-        "thumbnail": "",
+        "thumbnail": "./spiced-raspberry-thumbnail.jpg",
         "name": "Spiced Raspberry",
         "ingredients": [
             " 20g Drink Me Chai Spiced®",
@@ -103,7 +103,7 @@
     },
     "jasmine-espresso": {
         "ebook": 2018,
-        "thumbnail": "",
+        "thumbnail": "./jasmine-espresso-thumbnail.jpg",
         "name": "Jaśminowe Espresso",
         "ingredients": [
             "1 pomarańcza",
@@ -116,7 +116,7 @@
     },
     "black-coffee-with-orange-liqueur": {
         "ebook": 2018,
-        "thumbnail": "",
+        "thumbnail": "./black-coffee-with-orange-liqueur-thumbnail.jpg",
         "name": "Czarna kawa z likierem pomarańczowym",
         "ingredients": [
             "1 pomarańcza",
