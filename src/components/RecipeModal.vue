@@ -21,7 +21,14 @@ export default {
 .recipeDialog {
     --dialog-mw: calc(var(--container-mw) - calc(16px * 2));
     box-sizing: border-box;
+    border: 0;
+    border-radius: 8px;
     max-width: var(--dialog-mw);
+
+    &::backdrop {
+        background-color: #212121;
+        opacity: .5;
+    }
 }
 
 @media (min-width: 576px) {
