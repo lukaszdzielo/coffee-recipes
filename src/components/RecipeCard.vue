@@ -11,8 +11,10 @@ export default {
 
 <template>
     <div class="recipeCard" @click="$emit('open', data)">
-        <img v-if="data.thumbnail" :src="data.thumbnail" :alt="data.name">
-        <img v-else="data.thumbnail" :src="thumbnailDefault" :alt="data.name">
+        <div class="recipeCard__image" style="display: flex;">
+            <img v-if="data.thumbnail" :src="data.thumbnail" :alt="data.name">
+            <img v-else="data.thumbnail" :src="thumbnailDefault" :alt="data.name">
+        </div>
         <div class="card__content">{{ data.name }}</div>
     </div>
 </template>
@@ -28,11 +30,17 @@ export default {
     font-size: 14px;
     cursor: pointer;
 
-    img {
-        display: block;
+    & .recipeCard__image {
+        display: flex;
+        background-color: #BDBDBD;
         border-radius: 4px;
-        width: 100%;
-        max-width: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 </style>
