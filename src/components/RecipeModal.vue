@@ -19,10 +19,10 @@ export default {
 
 <style scoped>
 .recipeDialog {
-    --dialog-mw: calc(var(--container-mw) - calc(16px * 2));
+    --dialog-mw: calc(var(--container-mw) - calc(1rem * 2));
     box-sizing: border-box;
     border: 0;
-    border-radius: 8px;
+    border-radius: .5rem;
     max-width: var(--dialog-mw);
 
     &::backdrop {
@@ -37,7 +37,7 @@ export default {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     .recipeDialog {
         --container-mw: 720px;
     }
@@ -62,13 +62,14 @@ export default {
 }
 
 .recipeDialog__content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* flex-direction: column; */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     .recipeDialog__content {
-        flex-direction: row;
+        /* flex-direction: row; */
+        grid-template-rows: 1fr 2fr;
     }
 }
 </style>

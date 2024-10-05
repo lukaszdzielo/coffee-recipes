@@ -2,7 +2,9 @@
     "strawberry-frappe": {
         "ebook": 2018,
         "thumbnail": "./strawberry-frappe-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Frappe truskawkowe",
+        "dsc": "",
         "ingredients": [
             "5 truskawek do zmiksowania na gładko",
             "100ml mleka",
@@ -10,12 +12,14 @@
             "Podwójne espresso / czarna kawa",
             "5-6 kostek lodu"
         ],
-        "preparation": "Korzystajmy, póki jeszcze są… przepyszne, słodkie, soczyste truskawki, które swoim aromatem wprost kuszą do przygotowania orzeźwiającego Frappe na upalne dni. Truskawki, lody waniliowe, mleko i parę kostek lodu zmiksuj do uzyskania gładkiego, puszystego musu. Do szklanki wlej aromatyczne podwójne espresso bądź czarną kawę ze świeżo zmielonych ziaren, a następnie przełóż wcześniej przygotowany mus do szklanki, żeby uzyskać efekt kilku warstw (możesz też zmiksować wszystko razem). Nie zapomnij również o dekoracji z bitej śmietany i truskawki!"
+        "preparation": "<p>Korzystajmy, póki jeszcze są… przepyszne, słodkie, soczyste truskawki, które swoim aromatem wprost kuszą do przygotowania orzeźwiającego Frappe na upalne dni. Truskawki, lody waniliowe, mleko i parę kostek lodu zmiksuj do uzyskania gładkiego, puszystego musu. Do szklanki wlej aromatyczne podwójne espresso bądź czarną kawę ze świeżo zmielonych ziaren, a następnie przełóż wcześniej przygotowany mus do szklanki, żeby uzyskać efekt kilku warstw (możesz też zmiksować wszystko razem). Nie zapomnij również o dekoracji z bitej śmietany i truskawki!</p>"
     },
     "chocolate-banana-frappe": {
         "ebook": 2018,
         "thumbnail": "./chocolate-banana-frappe-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Czekoladowe Frappe z bananem",
+        "dsc": "",
         "ingredients": [
             "1/2 banana",
             "20ml miodu",
@@ -23,12 +27,14 @@
             "Podwójne espresso / czarna kawa",
             "5-6 kostek lodu"
         ],
-        "preparation": "To połączenie banana, miodu i lodów czekoladowych zawsze dobrze smakuje, a po dodaniu kostek lodu i zmiksowaniu wszystkich składników staje się niesamowicie orzeźwiające. Do przygotowania tego Frappe będziemy potrzebować podwójne espresso lub czarną kawę z mieszanki charakteryzującej się niską kwasowością i czekoladowym posmakiem."
+        "preparation": "<p>To połączenie banana, miodu i lodów czekoladowych zawsze dobrze smakuje, a po dodaniu kostek lodu i zmiksowaniu wszystkich składników staje się niesamowicie orzeźwiające. Do przygotowania tego Frappe będziemy potrzebować podwójne espresso lub czarną kawę z mieszanki charakteryzującej się niską kwasowością i czekoladowym posmakiem.</p>"
     },
     "almond-mocha": {
         "ebook": 2018,
         "thumbnail": "./almond-mocha-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Migdałowa Mokka",
+        "dsc": "",
         "ingredients": [
             "10ml syropu migdałowego",
             "150ml mleka",
@@ -37,12 +43,14 @@
             "Bita śmietana",
             "Płatki migdałów do dekoracji"
         ],
-        "preparation": "Do przygotowania tego pysznego drinka kawowego potrzebujesz espresso ze świeżo zmielonych ziaren. Jego niepowtarzalny smak zostanie podkreślony po dodaniu syropu migdałowego i sosu czekoladowego (jeśli nie masz sosu czekoladowego, możesz po prostu rozpuścić ok. 1/2 tabliczki czekolady). Całość dopełnij spienionym mlekiem i udekoruj bita śmietaną oraz pokruszonymi migdałami."
+        "preparation": "<p>Do przygotowania tego pysznego drinka kawowego potrzebujesz espresso ze świeżo zmielonych ziaren. Jego niepowtarzalny smak zostanie podkreślony po dodaniu syropu migdałowego i sosu czekoladowego (jeśli nie masz sosu czekoladowego, możesz po prostu rozpuścić ok. 1/2 tabliczki czekolady). Całość dopełnij spienionym mlekiem i udekoruj bita śmietaną oraz pokruszonymi migdałami.</p>"
     },
     "sweet-cherry": {
         "ebook": 2018,
         "thumbnail": "./sweet-cherry-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Sweet Cherry",
+        "dsc": "",
         "ingredients": [
             " 7ml syropu wiśniowego /2 łyżki konfitury wiśniowej",
             "150ml mleka",
@@ -50,12 +58,14 @@
             "Podwójne espresso / czarna kawa",
             "5-6 kostek lodu"
         ],
-        "preparation": "Z jednej strony orzeźwiająca kwasowość wiśni, z drugiej słodka biała czekolada, a to wszystko połączone z pobudzającym espresso. Do blendera dodaj 5-6 kostek lodu, mleko, syrop wiśniowy, sos z białej czekolady i na koniec dodaj świeżo zaparzone espresso albo czarną kawę. Całość miksujemy do uzyskania gęstej konsystencji i przelewamy do szklanki. Jeśli masz ochotę, to możesz użyć naturalnych składników - rozpuść białą czekoladę i dodaj do niej konfiturę wiśniową. Zmiksuj, aż wszystkie składniki będą dokładnie rozdrobnione i połączone."
+        "preparation": "<p>Z jednej strony orzeźwiająca kwasowość wiśni, z drugiej słodka biała czekolada, a to wszystko połączone z pobudzającym espresso. Do blendera dodaj 5-6 kostek lodu, mleko, syrop wiśniowy, sos z białej czekolady i na koniec dodaj świeżo zaparzone espresso albo czarną kawę. Całość miksujemy do uzyskania gęstej konsystencji i przelewamy do szklanki. Jeśli masz ochotę, to możesz użyć naturalnych składników - rozpuść białą czekoladę i dodaj do niej konfiturę wiśniową. Zmiksuj, aż wszystkie składniki będą dokładnie rozdrobnione i połączone.</p>"
     },
     "pear-with-vanilla": {
         "ebook": 2018,
         "thumbnail": "./pear-with-vanilla-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Gruszka z Wanilią",
+        "dsc": "",
         "ingredients": [
             "10ml syropu waniliowego",
             "1 łyżeczka musu z gruszki",
@@ -63,23 +73,26 @@
             "50ml mleka",
             "Espresso / czarna kawa"
         ],
-        "preparation": "Do metalowego dzbanuszka wlej syrop o smaku wanilii, bezpośrednio do tego naczynia zaparz espresso, a następnie je ostudź (np. wstaw dzbanuszek do pojemnika z kostkami lodu). Do kieliszka dodaj niewielką porcję musu z gruszki (musi być gładki, pozbawiony cząstek owoców) i połącz go ze schłodzonym espresso. Jeśli masz syfon do bitej śmietany, możesz użyć go do zrobienia „chmurki” z lodów waniliowych. Wrzuć kilka porcji lodów waniliowych do syfonu i dolej niewielką ilość mleka, później postępuj tak samo jak w przypadku przygotowania bitej śmietany. „Chmurkę” nałóż na wierzch napoju kawowego."
+        "preparation": "<p>Do metalowego dzbanuszka wlej syrop o smaku wanilii, bezpośrednio do tego naczynia zaparz espresso, a następnie je ostudź (np. wstaw dzbanuszek do pojemnika z kostkami lodu). Do kieliszka dodaj niewielką porcję musu z gruszki (musi być gładki, pozbawiony cząstek owoców) i połącz go ze schłodzonym espresso. Jeśli masz syfon do bitej śmietany, możesz użyć go do zrobienia „chmurki” z lodów waniliowych. Wrzuć kilka porcji lodów waniliowych do syfonu i dolej niewielką ilość mleka, później postępuj tak samo jak w przypadku przygotowania bitej śmietany. „Chmurkę” nałóż na wierzch napoju kawowego.</p>"
     },
     "chilli-mango": {
         "ebook": 2018,
         "thumbnail": "./chilli-mango-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Chilli Mango",
+        "dsc": "",
         "ingredients": [
             "1/3 mango w puszce / pół świeżego mango (do przygotowania musu)",
             "Szczypta chili",
             "150ml spienionego, ciepłego mleka",
             "Espresso / czarna kawa"
         ],
-        "preparation": "Mus z mango sprawia, że smak staje się unikalny, dodaj tam niewielką ilość chilli, a efekt będzie piorunujący. Jeśli wolisz możesz użyć syropu smakowego do kaw o smaku chilli. Do musu z mango i chilli należy oczywiście dodać espresso, podwójną porcję. Na sam koniec dodajemy aksamitnie gładkie spienione mleko."
+        "preparation": "Mus z mango sprawia, że smak staje się unikalny, dodaj tam niewielką ilość chilli, a efekt będzie piorunujący. Jeśli wolisz możesz użyć syropu smakowego do kaw o smaku chilli. Do musu z mango i chilli należy oczywiście dodać espresso, podwójną porcję. Na sam koniec dodajemy aksamitnie gładkie spienione mleko.</p>"
     },
     "peppermint-chai-latte": {
         "ebook": 2018,
         "thumbnail": "./peppermint-chai-latte-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Peppermint Chai Latte",
         "ingredients": [
             "20g Drink Me Chai Peppermint®",
@@ -87,24 +100,28 @@
             "10ml sosu czekoladowego",
             "Espresso"
         ],
-        "preparation": "Ciepłe, spienione mleko, świeże espresso i Drink Me Chai Peppermint® – połączenie tych składników to propozycja na rozgrzewającą kawę z mieszanką korzennych przypraw i delikatną nutą pieprzowej mięty. Całość należy zwieńczyć sosem czekoladowym, aby rozkoszować się tym niepowtarzalnym smakiem kawy."
+        "preparation": "<p>Ciepłe, spienione mleko, świeże espresso i Drink Me Chai Peppermint® – połączenie tych składników to propozycja na rozgrzewającą kawę z mieszanką korzennych przypraw i delikatną nutą pieprzowej mięty. Całość należy zwieńczyć sosem czekoladowym, aby rozkoszować się tym niepowtarzalnym smakiem kawy.</p>"
     },
     "spiced-raspberry": {
         "ebook": 2018,
         "thumbnail": "./spiced-raspberry-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Spiced Raspberry",
+        "dsc": "",
         "ingredients": [
             " 20g Drink Me Chai Spiced®",
             "200ml mleka",
             "7,5ml syropu malinowego",
             "Espresso"
         ],
-        "preparation": "Mleko wlej do metalowego dzbanka do spienienia mleka i dodaj do niego porcję Drink Me Chai Spiced® oraz syrop malinowy. Dokładnie rozmieszaj przy pomocy łyżki lub mieszadełka, tak aby uzyskać jednolitą konsystencję. Następnie spień całość. Zaparz espresso do dużej filiżanki, i połącz wszystko razem."
+        "preparation": "<p>Mleko wlej do metalowego dzbanka do spienienia mleka i dodaj do niego porcję Drink Me Chai Spiced® oraz syrop malinowy. Dokładnie rozmieszaj przy pomocy łyżki lub mieszadełka, tak aby uzyskać jednolitą konsystencję. Następnie spień całość. Zaparz espresso do dużej filiżanki, i połącz wszystko razem.</p>"
     },
     "jasmine-espresso": {
         "ebook": 2018,
         "thumbnail": "./jasmine-espresso-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Jaśminowe Espresso",
+        "dsc": "",
         "ingredients": [
             "1 pomarańcza",
             "50ml wody",
@@ -112,12 +129,14 @@
             "100ml naparu z zielonej herbaty jaśminowej",
             "Espresso"
         ],
-        "preparation": "Zarówno kawa jak i herbata zawierają przeciwutleniacze, więc dlaczego nie połączyć ich sił? Obierz pomarańczę, pokrój ją w kostkę i wrzuć je do małego garnka, dodaj niewielką ilość wody i melasę. Gotuj wszystko kilka minut, aż do uzyskania soku z pomarańczy. W międzyczasie zaparz zieloną herbatę jaśminową. Następnie przelej ją oraz wywar z pomarańczy do odpowiedniego naczynia (kieliszek lub mała szklanka), i dodaj espresso, którego kwasowość i melasowa słodycz idealnie połączy się z herbatą i pomarańczą."
+        "preparation": "<p>Zarówno kawa jak i herbata zawierają przeciwutleniacze, więc dlaczego nie połączyć ich sił? Obierz pomarańczę, pokrój ją w kostkę i wrzuć je do małego garnka, dodaj niewielką ilość wody i melasę. Gotuj wszystko kilka minut, aż do uzyskania soku z pomarańczy. W międzyczasie zaparz zieloną herbatę jaśminową. Następnie przelej ją oraz wywar z pomarańczy do odpowiedniego naczynia (kieliszek lub mała szklanka), i dodaj espresso, którego kwasowość i melasowa słodycz idealnie połączy się z herbatą i pomarańczą.</p>"
     },
     "black-coffee-with-orange-liqueur": {
         "ebook": 2018,
         "thumbnail": "./black-coffee-with-orange-liqueur-thumbnail.jpg",
+        "author": "Marcin Kozicki",
         "name": "Czarna kawa z likierem pomarańczowym",
+        "dsc": "",
         "ingredients": [
             "1 pomarańcza",
             "50ml wody",
@@ -125,6 +144,190 @@
             "100ml naparu z zielonej herbaty jaśminowej",
             "Espresso"
         ],
-        "preparation": "Do szklanki lub większego kieliszka wypełnionego lodem wlej schłodzone espresso lub czarną kawę i dodaj pomarańczowy likier. Następnie pokrój pomarańczę na drobne kawałki, dodaj wodę, cukier i gotuj aż do uzyskania aromatycznego wywaru. Schłodź go i wlej do szklanki, a na koniec dodaj niewielką ilość ciemnego piwa, którego słód doda drinkowi karmelowej słodyczy."
+        "preparation": "<p>Do szklanki lub większego kieliszka wypełnionego lodem wlej schłodzone espresso lub czarną kawę i dodaj pomarańczowy likier. Następnie pokrój pomarańczę na drobne kawałki, dodaj wodę, cukier i gotuj aż do uzyskania aromatycznego wywaru. Schłodź go i wlej do szklanki, a na koniec dodaj niewielką ilość ciemnego piwa, którego słód doda drinkowi karmelowej słodyczy.</p>"
+    },
+    "apple-pie-americano": {
+        "ebook": 2021,
+        "thumbnail": "./apple-pie-americano-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Apple pie americano",
+        "dsc": "",
+        "ingredients": [
+            "Kawa Americano",
+            [
+                "Syrop szarlotkowy:",
+                "1 szklanka soku jabłkowego 100%",
+                "½ szklanki cukru brązowego",
+                "1 łyżeczka soku z cytryny",
+                "3-4 goździki",
+                "¼ łyżeczki gałki muszkatołowej",
+                "szczypta kardamonu",
+                "½ łyżeczki ekstraktu waniliowego"
+            ]
+        ],
+        "preparation": "<p>Do garnka wlewamy sok jabłkowy i dodajemy cukier. Gotujemy na niewielkim ogniu aż do rozpuszczenia się cukru. Następnie dodajemy przyprawy i sok z cytryny. Gotujemy jeszcze ok. 5-10 minut, a po ostygnięciu syrop przelewamy przez gęste sitko. Wlewamy syrop do ulubionej filiżanki i przygotowujemy americano.</p>"
+    },
+    "coconut-matcha-latte": {
+        "ebook": 2021,
+        "thumbnail": "./coconut-matcha-latte-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Coconut matcha latte",
+        "dsc": "",
+        "ingredients": [
+            "1 ½ łyżeczki matcha w proszku",
+            "syrop kokosowy",
+            "200ml mleka (może być kokosowe)",
+            "Podwójne espresso"
+        ],
+        "preparation": "<p>Do wysokiej szklanki wlewamy syrop kokosowy, a następnie dodajemy spienione mleko i całość dokładnie łączymy z matchą. Na koniec dodajemy świeżo zaparzone podwójne espresso.</p>"
+    },
+    "chocolate-cappuccino-with-salted-caramel": {
+        "ebook": 2021,
+        "thumbnail": "./chocolate-cappuccino-with-salted-caramel-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Czekoladowe cappuccino ze słonym karmelem",
+        "dsc": "",
+        "ingredients": [
+            [
+                "Do przygotowania słonego karmelu:",
+                "1 szklanka drobnego cukru",
+                "½ szklanki śmietanki 30%",
+                "80g masła",
+                "½ łyżeczki soli"
+            ],
+            "4-5 kostek gorzkiej czekolady",
+            "Kawa cappuccino"
+        ],
+        "preparation": "<ol><li>Słony karmel: na dno rondla wsypujemy cukier i podgrzewamy go na umiarkowanym ogniu aż się rozpuści. Gdy zacznie się rozpuszczać mieszamy cukier od czasu do czasu. Gdy cukier rozpuści się całkowicie i będzie miał brązowy kolor dodajemy masło i mieszamy do połączenia się składników, aż staną się jednolite. Następnie ostrożnie dodajemy śmietankę i również mieszamy do uzyskania gładkiej konsystencji, dodajemy sól i dalej mieszając podgrzewamy całość około minuty. Zdejmujemy z ognia i przelewamy do słoiczka lub innego naczynia. Sosu karmelowego jest więcej niż potrzebujemy do przygotowania naszej kawy, dzięki temu można wykorzystać go również do innych deserów.</li><li>Gdy masz już gotowy, lekko przestudzony, ale nadal lejący się słony karmel, możesz zacząć rozpuszczać gorzką czekoladę – w kąpieli wodnej lub bezpośrednio w garnuszku, na małym ogniu. Rozpuszczoną czekoladę wlewamy do filiżanki, dodajemy 2 łyżeczki karmelu (może być więcej, wedle uznania) i bezpośrednio do tej filiżanki przygotowujemy cappuccino. Wierzch kawy możesz polać karmelem do ozdoby. Przed wypiciem dokładnie wymieszaj wszystkie składniki</li></ol>"
+    },
+    "raspberry-mocha": {
+        "ebook": 2021,
+        "thumbnail": "./raspberry-mocha-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Malinowa mocha",
+        "dsc": "",
+        "ingredients": [
+            "20ml roztopionej czekolady",
+            "20ml syropu malinowego",
+            "Latte macchiato"
+        ],
+        "preparation": "<p>Na spód ulubionego kubka dodaj czekoladę i wlej syrop malinowy. Następnie podstaw kubek pod ekspres i przygotuj latte macchiato. Wierzch kawy możesz udekorować sosem czekoladowym lub roztopioną czekoladą</p>"
+    },
+    "rose-latte-macchiato": {
+        "ebook": 2021,
+        "thumbnail": "./rose-latte-macchiato-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Różane latte macchiato",
+        "dsc": "",
+        "ingredients": [
+            " 200ml mleka",
+            "2 łyżki suszonych płatków róż ",
+            "Kawa Latte Macchiato",
+            "1 łyżeczka miodu (opcjonalnie)"
+        ],
+        "preparation": "<ol><li>W niewielkim garnku podgrzej mleko i suszone płatki róż, gotuj około 8-10min. Następnie wyłącz płomień, przykryj okrywką i pozostaw na kolejne 10min. Przy pomocy sitka pozbądź się płatków róż.</li><li>Wlej mleko różane do pojemnika na mleko i przygotuj latte acchiato. Jeśli lubisz słodką kawę, możesz dodać łyżeczkę miodu. Do dekoracji możesz wykorzystać 2-3 płatki róż.</li></ol>"
+    },
+    "honey-and-lavender-cold-coffee": {
+        "ebook": 2021,
+        "thumbnail": "./honey-and-lavender-cold-coffee-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Miodowo - lawendowa kawa na zimno",
+        "dsc": "",
+        "ingredients": [
+            "podwójne espresso",
+            "200ml mleka",
+            "½ łyżeczki suszonej lawendy",
+            "1 łyżeczka miodu",
+            "½ łyżeczki ekstraktu waniliowego",
+            "kostki lodu"
+        ],
+        "preparation": "<ol><li>W niewielkim garnku połącz mleko i suszoną lawendę, dodaj miód, ekstrakt waniliowy i zagotuj całość do około 60 stopni C. Po osiągnięciu tej temperatury gotuj na małym ogniu przez około 2-3 minuty. Następnie wyłącz płomień, przykryj pokrywką i pozostaw na kolejne 10min. Pozostaw do ostudzenia i umieść w lodówce. </li><li>Wysoką szklankę uzupełnij lodem do przynajmniej ¾ wysokości, bezpośrednio na kostki lodu zaparz podwójne espresso. Dopełnij lawendowym mlekiem, odcedzając je przy pomocy gęstego sitka.</li></ol>"
+    },
+    "espresso-with-jam-and-white-chocolate": {
+        "ebook": 2021,
+        "thumbnail": "./espresso-with-jam-and-white-chocolate-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Espresso z powidłami i białą czekoladą",
+        "dsc": "",
+        "ingredients": [
+            "Espresso z dodatkowym ristretto",
+            "1 łyżeczka powideł śliwkowych",
+            [
+                "Mus z białej czekolady:",
+                "500ml śmietany 30%",
+                "10 kostek białej czekolady"
+            ]
+        ],
+        "preparation": "<ol><li>Przepis na mus z białej czekolady: Czekoladę rozpuść w kąpieli wodnej razem ze 100ml śmietany kremówki, podgrzewaj tylko do momentu rozpuszczenia, wymieszaj, aby składniki się połączyły. Odstaw do wystudzenia. W międzyczasie ubij pozostałą część śmietanki (400ml)  mikserem, aż będzie gęsta. Dodawaj po łyżce do ostudzonej białej czekolady i dokładnie wymieszaj.</li><li>Do filiżanki lub niewielkiej szklaneczki dodaj powidła śliwkowe (ważne, aby były zmiksowane na jednolitą, gładką masę). Na powidłach ułóż mus z białej czekolady i przygotuj espresso z dodatkowym ristretto.</li></ol>"
+    },
+    "pumpkin-latte": {
+        "ebook": 2022,
+        "thumbnail": "./pumpkin-latte-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Latte dyniowa",
+        "dsc": "",
+        "ingredients": [
+            "espresso",
+            "150ml mleka",
+            "20ml syropu dyniowego ",
+            "bita śmietana do ozdoby"
+        ],
+        "preparation": "<p>Na spód szklanki wlej syrop smakowy. Następnie w dzbanku spień mleko i wlej po łyżce do szklanki, tworząc warstwy. Zaparz espresso i wlej ostrożnie na powierzchnię spienionego mleka. Udekoruj bitą śmietaną.</p>"
+    },
+    "chocolate-cherry-latte": {
+        "ebook": 2022,
+        "thumbnail": "./chocolate-cherry-latte-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Czekoladowo wiśniowa latte",
+        "dsc": "",
+        "ingredients": [
+            "espresso",
+            "200ml mleka",
+            "10ml płynnej czekolady",
+            "20ml syropu smakowego wiśniowego ",
+            "kakao do ozdoby"
+        ],
+        "preparation": "<p>abcd</p>"
+    },
+    "espresso-tonic": {
+        "ebook": 2022,
+        "thumbnail": "./espresso-tonic-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Espresso tonic",
+        "dsc": "",
+        "ingredients": [
+            "30-40ml espresso",
+            "150ml tonic",
+            "kostki lodu",
+            "limonka lub inne owoce"
+        ],
+        "preparation": "<p>Do szklanki wrzuć plaster limonki, kostki lodu i wlej tonic. Następnie zaparz espresso do dzbanuszka i wlej ostrożnie do szklanki. Przed wypiciem dokładnie wymieszaj.</p>"
+    },
+    "frozen-vanilla": {
+        "ebook": 2022,
+        "thumbnail": "./frozen-vanilla-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Zamrożona wanilia",
+        "dsc": "",
+        "ingredients": [
+            "espresso",
+            "100ml mleka",
+            "2 gałki lodów waniliowych ",
+            "3-4 kostki lodu",
+            "bita śmietana"
+        ],
+        "preparation": "<p>Przygotuj espresso, możesz je osłodzić do smaku. Następnie do shakera wsyp kostki lodu, wlej 100 ml mleka, kawę i 1 gałkę lodów waniliowych. Mocno wstrząśnij shakerem przez około 15 sekund. Następnie przelej do szklanki, wrzuć drugą gałkę lodów i udekoruj bitą śmietaną.</p>"
+    },
+    "cafe-bombon": {
+        "ebook": 2022,
+        "thumbnail": "./cafe-bombon-thumbnail.jpg",
+        "author": "Marcin Kozicki",
+        "name": "Café bombón",
+        "dsc": "",
+        "ingredients": [
+            "espresso",
+            "20ml mleka skondensowanego"
+        ],
+        "preparation": "<p>Do niedużej, przezroczystej szklaneczki wlać mleko skondensowane. Następnie po łyżeczce wlać espresso. Przed wypiciem dokładnie wymieszaj.</p>"
     }
 }
