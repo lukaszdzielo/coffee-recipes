@@ -23,17 +23,18 @@ export default {
 .recipeCard {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    border-radius: 8px;
-    padding: 8px;
+    gap: .5rem;
+    border-radius: .5rem;
+    padding: .5rem;
     background-color: #E0E0E0;
-    font-size: 14px;
+    font-size: .625rem;
     cursor: pointer;
+    transition: scale .1s;
 
     & .recipeCard__image {
         display: flex;
         background-color: #BDBDBD;
-        border-radius: 4px;
+        border-radius: .25rem;
         overflow: hidden;
 
         img {
@@ -41,6 +42,14 @@ export default {
             max-width: 100%;
             height: auto;
         }
+    }
+
+    &:hover {
+        scale: 1.03;
+    }
+
+    &:is(:active, :focus) {
+        scale: 0.97;
     }
 }
 </style>

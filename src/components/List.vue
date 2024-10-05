@@ -56,14 +56,14 @@ export default {
 .list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin-top: 16px;
+    gap: 1rem;
+    margin-top: 1rem;
 
     @media (min-width: 576px) {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 48rem) {
         grid-template-columns: repeat(4, 1fr);
     }
 
