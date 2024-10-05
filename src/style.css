@@ -8,6 +8,10 @@
   }
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -41,40 +45,35 @@ h1,
   margin-left: auto;
   padding-inline: 1rem;
   box-sizing: border-box;
-}
 
-@media (min-width: 576px) {
-  .container {
+  @media (min-width: 576px) {
     --container-mw: 540px;
   }
-}
 
-@media (min-width: 48rem) {
-  .container {
+  @media (min-width: 48rem) {
     --container-mw: 720px;
   }
-}
 
-@media (min-width: 992px) {
-  .container {
+  @media (min-width: 992px) {
     --container-mw: 960px;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
+  @media (min-width: 1200px) {
     --container-mw: 1140px;
   }
-}
 
-@media (min-width: 1400px) {
-  .container {
+  @media (min-width: 1400px) {
     --container-mw: 1320px;
   }
 }
 
-#recipeList {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+body:has(dialog:popover-open) {
+
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+
+  dialog:popover-open {
+    pointer-events: auto;
+  }
 }

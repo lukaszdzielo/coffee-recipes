@@ -7,7 +7,7 @@
         "dsc": "",
         "ingredients": [
             "5 truskawek do zmiksowania na gładko",
-            "100ml mleka",
+            "100 ml mleka",
             "1 gałka lodów waniliowych",
             "Podwójne espresso / czarna kawa",
             "5-6 kostek lodu"
@@ -22,7 +22,7 @@
         "dsc": "",
         "ingredients": [
             "1/2 banana",
-            "20ml miodu",
+            "20 ml miodu",
             "1 gałka lodów czekoladowych",
             "Podwójne espresso / czarna kawa",
             "5-6 kostek lodu"
@@ -36,8 +36,8 @@
         "name": "Migdałowa Mokka",
         "dsc": "",
         "ingredients": [
-            "10ml syropu migdałowego",
-            "150ml mleka",
+            "10 ml syropu migdałowego",
+            "150 ml mleka",
             "10ml sosu czekoladowego / 6 kostek rozpuszczonej czekolady deserowej",
             "Espresso / czarna kawa",
             "Bita śmietana",
@@ -52,9 +52,9 @@
         "name": "Sweet Cherry",
         "dsc": "",
         "ingredients": [
-            " 7ml syropu wiśniowego /2 łyżki konfitury wiśniowej",
-            "150ml mleka",
-            "10ml sosu z białej czekolady / 6 kostek rozpuszczonej białej czekolady",
+            "7 ml syropu wiśniowego /2 łyżki konfitury wiśniowej",
+            "150 ml mleka",
+            "10 ml sosu z białej czekolady / 6 kostek rozpuszczonej białej czekolady",
             "Podwójne espresso / czarna kawa",
             "5-6 kostek lodu"
         ],
@@ -67,10 +67,10 @@
         "name": "Gruszka z Wanilią",
         "dsc": "",
         "ingredients": [
-            "10ml syropu waniliowego",
+            "10 ml syropu waniliowego",
             "1 łyżeczka musu z gruszki",
             "2 gałki lodów waniliowych",
-            "50ml mleka",
+            "50 ml mleka",
             "Espresso / czarna kawa"
         ],
         "preparation": "<p>Do metalowego dzbanuszka wlej syrop o smaku wanilii, bezpośrednio do tego naczynia zaparz espresso, a następnie je ostudź (np. wstaw dzbanuszek do pojemnika z kostkami lodu). Do kieliszka dodaj niewielką porcję musu z gruszki (musi być gładki, pozbawiony cząstek owoców) i połącz go ze schłodzonym espresso. Jeśli masz syfon do bitej śmietany, możesz użyć go do zrobienia „chmurki” z lodów waniliowych. Wrzuć kilka porcji lodów waniliowych do syfonu i dolej niewielką ilość mleka, później postępuj tak samo jak w przypadku przygotowania bitej śmietany. „Chmurkę” nałóż na wierzch napoju kawowego.</p>"
@@ -84,7 +84,7 @@
         "ingredients": [
             "1/3 mango w puszce / pół świeżego mango (do przygotowania musu)",
             "Szczypta chili",
-            "150ml spienionego, ciepłego mleka",
+            "150 ml spienionego, ciepłego mleka",
             "Espresso / czarna kawa"
         ],
         "preparation": "Mus z mango sprawia, że smak staje się unikalny, dodaj tam niewielką ilość chilli, a efekt będzie piorunujący. Jeśli wolisz możesz użyć syropu smakowego do kaw o smaku chilli. Do musu z mango i chilli należy oczywiście dodać espresso, podwójną porcję. Na sam koniec dodajemy aksamitnie gładkie spienione mleko.</p>"
@@ -95,9 +95,9 @@
         "author": "Marcin Kozicki",
         "name": "Peppermint Chai Latte",
         "ingredients": [
-            "20g Drink Me Chai Peppermint®",
-            "200ml mleka",
-            "10ml sosu czekoladowego",
+            "20 g Drink Me Chai Peppermint®",
+            "200 ml mleka",
+            "10 ml sosu czekoladowego",
             "Espresso"
         ],
         "preparation": "<p>Ciepłe, spienione mleko, świeże espresso i Drink Me Chai Peppermint® – połączenie tych składników to propozycja na rozgrzewającą kawę z mieszanką korzennych przypraw i delikatną nutą pieprzowej mięty. Całość należy zwieńczyć sosem czekoladowym, aby rozkoszować się tym niepowtarzalnym smakiem kawy.</p>"
@@ -109,9 +109,9 @@
         "name": "Spiced Raspberry",
         "dsc": "",
         "ingredients": [
-            " 20g Drink Me Chai Spiced®",
-            "200ml mleka",
-            "7,5ml syropu malinowego",
+            "20 g Drink Me Chai Spiced®",
+            "200 ml mleka",
+            "7,5 ml syropu malinowego",
             "Espresso"
         ],
         "preparation": "<p>Mleko wlej do metalowego dzbanka do spienienia mleka i dodaj do niego porcję Drink Me Chai Spiced® oraz syrop malinowy. Dokładnie rozmieszaj przy pomocy łyżki lub mieszadełka, tak aby uzyskać jednolitą konsystencję. Następnie spień całość. Zaparz espresso do dużej filiżanki, i połącz wszystko razem.</p>"
@@ -124,9 +124,9 @@
         "dsc": "",
         "ingredients": [
             "1 pomarańcza",
-            "50ml wody",
+            "50 ml wody",
             "3 łyżeczki melasy trzcinowej",
-            "100ml naparu z zielonej herbaty jaśminowej",
+            "100 ml naparu z zielonej herbaty jaśminowej",
             "Espresso"
         ],
         "preparation": "<p>Zarówno kawa jak i herbata zawierają przeciwutleniacze, więc dlaczego nie połączyć ich sił? Obierz pomarańczę, pokrój ją w kostkę i wrzuć je do małego garnka, dodaj niewielką ilość wody i melasę. Gotuj wszystko kilka minut, aż do uzyskania soku z pomarańczy. W międzyczasie zaparz zieloną herbatę jaśminową. Następnie przelej ją oraz wywar z pomarańczy do odpowiedniego naczynia (kieliszek lub mała szklanka), i dodaj espresso, którego kwasowość i melasowa słodycz idealnie połączy się z herbatą i pomarańczą.</p>"
@@ -139,9 +139,9 @@
         "dsc": "",
         "ingredients": [
             "1 pomarańcza",
-            "50ml wody",
+            "50 ml wody",
             "3 łyżeczki melasy trzcinowej",
-            "100ml naparu z zielonej herbaty jaśminowej",
+            "100 ml naparu z zielonej herbaty jaśminowej",
             "Espresso"
         ],
         "preparation": "<p>Do szklanki lub większego kieliszka wypełnionego lodem wlej schłodzone espresso lub czarną kawę i dodaj pomarańczowy likier. Następnie pokrój pomarańczę na drobne kawałki, dodaj wodę, cukier i gotuj aż do uzyskania aromatycznego wywaru. Schłodź go i wlej do szklanki, a na koniec dodaj niewielką ilość ciemnego piwa, którego słód doda drinkowi karmelowej słodyczy.</p>"
@@ -176,7 +176,7 @@
         "ingredients": [
             "1 ½ łyżeczki matcha w proszku",
             "syrop kokosowy",
-            "200ml mleka (może być kokosowe)",
+            "200 ml mleka (może być kokosowe)",
             "Podwójne espresso"
         ],
         "preparation": "<p>Do wysokiej szklanki wlewamy syrop kokosowy, a następnie dodajemy spienione mleko i całość dokładnie łączymy z matchą. Na koniec dodajemy świeżo zaparzone podwójne espresso.</p>"
@@ -192,7 +192,7 @@
                 "Do przygotowania słonego karmelu:",
                 "1 szklanka drobnego cukru",
                 "½ szklanki śmietanki 30%",
-                "80g masła",
+                "80 g masła",
                 "½ łyżeczki soli"
             ],
             "4-5 kostek gorzkiej czekolady",
@@ -207,8 +207,8 @@
         "name": "Malinowa mocha",
         "dsc": "",
         "ingredients": [
-            "20ml roztopionej czekolady",
-            "20ml syropu malinowego",
+            "20 ml roztopionej czekolady",
+            "20 ml syropu malinowego",
             "Latte macchiato"
         ],
         "preparation": "<p>Na spód ulubionego kubka dodaj czekoladę i wlej syrop malinowy. Następnie podstaw kubek pod ekspres i przygotuj latte macchiato. Wierzch kawy możesz udekorować sosem czekoladowym lub roztopioną czekoladą</p>"
@@ -220,7 +220,7 @@
         "name": "Różane latte macchiato",
         "dsc": "",
         "ingredients": [
-            " 200ml mleka",
+            "200 ml mleka",
             "2 łyżki suszonych płatków róż ",
             "Kawa Latte Macchiato",
             "1 łyżeczka miodu (opcjonalnie)"
@@ -234,12 +234,12 @@
         "name": "Miodowo - lawendowa kawa na zimno",
         "dsc": "",
         "ingredients": [
-            "podwójne espresso",
-            "200ml mleka",
+            "Podwójne espresso",
+            "200 ml mleka",
             "½ łyżeczki suszonej lawendy",
             "1 łyżeczka miodu",
             "½ łyżeczki ekstraktu waniliowego",
-            "kostki lodu"
+            "Kostki lodu"
         ],
         "preparation": "<ol><li>W niewielkim garnku połącz mleko i suszoną lawendę, dodaj miód, ekstrakt waniliowy i zagotuj całość do około 60 stopni C. Po osiągnięciu tej temperatury gotuj na małym ogniu przez około 2-3 minuty. Następnie wyłącz płomień, przykryj pokrywką i pozostaw na kolejne 10min. Pozostaw do ostudzenia i umieść w lodówce. </li><li>Wysoką szklankę uzupełnij lodem do przynajmniej ¾ wysokości, bezpośrednio na kostki lodu zaparz podwójne espresso. Dopełnij lawendowym mlekiem, odcedzając je przy pomocy gęstego sitka.</li></ol>"
     },
@@ -254,7 +254,7 @@
             "1 łyżeczka powideł śliwkowych",
             [
                 "Mus z białej czekolady:",
-                "500ml śmietany 30%",
+                "500 ml śmietany 30%",
                 "10 kostek białej czekolady"
             ]
         ],
@@ -267,10 +267,10 @@
         "name": "Latte dyniowa",
         "dsc": "",
         "ingredients": [
-            "espresso",
-            "150ml mleka",
-            "20ml syropu dyniowego ",
-            "bita śmietana do ozdoby"
+            "Espresso",
+            "150 ml mleka",
+            "20 ml syropu dyniowego ",
+            "Bita śmietana do ozdoby"
         ],
         "preparation": "<p>Na spód szklanki wlej syrop smakowy. Następnie w dzbanku spień mleko i wlej po łyżce do szklanki, tworząc warstwy. Zaparz espresso i wlej ostrożnie na powierzchnię spienionego mleka. Udekoruj bitą śmietaną.</p>"
     },
@@ -281,13 +281,13 @@
         "name": "Czekoladowo wiśniowa latte",
         "dsc": "",
         "ingredients": [
-            "espresso",
-            "200ml mleka",
-            "10ml płynnej czekolady",
-            "20ml syropu smakowego wiśniowego ",
-            "kakao do ozdoby"
+            "Espresso",
+            "200 ml mleka",
+            "10 ml płynnej czekolady",
+            "20 ml syropu smakowego wiśniowego ",
+            "Kakao do ozdoby"
         ],
-        "preparation": "<p>abcd</p>"
+        "preparation": "<p>Do szklanki wlej czekoladę, syrop wiśniowy i dokładnie wymieszaj. Następnie w dzbanku spień mleko i wlej po łyżce do szklanki, tworząc warstwy. Zaparz espresso i wlej ostrożnie na powierzchnię spienionego mleka. Kawę możesz ozdobić kakao w proszku.</p>"
     },
     "espresso-tonic": {
         "ebook": 2022,
@@ -296,10 +296,10 @@
         "name": "Espresso tonic",
         "dsc": "",
         "ingredients": [
-            "30-40ml espresso",
-            "150ml tonic",
-            "kostki lodu",
-            "limonka lub inne owoce"
+            "30-40 ml espresso",
+            "150 ml tonic",
+            "Kostki lodu",
+            "Limonka lub inne owoce"
         ],
         "preparation": "<p>Do szklanki wrzuć plaster limonki, kostki lodu i wlej tonic. Następnie zaparz espresso do dzbanuszka i wlej ostrożnie do szklanki. Przed wypiciem dokładnie wymieszaj.</p>"
     },
@@ -310,11 +310,11 @@
         "name": "Zamrożona wanilia",
         "dsc": "",
         "ingredients": [
-            "espresso",
-            "100ml mleka",
+            "Espresso",
+            "100 ml mleka",
             "2 gałki lodów waniliowych ",
             "3-4 kostki lodu",
-            "bita śmietana"
+            "Bita śmietana"
         ],
         "preparation": "<p>Przygotuj espresso, możesz je osłodzić do smaku. Następnie do shakera wsyp kostki lodu, wlej 100 ml mleka, kawę i 1 gałkę lodów waniliowych. Mocno wstrząśnij shakerem przez około 15 sekund. Następnie przelej do szklanki, wrzuć drugą gałkę lodów i udekoruj bitą śmietaną.</p>"
     },
@@ -325,8 +325,8 @@
         "name": "Café bombón",
         "dsc": "",
         "ingredients": [
-            "espresso",
-            "20ml mleka skondensowanego"
+            "Espresso",
+            "20 ml mleka skondensowanego"
         ],
         "preparation": "<p>Do niedużej, przezroczystej szklaneczki wlać mleko skondensowane. Następnie po łyżeczce wlać espresso. Przed wypiciem dokładnie wymieszaj.</p>"
     }

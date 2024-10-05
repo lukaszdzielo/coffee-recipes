@@ -4,13 +4,6 @@ import List from './components/List.vue';
 </script>
 
 <script lang="ts">
-
-export default {
-  data() {
-    return {
-    }
-  },
-}
 </script>
 
 <template>
@@ -20,6 +13,4 @@ export default {
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
