@@ -35,10 +35,8 @@ export default {
         },
         openModal(recipeSlug: { name: String }) {
             this.dialogRecipe = recipeSlug;
-            this.modalRecipe?.showModal();
         },
         closeDialog() {
-            this.modalRecipe?.close();
             this.dialogRecipe = {};
         },
     }
@@ -63,7 +61,7 @@ export default {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
         grid-template-columns: repeat(4, 1fr);
     }
 
