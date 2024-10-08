@@ -45,9 +45,9 @@ export default {
 
 <template>
     <div class="recipeList">
-        <recipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal" />
+        <RecipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal" />
     </div>
-    <recipeModal :recipe="dialogRecipe" @close="closeDialog" />
+    <RecipeModal :recipe="dialogRecipe" @close="closeDialog" />
 </template>
 
 <style scoped>
