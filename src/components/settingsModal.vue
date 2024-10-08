@@ -6,8 +6,6 @@ export default {
         }
     },
     mounted() {
-        console.log('?', this.pageRemSize);
-
         const localRemSize = localStorage.getItem('pageRemSize');
         if (localRemSize) {
             this.pageRemSize = +(localRemSize || this.pageRemSize)
