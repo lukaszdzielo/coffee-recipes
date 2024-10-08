@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Header from './components/header.vue';
-import List from './components/recipeList.vue';
+import recipeList from './components/recipeList.vue';
 </script>
 
 <script lang="ts">
@@ -9,7 +9,7 @@ import List from './components/recipeList.vue';
 <template>
   <Header />
   <div class="container">
-    <List />
+    <recipeList />
   </div>
 </template>
 
