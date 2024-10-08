@@ -28,14 +28,13 @@ export default {
     gap: .5rem;
     border-radius: .5rem;
     padding: .75rem;
-    background-color: #E0E0E0;
+    background-color: var(--gray-200);
     font-size: .875rem;
-    transition: box-shadow .3s;
     text-wrap: balance;
 
     & .image {
         display: flex;
-        background-color: #BDBDBD;
+        background-color: var(--gray-300);
         border-radius: .25rem;
         overflow: hidden;
 
@@ -45,10 +44,6 @@ export default {
             max-width: 100%;
             height: auto;
         }
-    }
-
-    &:hover {
-        box-shadow: inset 0 0 0 1px #212121;
     }
 
     [popovertarget] {

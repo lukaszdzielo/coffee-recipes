@@ -10,15 +10,13 @@ export default {
 </script>
 
 <template>
-
-
     <dialog id="recipeDialog" popover="manual">
         <header>
-            <div class="image">
+            <div class="header__image">
                 <img v-if="recipe.thumbnail" :src="recipe.thumbnail" :alt="recipe.name">
                 <img v-else="data.thumbnail" :src="thumbnailDefault" :alt="recipe.name">
             </div>
-            <div v-show="recipe.name" class="name">{{ recipe.name }}</div>
+            <div v-show="recipe.name" class="header__heading">{{ recipe.name }}</div>
             <button popovertarget="recipeDialog" @click="$emit('close')" class="btn--close">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#212121">
                     <path
@@ -57,6 +55,7 @@ dialog {
     border: 0;
     border-radius: .5rem;
     padding: 0;
+    width: 100%;
     max-width: var(--dialog-mw);
     max-height: var(--dialog-mh);
 
@@ -89,55 +88,57 @@ header {
     display: flex;
     gap: .75rem;
     padding: 1rem;
-    border-bottom: 1px solid #BDBDBD;
+    border-bottom: .0625rem solid #BDBDBD;
     background-color: #fff;
 
-    & .image {
-        flex-shrink: 0;
-        width: 40px;
-        height: 40px;
-        border-radius: .25rem;
-        overflow: hidden;
+}
 
-        img {
-            display: block;
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-        }
+.header__image {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
+}
 
-    .name {
-        align-self: center;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 1.2;
-        text-wrap: balance;
-    }
+.header__heading {
+    align-self: center;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-wrap: balance;
+}
 
-    .btn--close {
-        flex-shrink: 0;
-        align-self: flex-start;
-        margin-top: -.75rem;
-        margin-right: -.75rem;
-        margin-left: auto;
-        border: 0;
-        padding: 0;
-        width: 24px;
-        height: 24px;
-        background: transparent;
-        appearance: none;
+.btn--close {
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: -.75rem;
+    margin-right: -.75rem;
+    margin-left: auto;
+    border: 0;
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    appearance: none;
+    cursor: pointer;
 
-        & svg {
-            width: 100%;
-            height: 100%;
-        }
+    & svg {
+        width: 100%;
+        height: 100%;
     }
 }
 
 main {
     display: grid;
-    gap: 16px;
+    gap: 1rem;
     padding: 1rem 1rem 2rem;
     font-size: .875rem;
     overflow: auto;
