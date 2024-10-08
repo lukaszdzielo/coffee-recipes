@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import recipeCard from './recipeCard.vue';
-import recipeModal from './recipeModal.vue';
+import RecipeCard from './RecipeCard.vue';
+import RecipeModal from './RecipeModal.vue';
 </script>
 
 <script lang="ts">
 export default {
     components: {
-        recipeCard,
-        recipeModal
+        RecipeCard,
+        RecipeModal
     },
     props: ['item'],
     data() {
