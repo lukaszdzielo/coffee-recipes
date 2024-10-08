@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import Card from './recipeCard.vue';
-import Dialog from './recipeModal.vue';
+import recipeCard from './recipeCard.vue';
+import recipeModal from './recipeModal.vue';
 </script>
 
 <script lang="ts">
 export default {
     components: {
-        Card,
-        Dialog
+        recipeCard,
+        recipeModal
     },
     props: ['item'],
     data() {
@@ -44,14 +44,14 @@ export default {
 </script>
 
 <template>
-    <div class="list">
-        <Card v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal" />
+    <div class="recipeList">
+        <recipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal" />
     </div>
-    <Dialog :recipe="dialogRecipe" @close="closeDialog" />
+    <recipeModal :recipe="dialogRecipe" @close="closeDialog" />
 </template>
 
 <style scoped>
-.list {
+.recipeList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
