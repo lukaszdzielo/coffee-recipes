@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Header from './components/Header.vue';
-import List from './components/List.vue';
+import Header from './components/header.vue';
+import List from './components/recipeList.vue';
 </script>
 
 <script lang="ts">
