@@ -12,10 +12,7 @@ export default {
 <template>
     <header>
         <div class="container">
-            <div>
-                ----------
-            </div>
-            <SettingsModal />
+            <SettingsModal></SettingsModal>
         </div>
     </header>
 </template>
