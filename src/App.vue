@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Header from './components/Header.vue';
+import AppHeader from './components/AppHeader.vue';
 import RecipeList from './components/RecipeList.vue';
 </script>
 
 <template>
-  <Header></Header>
+  <AppHeader />
   <div class="container">
     <RecipeList />
   </div>
