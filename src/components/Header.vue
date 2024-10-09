@@ -15,7 +15,7 @@ export default {
             <div>
                 ----------
             </div>
-            <settingsModal />
+            <SettingsModal />
         </div>
     </header>
 </template>
