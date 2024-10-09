@@ -15,7 +15,7 @@ export default {
 <template>
   <Header />
   <div class="container">
-    <recipeList />
+    <RecipeList />
   </div>
 </template>
 
