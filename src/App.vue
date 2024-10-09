@@ -5,10 +5,7 @@ import RecipeList from './components/RecipeList.vue';
 
 <script lang="ts">
 export default {
-  components: {
-    Header,
-    RecipeList
-  },
+
 }
 </script>
 
@@ -18,5 +15,3 @@ export default {
     <RecipeList />
   </div>
 </template>
-
-<style scoped></style>

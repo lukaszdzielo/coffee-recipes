@@ -5,10 +5,6 @@ import RecipeModal from './RecipeModal.vue';
 
 <script lang="ts">
 export default {
-    components: {
-        RecipeCard,
-        RecipeModal
-    },
     props: ['item'],
     data() {
         return {
