@@ -1,17 +1,11 @@
 <script setup lang="ts">
 import Header from './components/Header.vue';
-import List from './components/List.vue';
-</script>
-
-<script lang="ts">
-export default {
-
-}
+import RecipeList from './components/RecipeList.vue';
 </script>
 
 <template>
   <Header></Header>
   <div class="container">
-    <List />
+    <RecipeList />
   </div>
 </template>
