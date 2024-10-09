@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SettingsModal from './SettingsModal.vue';
+import Settings from './Settings.vue';
 </script>
 <script lang="ts">
 export default {
@@ -12,7 +12,7 @@ export default {
 <template>
     <header>
         <div class="container">
-            <SettingsModal />
+            <Settings />
         </div>
     </header>
 </template>
