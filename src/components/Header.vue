@@ -1,18 +1,11 @@
 <script setup lang="ts">
-import Settings from './Settings.vue';
-</script>
-<script lang="ts">
-export default {
-    // components: {
-    //     settingsModal,
-    // },
-}
+import SettingsModal from './SettingsModal.vue';
 </script>
 
 <template>
     <header>
         <div class="container">
-            <Settings />
+            <SettingsModal />
         </div>
     </header>
 </template>
