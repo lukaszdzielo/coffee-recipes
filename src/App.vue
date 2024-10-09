@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Header from './components/Header.vue';
-import RecipeList from './components/RecipeList.vue';
+import List from './components/List.vue';
 </script>
 
 <script lang="ts">
@@ -12,6 +12,6 @@ export default {
 <template>
   <Header />
   <div class="container">
-    <RecipeList />
+    <List />
   </div>
 </template>
