@@ -12,6 +12,7 @@ import SettingsModal from './SettingsModal.vue';
 
 <style scoped>
 header {
-    background-color: var(--gray-400);
+    padding-block: .5rem;
+    background-color: var(--gray-200);
 }
 </style>
