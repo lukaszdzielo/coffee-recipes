@@ -17,8 +17,8 @@ export default {
                 <img v-else="data.thumbnail" :src="thumbnailDefault" :alt="recipe.name">
             </div>
             <div v-show="recipe.name" class="header__heading">{{ recipe.name }}</div>
-            <button popovertarget="recipeDialog" @click="$emit('close')" class="btn--close">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#212121">
+            <button popovertarget="recipeDialog" @click="$emit('close')" class="btn btn--icon btn--close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path
                         d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
                 </svg>
@@ -60,7 +60,7 @@ dialog {
     max-height: var(--dialog-mh);
 
     &::backdrop {
-        background-color: #212121;
+        background-color: var(--gray-900);
         opacity: .5;
     }
 
@@ -88,51 +88,41 @@ header {
     display: flex;
     gap: .75rem;
     padding: 1rem;
-    border-bottom: .0625rem solid #BDBDBD;
-    background-color: #fff;
+    border-bottom: 1px solid var(--gray-400);
+    background-color: var(--white);
 
-}
+    .header__image {
+        flex-shrink: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: .25rem;
+        overflow: hidden;
 
-.header__image {
-    flex-shrink: 0;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: .25rem;
-    overflow: hidden;
-
-    img {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
     }
-}
 
-.header__heading {
-    align-self: center;
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.2;
-    text-wrap: balance;
-}
+    .header__heading {
+        align-self: center;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.2;
+        text-wrap: balance;
+    }
 
-.btn--close {
-    flex-shrink: 0;
-    align-self: flex-start;
-    margin-top: -.75rem;
-    margin-right: -.75rem;
-    margin-left: auto;
-    border: 0;
-    padding: 0;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: transparent;
-    appearance: none;
-    cursor: pointer;
+    .btn--close {
+        align-self: flex-start;
+        margin-top: -.75rem;
+        margin-right: -.75rem;
+        margin-left: auto;
+        border: 0;
+        padding: 0;
+        background: transparent;
 
-    & svg {
-        width: 100%;
-        height: 100%;
     }
 }
 
@@ -150,22 +140,23 @@ main {
     @media (min-width: 992px) {
         grid-template-columns: 1fr 2fr;
     }
-}
 
-.heading {
-    display: block;
-    margin-bottom: .5rem;
-    font-weight: bold;
-    font-size: 1rem;
-}
+    .heading {
+        display: block;
+        margin-bottom: .5rem;
+        font-weight: bold;
+        font-size: 1rem;
+    }
 
-::v-deep :is(ul, ol, p) {
-    margin: 0;
-}
+    :deep(:is(ul, ol, p)) {
+        margin: 0;
+    }
 
-::v-deep .preparation {
-    :is(li+li, p+p) {
-        margin-top: 1rem;
+    :deep(.preparation) {
+
+        :is(li+li, p+p) {
+            margin-top: 1rem;
+        }
     }
 }
 </style>
