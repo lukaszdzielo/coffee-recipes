@@ -15,7 +15,6 @@ export default {
     },
     created() {
         this.fetchData();
-
     },
     mounted() {
         this.modalRecipe = document.querySelector('dialog');
@@ -49,7 +48,7 @@ export default {
 <style scoped>
 .recipeList {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
     flex-wrap: wrap;
     gap: .75rem;
     margin-top: 1rem;

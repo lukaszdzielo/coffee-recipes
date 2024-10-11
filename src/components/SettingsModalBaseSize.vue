@@ -85,8 +85,10 @@ export default {
         appearance: none;
         fill: var(--gray-900);
 
-        &:hover {
-            background: var(--gray-100);
+        @media (hover: hover) {
+            &:hover {
+                background: var(--gray-100);
+            }
         }
 
         &:disabled {
@@ -118,7 +120,7 @@ export default {
         justify-content: center;
         align-items: center;
         margin: 0 -1px;
-        width: 2rem;
+        padding: 0 .5rem;
         height: 2rem;
         border: 1px solid var(--gray-300);
         background: transparent;
