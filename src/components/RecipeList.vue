@@ -23,7 +23,7 @@ export default {
     methods: {
         async fetchData() {
             try {
-                const response = await fetch('recipes.json');
+                const response = await fetch('recipes/recipes.json');
                 this.recipes = await response.json();
             } catch (error) {
                 console.error(error);
