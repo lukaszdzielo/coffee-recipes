@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import settingsModalLang from './SettingsModalLang.vue';
 import SettingsModalBaseSize from './SettingsModalBaseSize.vue';
 </script>
 
@@ -21,6 +22,7 @@ import SettingsModalBaseSize from './SettingsModalBaseSize.vue';
             </button>
         </header>
         <main>
+            <settingsModalLang />
             <SettingsModalBaseSize />
         </main>
     </dialog>
@@ -30,7 +32,6 @@ import SettingsModalBaseSize from './SettingsModalBaseSize.vue';
     &.btn--settings {
         margin: 0;
         margin-left: auto;
-        border: 0;
         border: 0;
         background: var(--white);
         appearance: none;
