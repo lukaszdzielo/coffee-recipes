@@ -31,6 +31,7 @@ export default {
     background-color: var(--gray-200);
     font-size: .875rem;
     text-wrap: balance;
+    box-sizing: border-box;
 
     & .image {
         display: flex;
