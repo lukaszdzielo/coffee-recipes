@@ -136,17 +136,15 @@ header {
     position: sticky;
     top: 0;
     display: flex;
+    align-items: center;
     gap: .75rem;
     padding: 1rem;
     border-bottom: 1px solid var(--gray-300);
     background-color: var(--white);
 
     .btn--close {
-        align-self: flex-start;
-        margin-top: -.75rem;
-        margin-right: -.75rem;
         margin-left: auto;
-        border: 0;
+        border: 1px solid transparent;
         padding: 0;
         background: transparent;
         appearance: none;
