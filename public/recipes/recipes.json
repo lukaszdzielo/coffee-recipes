@@ -1,8 +1,22 @@
 {
     "strawberry-frappe": {
         "ebook": 2018,
-        "thumbnail": "./strawberry-frappe-thumbnail.jpg",
+        "thumbnail": "recipes/img/strawberry-frappe-thumbnail.jpg",
         "author": "Marcin Kozicki",
+        "langs": {
+            "pl": {
+                "name": "Frappe truskawkowe",
+                "dsc": "",
+                "ingredients": [
+                    "5 truskawek do zmiksowania na gładko",
+                    "100 ml mleka",
+                    "1 gałka lodów waniliowych",
+                    "Podwójne espresso / czarna kawa",
+                    "5-6 kostek lodu"
+                ],
+                "preparation": "<p>Korzystajmy, póki jeszcze są… przepyszne, słodkie, soczyste truskawki, które swoim aromatem wprost kuszą do przygotowania orzeźwiającego Frappe na upalne dni. Truskawki, lody waniliowe, mleko i parę kostek lodu zmiksuj do uzyskania gładkiego, puszystego musu. Do szklanki wlej aromatyczne podwójne espresso bądź czarną kawę ze świeżo zmielonych ziaren, a następnie przełóż wcześniej przygotowany mus do szklanki, żeby uzyskać efekt kilku warstw (możesz też zmiksować wszystko razem). Nie zapomnij również o dekoracji z bitej śmietany i truskawki!</p>"
+            }
+        },
         "name": "Frappe truskawkowe",
         "dsc": "",
         "ingredients": [
@@ -16,7 +30,7 @@
     },
     "chocolate-banana-frappe": {
         "ebook": 2018,
-        "thumbnail": "./chocolate-banana-frappe-thumbnail.jpg",
+        "thumbnail": "recipes/img/chocolate-banana-frappe-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Czekoladowe Frappe z bananem",
         "dsc": "",
@@ -31,7 +45,7 @@
     },
     "almond-mocha": {
         "ebook": 2018,
-        "thumbnail": "./almond-mocha-thumbnail.jpg",
+        "thumbnail": "recipes/img/almond-mocha-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Migdałowa Mokka",
         "dsc": "",
@@ -47,7 +61,7 @@
     },
     "sweet-cherry": {
         "ebook": 2018,
-        "thumbnail": "./sweet-cherry-thumbnail.jpg",
+        "thumbnail": "recipes/img/sweet-cherry-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Sweet Cherry",
         "dsc": "",
@@ -62,7 +76,7 @@
     },
     "pear-with-vanilla": {
         "ebook": 2018,
-        "thumbnail": "./pear-with-vanilla-thumbnail.jpg",
+        "thumbnail": "recipes/img/pear-with-vanilla-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Gruszka z Wanilią",
         "dsc": "",
@@ -77,7 +91,7 @@
     },
     "chilli-mango": {
         "ebook": 2018,
-        "thumbnail": "./chilli-mango-thumbnail.jpg",
+        "thumbnail": "recipes/img/chilli-mango-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Chilli Mango",
         "dsc": "",
@@ -91,7 +105,7 @@
     },
     "peppermint-chai-latte": {
         "ebook": 2018,
-        "thumbnail": "./peppermint-chai-latte-thumbnail.jpg",
+        "thumbnail": "recipes/img/peppermint-chai-latte-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Peppermint Chai Latte",
         "ingredients": [
@@ -104,7 +118,7 @@
     },
     "spiced-raspberry": {
         "ebook": 2018,
-        "thumbnail": "./spiced-raspberry-thumbnail.jpg",
+        "thumbnail": "recipes/img/spiced-raspberry-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Spiced Raspberry",
         "dsc": "",
@@ -118,7 +132,7 @@
     },
     "jasmine-espresso": {
         "ebook": 2018,
-        "thumbnail": "./jasmine-espresso-thumbnail.jpg",
+        "thumbnail": "recipes/img/jasmine-espresso-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Jaśminowe Espresso",
         "dsc": "",
@@ -133,7 +147,7 @@
     },
     "black-coffee-with-orange-liqueur": {
         "ebook": 2018,
-        "thumbnail": "./black-coffee-with-orange-liqueur-thumbnail.jpg",
+        "thumbnail": "recipes/img/black-coffee-with-orange-liqueur-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Czarna kawa z likierem pomarańczowym",
         "dsc": "",
@@ -148,7 +162,7 @@
     },
     "apple-pie-americano": {
         "ebook": 2021,
-        "thumbnail": "./apple-pie-americano-thumbnail.jpg",
+        "thumbnail": "recipes/img/apple-pie-americano-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Apple pie americano",
         "dsc": "",
@@ -169,7 +183,7 @@
     },
     "coconut-matcha-latte": {
         "ebook": 2021,
-        "thumbnail": "./coconut-matcha-latte-thumbnail.jpg",
+        "thumbnail": "recipes/img/coconut-matcha-latte-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Coconut matcha latte",
         "dsc": "",
@@ -183,7 +197,7 @@
     },
     "chocolate-cappuccino-with-salted-caramel": {
         "ebook": 2021,
-        "thumbnail": "./chocolate-cappuccino-with-salted-caramel-thumbnail.jpg",
+        "thumbnail": "recipes/img/chocolate-cappuccino-with-salted-caramel-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Czekoladowe cappuccino ze słonym karmelem",
         "dsc": "",
@@ -202,7 +216,7 @@
     },
     "raspberry-mocha": {
         "ebook": 2021,
-        "thumbnail": "./raspberry-mocha-thumbnail.jpg",
+        "thumbnail": "recipes/img/raspberry-mocha-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Malinowa mocha",
         "dsc": "",
@@ -215,7 +229,7 @@
     },
     "rose-latte-macchiato": {
         "ebook": 2021,
-        "thumbnail": "./rose-latte-macchiato-thumbnail.jpg",
+        "thumbnail": "recipes/img/rose-latte-macchiato-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Różane latte macchiato",
         "dsc": "",
@@ -229,7 +243,7 @@
     },
     "honey-and-lavender-cold-coffee": {
         "ebook": 2021,
-        "thumbnail": "./honey-and-lavender-cold-coffee-thumbnail.jpg",
+        "thumbnail": "recipes/img/honey-and-lavender-cold-coffee-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Miodowo - lawendowa kawa na zimno",
         "dsc": "",
@@ -245,7 +259,7 @@
     },
     "espresso-with-jam-and-white-chocolate": {
         "ebook": 2021,
-        "thumbnail": "./espresso-with-jam-and-white-chocolate-thumbnail.jpg",
+        "thumbnail": "recipes/img/espresso-with-jam-and-white-chocolate-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Espresso z powidłami i białą czekoladą",
         "dsc": "",
@@ -262,7 +276,7 @@
     },
     "pumpkin-latte": {
         "ebook": 2022,
-        "thumbnail": "./pumpkin-latte-thumbnail.jpg",
+        "thumbnail": "recipes/img/pumpkin-latte-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Latte dyniowa",
         "dsc": "",
@@ -276,7 +290,7 @@
     },
     "chocolate-cherry-latte": {
         "ebook": 2022,
-        "thumbnail": "./chocolate-cherry-latte-thumbnail.jpg",
+        "thumbnail": "recipes/img/chocolate-cherry-latte-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Czekoladowo wiśniowa latte",
         "dsc": "",
@@ -291,7 +305,7 @@
     },
     "espresso-tonic": {
         "ebook": 2022,
-        "thumbnail": "./espresso-tonic-thumbnail.jpg",
+        "thumbnail": "recipes/img/espresso-tonic-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Espresso tonic",
         "dsc": "",
@@ -305,7 +319,7 @@
     },
     "frozen-vanilla": {
         "ebook": 2022,
-        "thumbnail": "./frozen-vanilla-thumbnail.jpg",
+        "thumbnail": "recipes/img/frozen-vanilla-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Zamrożona wanilia",
         "dsc": "",
@@ -320,7 +334,7 @@
     },
     "cafe-bombon": {
         "ebook": 2022,
-        "thumbnail": "./cafe-bombon-thumbnail.jpg",
+        "thumbnail": "recipes/img/cafe-bombon-thumbnail.jpg",
         "author": "Marcin Kozicki",
         "name": "Café bombón",
         "dsc": "",
