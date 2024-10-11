@@ -95,7 +95,6 @@ export default {
         margin: 0;
         margin-left: auto;
         border: 0;
-        padding: .375rem;
         border: 0;
         background: var(--white);
         appearance: none;
