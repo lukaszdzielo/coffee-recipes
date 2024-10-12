@@ -1,14 +1,3 @@
-<script lang="ts">
-export default {
-    props: ['recipe'],
-    data() {
-        return {
-            thumbnailDefault: './recipeCard-placeholder.svg',
-        }
-    }
-}
-</script>
-
 <template>
     <dialog id="recipeDialog" popover="manual">
         <header>
@@ -46,6 +35,17 @@ export default {
         </main>
     </dialog>
 </template>
+
+<script lang="ts">
+export default {
+    props: ['recipe'],
+    data() {
+        return {
+            thumbnailDefault: './recipeCard-placeholder.svg',
+        }
+    }
+}
+</script>
 
 <style scoped>
 dialog {

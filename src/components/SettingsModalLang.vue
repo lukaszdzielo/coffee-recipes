@@ -73,6 +73,7 @@ export default {
 
     </section>
 </template>
+
 <style scoped>
 .lang {
     display: flex;

@@ -1,3 +1,10 @@
+<template>
+    <div class="recipeList">
+        <RecipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal" />
+    </div>
+    <RecipeModal :recipe="dialogRecipe" @close="closeDialog" />
+</template>
+
 <script setup lang="ts">
 import RecipeCard from './RecipeCard.vue';
 import RecipeModal from './RecipeModal.vue';
@@ -37,13 +44,6 @@ export default {
     }
 }
 </script>
-
-<template>
-    <div class="recipeList">
-        <RecipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal" />
-    </div>
-    <RecipeModal :recipe="dialogRecipe" @close="closeDialog" />
-</template>
 
 <style scoped>
 .recipeList {
