@@ -1,7 +1,10 @@
 {
     "langList": [
         "en",
-        "pl"
+        "pl",
+        "es",
+        "de",
+        "it"
     ],
     "close": {
         "en": "Close",
