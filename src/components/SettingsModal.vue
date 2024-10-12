@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import settingsModalLang from './SettingsModalLang.vue';
-import SettingsModalBaseSize from './SettingsModalBaseSize.vue';
-</script>
-
 <template>
     <button popovertarget="settingsModal" class="btn btn--icon btn--settings">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -27,6 +22,12 @@ import SettingsModalBaseSize from './SettingsModalBaseSize.vue';
         </main>
     </dialog>
 </template>
+
+<script setup lang="ts">
+import settingsModalLang from './SettingsModalLang.vue';
+import SettingsModalBaseSize from './SettingsModalBaseSize.vue';
+</script>
+
 <style scoped>
 .btn {
     &.btn--settings {

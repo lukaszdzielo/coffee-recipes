@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import SettingsModal from './SettingsModal.vue';
-</script>
-
 <template>
     <header>
         <div class="container">
@@ -9,6 +5,10 @@ import SettingsModal from './SettingsModal.vue';
         </div>
     </header>
 </template>
+
+<script setup lang="ts">
+import SettingsModal from './SettingsModal.vue';
+</script>
 
 <style scoped>
 header {

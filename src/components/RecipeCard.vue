@@ -1,14 +1,3 @@
-<script lang="ts">
-export default {
-    props: ['data', 'slug'],
-    data() {
-        return {
-            thumbnailDefault: './recipeCard-placeholder.svg',
-        }
-    }
-}
-</script>
-
 <template>
     <div class="recipeCard">
         <div class="image" style="display: flex;">
@@ -19,6 +8,17 @@ export default {
         <button popovertarget="recipeDialog" @click="$emit('open', data)"></button>
     </div>
 </template>
+
+<script lang="ts">
+export default {
+    props: ['data', 'slug'],
+    data() {
+        return {
+            thumbnailDefault: './recipeCard-placeholder.svg',
+        }
+    }
+}
+</script>
 
 <style scoped>
 .recipeCard {
