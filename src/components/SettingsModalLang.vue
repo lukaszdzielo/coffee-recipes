@@ -108,5 +108,6 @@ select {
     font-size: 1rem;
     /* appearance: none; */
     -webkit-appearance: none;
+    cursor: pointer;
 }
 </style>
