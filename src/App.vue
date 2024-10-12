@@ -29,6 +29,7 @@ export default {
 <template>
   <AppHeader />
   <div class="container">
+    {{ pageLang }}
     <RecipeList />
   </div>
   <AppFooter />
