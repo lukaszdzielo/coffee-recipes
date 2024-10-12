@@ -5,24 +5,24 @@ import RecipeList from './components/RecipeList.vue';
 </script>
 <script lang="ts">
 export default {
-  // data() {
-  //   return {
-  //     pageLang: 'en',
-  //   }
-  // },
-  // created() {
-  //   this.pageLang = navigator.language;
-  //   const localLang = localStorage.getItem('pageLang');
-  //   if (localLang) {
-  //     // this.pageBaseSize = +(localRemSize || this.pageBaseSize)
-  //   }
-  //   this.setHtmlSize();
-  // },
-  // methods: {
-  //   setHtmlSize() {
-  //     document.documentElement.lang = this.pageLang
-  //   }
-  // }
+  data() {
+    return {
+      pageLang: '',
+    }
+  },
+  created() {
+    this.pageLang = navigator.language;
+    const localLang = localStorage.getItem('pageLang');
+    if (localLang) {
+      // this.pageBaseSize = +(localRemSize || this.pageBaseSize)
+    }
+    this.setHtmlLang();
+  },
+  methods: {
+    setHtmlLang() {
+      document.documentElement.lang = this.pageLang
+    }
+  }
 }
 </script>
 
