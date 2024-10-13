@@ -1,5 +1,5 @@
 <template>
-    <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small>
+    <!-- <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small> -->
     <section class="lang">
         <span>Język</span>
 
@@ -46,7 +46,7 @@ export default {
         },
         change(e: any) {
             const lang:String = e.target.value || '';
-            this.lang.current = lang;
+            // this.lang.current = lang;
             // this.setHtmlLang(lang);
 
             // if (e.target.value === 'auto' || this.langDefault === e.target.value) {
