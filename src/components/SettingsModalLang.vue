@@ -37,7 +37,7 @@ export default {
     },
     methods: {
         change(e: any) {
-            console.log('this.$parent', e.target.value);
+            console.log('e.target.value', e.target.value);
             console.log(this.lang);
             
             // this.lang.current = e.target.value;
