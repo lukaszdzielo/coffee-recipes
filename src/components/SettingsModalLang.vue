@@ -1,5 +1,5 @@
 <template>
-    <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small>
+    <!-- <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small> -->
     <section class="lang">
         <span>Język</span>
 
