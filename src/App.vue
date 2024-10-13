@@ -1,7 +1,7 @@
 <template>
   <AppHeader />
   <div class="container">
-    {{ pageLang }}
+    <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small>
     <RecipeList />
   </div>
   <AppFooter />
@@ -14,23 +14,34 @@ import RecipeList from './components/RecipeList.vue';
 </script>
 
 <script lang="ts">
+// const setHtmlLang = (lang: any) => {
+//   document.documentElement.lang = lang;
+// }
 export default {
   data() {
     return {
-      pageLang: '',
+      lang: {
+        default: '',
+        current: '',
+        langText: {},
+      }
     }
   },
   created() {
-    this.pageLang = navigator.language;
+    this.lang.default = navigator.language;
     const localLang = localStorage.getItem('pageLang');
-    if (localLang) {
-      // this.pageBaseSize = +(localRemSize || this.pageBaseSize)
-    }
-    this.setHtmlLang();
+    this.lang.current = localLang || navigator.language;
+    // this.setHtmlLang(this.lang.current)
   },
   methods: {
-    setHtmlLang() {
-      document.documentElement.lang = this.pageLang
+    // setHtmlLang(lang: any) {
+    //   document.documentElement.lang = lang;
+    // }
+  },
+  provide() {
+    return {
+      lang: this.lang,
+      // setHtmlLang,
     }
   }
 }
