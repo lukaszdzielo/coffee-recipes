@@ -1,7 +1,7 @@
 <template>
   <AppHeader />
   <div class="container">
-    <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small>
+    <!-- <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small> -->
     <RecipeList />
   </div>
   <AppFooter />
