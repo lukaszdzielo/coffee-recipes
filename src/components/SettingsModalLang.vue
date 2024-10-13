@@ -37,7 +37,7 @@ export default {
         // }
     },
     methods: {
-        change(e: any) {
+        // change(e: any) {
             // this.lang.current = e.target.value;
 
             // if (e.target.value === 'auto' || this.langDefault === e.target.value) {
@@ -61,7 +61,7 @@ export default {
             //     localStorage.setItem('lang', JSON.stringify(lang));
             //     this.setHtmlSize();
             // }
-        },
+        // },
     }
 }
 </script>
