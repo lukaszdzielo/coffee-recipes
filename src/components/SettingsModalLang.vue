@@ -1,5 +1,6 @@
 <template>
-    <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small>
+    <!-- <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small> -->
+    <small style="color: var(--gray-300)"><code>App: {{ test?.current }}</code></small>
     <section class="lang">
         <span>Język</span>
 
@@ -18,10 +19,12 @@
 </template>
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
     inject: ['lang'],
     data() {
         return {
+            test: inject('lang'),
             langList: ['en', 'pl', 'it', 'es'],
             // lang: this.lang,
         };
@@ -38,8 +41,11 @@ export default {
     },
     methods: {
         change(e: any) {
-            console.log('lang selected', e.target.value);
-            this.lang.current = e.target.value;
+            console.log('this.$parent', e.target.value);
+            // this.lang.current = e.target.value;
+            // this.test.current = e.target.value;
+            // console.log('this.test', this.test);
+
 
             // if (e.target.value === 'auto' || this.langDefault === e.target.value) {
             //     console.log('??', localStorage.getItem('lang'));
