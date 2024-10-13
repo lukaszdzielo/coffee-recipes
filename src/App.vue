@@ -1,7 +1,7 @@
 <template>
   <AppHeader />
   <div class="container">
-    <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small>
+    <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small>
     <RecipeList />
   </div>
   <AppFooter />
@@ -14,9 +14,6 @@ import RecipeList from './components/RecipeList.vue';
 </script>
 
 <script lang="ts">
-// const setHtmlLang = (lang: any) => {
-//   document.documentElement.lang = lang;
-// }
 export default {
   data() {
     return {
@@ -30,18 +27,24 @@ export default {
   created() {
     this.lang.default = navigator.language;
     const localLang = localStorage.getItem('pageLang');
-    this.lang.current = localLang || navigator.language;
-    // this.setHtmlLang(this.lang.current)
+    this.lang.current = localLang || this.lang.default;
+
+    this.fetchData();
   },
   methods: {
-    // setHtmlLang(lang: any) {
-    //   document.documentElement.lang = lang;
-    // }
+    async fetchData() {
+      try {
+        const response = await fetch('./langs.json');
+        const json = await response.json();
+        this.lang.langText = json || {};
+      } catch (error) {
+        console.error(error);
+      }
+    }
   },
   provide() {
     return {
       lang: this.lang,
-      // setHtmlLang,
     }
   }
 }
