@@ -6,7 +6,7 @@
         <div class="customSelect">
             <select @change="change($event)">
                 <option value="auto">auto</option>
-                <option v-for="lang of langList" :value="lang">{{ lang }}</option>
+                <option v-for="language of langList" :value="language">{{ language }}</option>
             </select>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path
@@ -39,7 +39,7 @@ export default {
         change(e: any) {
             console.log('e.target.value', e.target.value);
             // console.log(this.lang);
-            
+
             // this.lang.current = e.target.value;
             // this.test.current = e.target.value;
             // console.log('this.test', this.test);
