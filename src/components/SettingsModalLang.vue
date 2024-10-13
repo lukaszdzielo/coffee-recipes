@@ -4,7 +4,7 @@
         <span>Język</span>
 
         <div class="customSelect">
-            <select>
+            <select  @change="change($event)">
                 <option value="auto">auto</option>
                 <option v-for="lang of langList" :value="lang">{{ lang }}</option>
             </select>
@@ -37,7 +37,9 @@ export default {
         // }
     },
     methods: {
-        // change(e: any) {
+        change(e: any) {
+            console.log('lang selected', e.target.value);
+            
             // this.lang.current = e.target.value;
 
             // if (e.target.value === 'auto' || this.langDefault === e.target.value) {
@@ -61,7 +63,7 @@ export default {
             //     localStorage.setItem('lang', JSON.stringify(lang));
             //     this.setHtmlSize();
             // }
-        // },
+        },
     }
 }
 </script>
