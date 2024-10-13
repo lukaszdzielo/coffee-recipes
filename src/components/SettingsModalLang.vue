@@ -1,5 +1,5 @@
 <template>
-    <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small>
+    <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small>
     <section class="lang">
         <span>Język</span>
 
@@ -17,14 +17,15 @@
     </section>
 </template>
 
-<script lang="ts">
+<!-- <script lang="ts"> -->
+<script>
 export default {
     inject: ['lang'],
     data() {
         return {
             langList: ['en', 'pl', 'it', 'es'],
-            lang: this.lang,
-        }
+            // lang: this.lang,
+        };
     },
     created() {
         // this.lang = this.lang || {};
@@ -37,10 +38,9 @@ export default {
         // }
     },
     methods: {
-        change(e: any) {
+        change(e) {
             console.log('lang selected', e.target.value);
-            
-            // this.lang.current = e.target.value;
+            this.lang.current = e.target.value;
 
             // if (e.target.value === 'auto' || this.langDefault === e.target.value) {
             //     console.log('??', localStorage.getItem('lang'));
@@ -65,7 +65,7 @@ export default {
             // }
         },
     }
-}
+};
 </script>
 
 
