@@ -4,7 +4,7 @@
         <span>Język</span>
 
         <div class="customSelect">
-            <select  @change="change($event)">
+            <select @change="change($event)">
                 <option value="auto">auto</option>
                 <option v-for="lang of langList" :value="lang">{{ lang }}</option>
             </select>
