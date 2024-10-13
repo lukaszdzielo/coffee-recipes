@@ -1,4 +1,5 @@
 <template>
+    <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small>
     <section class="lang">
         <span>Język</span>
 
@@ -20,17 +21,16 @@
 export default {
     data() {
         return {
-            langDefault: '',
-            lang: '',
             langList: [],
         }
     },
+    inject: ['lang'],
     created() {
-        this.langDefault = navigator.language;
-        const localLang = localStorage.getItem('lang');
-        if (localLang) {
-            // this.pageBaseSize = +(localRemSize || this.pageBaseSize)
-        }
+        // this.langDefault = navigator.language;
+        // const localLang = localStorage.getItem('lang');
+        // if (localLang) {
+        //     // this.pageBaseSize = +(localRemSize || this.pageBaseSize)
+        // }
 
         this.fetchData();
     },
@@ -45,30 +45,34 @@ export default {
             }
         },
         change(e: any) {
-            if (e.target.value === 'auto' || this.langDefault === e.target.value) {
-                console.log('??', localStorage.getItem('lang'));
+            const lang:String = e.target.value || '';
+            this.lang.current = lang;
+            // this.setHtmlLang(lang);
 
-                // var storedNames = JSON.parse(localStorage.getItem("names"));
-                // console.log('aaauuttoo');
-                this.lang = this.langDefault;
-                localStorage.removeItem('lang');
-                this.setHtmlSize();
-            } else {
-                // console.log('lang', e.target.value);
-                // localStorage.setItem('lang', `${e.target.value}`);
-                this.lang = e.target.value;
-                console.log('??', this.lang);
+            // if (e.target.value === 'auto' || this.langDefault === e.target.value) {
+            //     console.log('??', localStorage.getItem('lang'));
 
-                const lang = {
-                    default: this.langDefault,
-                    selected: e.target.value,
-                };
-                localStorage.setItem('lang', JSON.stringify(lang));
-                this.setHtmlSize();
-            }
+            //     // var storedNames = JSON.parse(localStorage.getItem("names"));
+            //     // console.log('aaauuttoo');
+            //     this.lang = this.langDefault;
+            //     localStorage.removeItem('lang');
+            //     this.setHtmlSize();
+            // } else {
+            //     // console.log('lang', e.target.value);
+            //     // localStorage.setItem('lang', `${e.target.value}`);
+            //     this.lang = e.target.value;
+            //     console.log('??', this.lang);
+
+            //     const lang = {
+            //         default: this.langDefault,
+            //         selected: e.target.value,
+            //     };
+            //     localStorage.setItem('lang', JSON.stringify(lang));
+            //     this.setHtmlSize();
+            // }
         },
         setHtmlSize() {
-            document.documentElement.lang = this.lang
+            // document.documentElement.lang = this.lang
         }
     }
 }
