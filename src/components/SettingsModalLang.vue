@@ -21,8 +21,8 @@
 import { inject } from 'vue';
 
 interface InjectedObject {
-    default: string;
-    current: string;
+    default: '';
+    current: '';
 }
 
 export default {
