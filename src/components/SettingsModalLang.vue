@@ -38,9 +38,9 @@ export default {
         // }
     },
     methods: {
-        change(e) {
-            console.log('lang selected', e.target.value);
-            this.lang.current = e.target.value;
+        change(event) {
+            console.log('lang selected', event.target.value);
+            this.lang.current = event.target.value;
 
             // if (e.target.value === 'auto' || this.langDefault === e.target.value) {
             //     console.log('??', localStorage.getItem('lang'));
