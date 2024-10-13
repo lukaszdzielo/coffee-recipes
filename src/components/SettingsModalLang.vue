@@ -1,6 +1,6 @@
 <template>
     <!-- <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small> -->
-    <small style="color: var(--gray-300)"><code>App: {{ abcd }}</code></small>
+    <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small>
     <section class="lang">
         <span>Język</span>
 
@@ -19,14 +19,15 @@
 </template>
 
 <script lang="ts">
-import { inject } from 'vue';
+// import { inject } from 'vue';
 export default {
-    setup() {
-        const abcd = inject('lang', {});
-        return {
-            abcd
-        }
-    },
+    // setup() {
+    //     const abcd = inject('lang', {});
+    //     return {
+    //         abcd
+    //     }
+    // },
+    inject: ['lang'],
     data() {
         return {
             test: this.lang,
