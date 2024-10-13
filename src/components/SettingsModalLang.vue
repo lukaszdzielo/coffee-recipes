@@ -1,5 +1,5 @@
 <template>
-    <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small>
+    <!-- <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small> -->
     <section class="lang">
         <span>Język</span>
 
@@ -19,7 +19,7 @@
 
 <script lang="ts">
 export default {
-    inject: ['lang'],
+    // inject: ['lang'],
     data() {
         return {
             langList: ['en', 'pl', 'it', 'es'],
@@ -38,7 +38,7 @@ export default {
     methods: {
         change(e: any) {
             console.log('e.target.value', e.target.value);
-            console.log(this.lang);
+            // console.log(this.lang);
             
             // this.lang.current = e.target.value;
             // this.test.current = e.target.value;
