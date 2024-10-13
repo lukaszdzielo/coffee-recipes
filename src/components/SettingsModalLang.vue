@@ -45,7 +45,9 @@ export default {
             }
         },
         // change(e: any) {
-        change() {
+        change(e: any) {
+            console.log('e', e);
+
             // const lang:String = e.target.value || '';
             // this.lang.current = lang;
             // this.setHtmlLang(lang);
