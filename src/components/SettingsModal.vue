@@ -8,7 +8,7 @@
 
     <dialog id="settingsModal" popover="manual">
         <header>
-            <div class="header__heading">Settings</div>
+            <div class="header__heading">Ustawienia</div>
             <button popovertarget="settingsModal" class="btn btn--icon btn--close">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path

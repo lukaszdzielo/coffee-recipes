@@ -1,6 +1,6 @@
 <template>
     <section class="lang">
-        <span>Language</span>
+        <span>Język</span>
 
         <div class="customSelect">
             <select @change="change($event)">

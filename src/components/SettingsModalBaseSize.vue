@@ -1,6 +1,6 @@
 <template>
     <section class="baseSize">
-        <span>Page base size</span>
+        <span>Rozmiar bazowy strony</span>
 
         <div class="btn__group">
             <button class="btn btn--icon btn--minus" @click="decreaseSize" :disabled="pageBaseSize <= 12">
