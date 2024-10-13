@@ -44,7 +44,8 @@ export default {
                 console.error(error);
             }
         },
-        change(e: any) {
+        // change(e: any) {
+        change() {
             // const lang:String = e.target.value || '';
             // this.lang.current = lang;
             // this.setHtmlLang(lang);
