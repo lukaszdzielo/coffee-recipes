@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <AppHeader />
   <div class="container">
     <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small>
@@ -48,7 +48,7 @@ export default {
     }
   }
 }
-</script> -->
+</script>
 
 
 
@@ -64,7 +64,7 @@ export default {
 
 
 
-<template>
+<!-- <template>
   <button @click="incrementCount">+</button>
   <AppHeader />
   <div class="container">
@@ -136,4 +136,4 @@ export default {
     }
   },
 }
-</script>
+</script> -->
