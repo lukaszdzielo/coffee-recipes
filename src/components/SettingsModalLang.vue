@@ -1,5 +1,5 @@
-<!-- <template>
-    <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small>
+<template>
+    <!-- <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small> -->
     <small style="color: var(--gray-300)"><code>App: {{ abcd }}</code></small>
     <section class="lang">
         <span>Język</span>
@@ -78,7 +78,7 @@ export default {
         },
     }
 };
-</script> -->
+</script>
 
 
 
@@ -105,10 +105,10 @@ export default {
 
 
 
-<template>
+<!-- <template>
     <div>{{ childUserName }}</div>
     <div>{{ childCount }}</div>
-    <!-- <div>{{ firstName }} {{ lastName }}</div> -->
+    <div>{{ firstName }} {{ lastName }}</div>
     <button @click="incrementCount">+</button>
 
     
@@ -194,7 +194,7 @@ export default {
         },
     }
 }
-</script>
+</script> -->
 
 
 
