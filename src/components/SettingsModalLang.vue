@@ -108,7 +108,7 @@ export default {
 <template>
     <div>{{ childUserName }}</div>
     <div>{{ childCount }}</div>
-    <div>{{ firstName }} {{ lastName }}</div>
+    <!-- <div>{{ firstName }} {{ lastName }}</div> -->
     <button @click="incrementCount">+</button>
 
     
