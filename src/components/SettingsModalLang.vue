@@ -17,8 +17,7 @@
     </section>
 </template>
 
-<!-- <script lang="ts"> -->
-<script>
+<script lang="ts">
 export default {
     inject: ['lang'],
     data() {
@@ -38,9 +37,9 @@ export default {
         // }
     },
     methods: {
-        change(event) {
-            console.log('lang selected', event.target.value);
-            this.lang.current = event.target.value;
+        change(e: any) {
+            console.log('lang selected', e.target.value);
+            this.lang.current = e.target.value;
 
             // if (e.target.value === 'auto' || this.langDefault === e.target.value) {
             //     console.log('??', localStorage.getItem('lang'));
