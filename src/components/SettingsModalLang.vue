@@ -1,11 +1,9 @@
 <template>
-    <!-- <small style="color: var(--gray-300)"><code>App: {{ test }}</code></small>
-    <small style="color: var(--gray-300)"><code>App: {{ test?.current }}</code></small>
     <section class="lang">
         <span>Język</span>
 
         <div class="customSelect">
-            <select @change="change($event)">
+            <select disabled>
                 <option value="auto">auto</option>
                 <option v-for="language of langList" :value="language">{{ language }}</option>
             </select>
@@ -14,24 +12,16 @@
                     d="M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z" />
             </svg>
         </div>
-
-    </section> -->
+    </section>
 </template>
 
-<!-- 
-<script setup lang="ts">
-// import { inject } from 'vue';
-// export default {
-    // setup() {
-    //     const abcd = inject('lang', {});
-    //     return {
-    //         abcd
-    //     }
-    // },
-    inject: ['lang'],
+
+<script lang="ts">
+export default {
+    // inject: ['lang'],
     data() {
         return {
-            test: this.lang,
+            // lang: this.lang,
             langList: ['en', 'pl', 'it', 'es'],
         };
     },
@@ -48,8 +38,9 @@
     methods: {
         change(e: any) {
             console.log('e.target.value', e.target.value);
+            // this.fullMessage.c = 's'
             // console.log(this.lang);
-            // this.test.current = e.target.value
+            // this.lang.current = e.target.value
 
             // this.lang.current = e.target.value;
             // this.test.current = e.target.value;
@@ -79,10 +70,8 @@
             // }
         },
     }
-// };
-</script> -->
-
-
+};
+</script>
 
 
 
@@ -245,6 +234,21 @@ select {
     font-size: 1rem;
     /* appearance: none; */
     -webkit-appearance: none;
-    cursor: pointer;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:disabled {
+        background: var(--gray-200);
+        color: var(--gray-500);
+        fill: var(--gray-500);
+    }
+}
+
+:has(:disabled) {
+    svg {
+        fill: var(--gray-500);
+    }
 }
 </style>
