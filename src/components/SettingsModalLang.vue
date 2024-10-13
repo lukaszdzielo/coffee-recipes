@@ -2,8 +2,9 @@
     <section class="lang">
         <span>Język</span>
 
+        {{ lang?.current }}
         <div class="customSelect">
-            <select disabled>
+            <select>
                 <option value="auto">auto</option>
                 <option v-for="language of langList" :value="language">{{ language }}</option>
             </select>
@@ -17,11 +18,18 @@
 
 
 <script lang="ts">
+import { inject } from 'vue';
+
+interface InjectedObject {
+    default: string;
+    current: string;
+}
+
 export default {
-    // inject: ['lang'],
+    inject: ['lang'],
     data() {
         return {
-            // lang: this.lang,
+            lang: inject<InjectedObject>('myInjectedObject'),
             langList: ['en', 'pl', 'it', 'es'],
         };
     },
