@@ -1,6 +1,6 @@
-<template>
-    <!-- <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small> -->
-    <small style="color: var(--gray-300)"><code>App: {{ test }}</code></small>
+<!-- <template>
+    <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small>
+    <small style="color: var(--gray-300)"><code>App: {{ abcd }}</code></small>
     <section class="lang">
         <span>Język</span>
 
@@ -19,8 +19,14 @@
 </template>
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
-    inject: ['lang'],
+    setup() {
+        const abcd = inject('lang', {});
+        return {
+            abcd
+        }
+    },
     data() {
         return {
             test: this.lang,
@@ -41,6 +47,7 @@ export default {
         change(e: any) {
             console.log('e.target.value', e.target.value);
             // console.log(this.lang);
+            // this.test.current = e.target.value
 
             // this.lang.current = e.target.value;
             // this.test.current = e.target.value;
@@ -71,7 +78,7 @@ export default {
         },
     }
 };
-</script>
+</script> -->
 
 
 
@@ -98,7 +105,7 @@ export default {
 
 
 
-<!-- <template>
+<template>
     <div>{{ childUserName }}</div>
     <div>{{ childCount }}</div>
     <div>{{ firstName }} {{ lastName }}</div>
@@ -187,7 +194,7 @@ export default {
         },
     }
 }
-</script> -->
+</script>
 
 
 
