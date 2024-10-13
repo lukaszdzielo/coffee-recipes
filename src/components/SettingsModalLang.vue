@@ -19,12 +19,7 @@
 
 <script lang="ts">
 export default {
-    data() {
-        return {
-            langList: [],
-        }
-    },
-    // inject: ['lang'],
+    inject: ['lang'],
     created() {
         // this.langDefault = navigator.language;
         // const localLang = localStorage.getItem('lang');
