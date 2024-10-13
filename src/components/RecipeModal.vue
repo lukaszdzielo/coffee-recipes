@@ -41,7 +41,7 @@ export default {
     props: ['recipe'],
     data() {
         return {
-            thumbnailDefault: './recipeCard-placeholder.svg',
+            thumbnailDefault: 'recipes/img/recipeCard-placeholder.svg',
         }
     }
 }
