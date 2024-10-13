@@ -2,7 +2,7 @@
     <section class="lang">
         <span>Język</span>
 
-        {{ lang?.current }}
+        {{ lang.current }}
         <div class="customSelect">
             <select>
                 <option value="auto">auto</option>
@@ -26,10 +26,10 @@ interface InjectedObject {
 }
 
 export default {
-    inject: ['lang'],
+    // inject: ['lang'],
     data() {
         return {
-            lang: inject<InjectedObject>('myInjectedObject'),
+            lang: inject<InjectedObject>('lang'),
             langList: ['en', 'pl', 'it', 'es'],
         };
     },
