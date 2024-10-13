@@ -1,5 +1,5 @@
 <template>
-    <!-- <small style="color: var(--gray-300)"><code>App: {{ lang.current }}</code></small> -->
+    <!-- <small style="color: var(--gray-300)"><code>App: {{ lang }}</code></small> -->
     <section class="lang">
         <span>Język</span>
 
@@ -24,7 +24,7 @@ export default {
             langList: [],
         }
     },
-    // inject: ['lang'],
+    inject: ['lang'],
     created() {
         // this.langDefault = navigator.language;
         // const localLang = localStorage.getItem('lang');
@@ -46,9 +46,8 @@ export default {
         },
         // change(e: any) {
         change(e: any) {
-            console.log('e', e);
-
-            // const lang:String = e.target.value || '';
+            const lang:String = e.target.value || '';
+            console.log('lang', lang);
             // this.lang.current = lang;
             // this.setHtmlLang(lang);
 
