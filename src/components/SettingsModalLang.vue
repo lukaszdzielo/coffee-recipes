@@ -22,6 +22,7 @@ export default {
     inject: ['lang'],
     data() {
         return {
+            test: this.lang,
             langList: ['en', 'pl', 'it', 'es'],
         };
     },
