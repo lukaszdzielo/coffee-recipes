@@ -8,7 +8,8 @@
 
     <dialog id="settingsModal" popover="manual">
         <header>
-            <div class="header__heading">Ustawienia</div>
+            <div v-if="langPage.current === 'pl'" class="header__heading">Ustawienia</div>
+            <div v-if="langPage.current === 'en'" class="header__heading">Setings</div>
             <button popovertarget="settingsModal" class="btn btn--icon btn--close">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path
@@ -26,6 +27,17 @@
 <script setup lang="ts">
 import settingsModalLang from './SettingsModalLang.vue';
 import SettingsModalBaseSize from './SettingsModalBaseSize.vue';
+</script>
+
+<script lang="ts">
+import { inject } from 'vue';
+export default {
+    data() {
+        return {
+            langPage: inject('lang') as any,
+        }
+    },
+}
 </script>
 
 <style scoped>

@@ -50,6 +50,7 @@ export default {
 
   provide() {
     return {
+      'lang': this.lang,
       'langChange': (newLang: '') => this.lang.current = newLang,
     }
   }
