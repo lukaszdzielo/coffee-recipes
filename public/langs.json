@@ -10,16 +10,20 @@
         "en": "Close",
         "pl": "Zamknij"
     },
-    "settings": {
-        "en": "Settings",
-        "pl": "Ustawienia"
+    "settingsModal": {
+        "settings": {
+            "en": "Settings",
+            "pl": "Ustawienia"
+        }
     },
-    "ingredients": {
-        "en": "ingredients",
-        "pl": "Składniki"
-    },
-    "preparation": {
-        "en": "Preparation",
-        "pl": "Przygotowanie"
+    "recipeModal": {
+        "ingredients": {
+            "en": "ingredients",
+            "pl": "Składniki"
+        },
+        "preparation": {
+            "en": "Preparation",
+            "pl": "Przygotowanie"
+        }
     }
 }
