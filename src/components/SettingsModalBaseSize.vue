@@ -1,6 +1,7 @@
 <template>
     <section class="baseSize">
-        <span>Rozmiar bazowy strony</span>
+        <span v-if="langPage.current === 'pl'">Rozmiar bazowy strony</span>
+        <span v-if="langPage.current === 'en'">Base page size</span>
 
         <div class="btn__group">
             <button class="btn btn--icon btn--minus" @click="decreaseSize" :disabled="pageBaseSize <= 12">
@@ -32,11 +33,7 @@ import { inject } from 'vue';
 export default {
     data() {
         return {
-            lang: inject('lang') as {
-                default: String,
-                current: String,
-                langList: []
-            },
+            langPage: inject('lang') as any,
             pageBaseSize: 16,
         }
     },

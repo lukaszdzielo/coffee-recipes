@@ -1,9 +1,11 @@
 <template>
     <section class="lang">
-        <span>Język</span>
+        <span v-if="langPage.current === 'pl'">Język</span>
+        <span v-if="langPage.current === 'en'">Language</span>
         <div class="customSelect">
             <select @change="change($event)">
-                <option value="auto">auto</option>
+                <option value="auto">---</option>
+                <!-- <option value="auto">auto</option> -->
                 <option v-for="language of langList" :value="language">{{ language }}</option>
             </select>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -20,8 +22,9 @@ import { inject } from 'vue';
 export default {
     data() {
         return {
+            langPage: inject('lang') as any,
             langChange: inject('langChange') as any,
-            langList: ['en', 'pl', 'it', 'es'],
+            langList: ['en', 'pl'],
         };
     },
     created() {
