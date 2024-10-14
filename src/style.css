@@ -80,13 +80,13 @@ h1,
 }
 
 body:has(dialog:popover-open) {
-
+  /* 
   overflow: hidden;
   pointer-events: none;
-  user-select: none;
+  user-select: none; */
 
   dialog:popover-open {
-    pointer-events: auto;
+    /* pointer-events: auto; */
     /* user-select: none; */
   }
 }

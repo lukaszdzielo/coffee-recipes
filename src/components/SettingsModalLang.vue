@@ -2,7 +2,7 @@
     <section class="lang">
         <span>Język</span>
         <div class="customSelect">
-            <select disabled>
+            <select @change="change($event)">
                 <option value="auto">auto</option>
                 <option v-for="language of langList" :value="language">{{ language }}</option>
             </select>
@@ -16,10 +16,11 @@
 
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
-    // inject: ['lang'],
     data() {
         return {
+            langChange: inject('langChange') as any,
             langList: ['en', 'pl', 'it', 'es'],
         };
     },
@@ -35,11 +36,7 @@ export default {
     },
     methods: {
         change(e: any) {
-            console.log('e.target.value', e.target.value);
-            // this.fullMessage.c = 's'
-            // console.log(this.lang);
-            // this.lang.current = e.target.value
-
+            this.langChange(e.target.value);
             // this.lang.current = e.target.value;
             // this.test.current = e.target.value;
             // console.log('this.test', this.test);
