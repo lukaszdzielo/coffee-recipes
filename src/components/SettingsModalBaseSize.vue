@@ -1,4 +1,6 @@
 <template>
+    {{ test.default }}
+    {{ test['default'] }}
     <section class="baseSize">
         <span>Rozmiar bazowy strony</span>
 
@@ -27,9 +29,12 @@
 </template>
 
 <script lang="ts">
+import { inject } from 'vue';
+
 export default {
     data() {
         return {
+            test: inject('lang') as any,
             pageBaseSize: 16,
         }
     },
