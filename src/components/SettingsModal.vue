@@ -8,8 +8,7 @@
 
     <dialog id="settingsModal" popover="manual">
         <header>
-            <div v-if="langPage.current === 'pl'" class="header__heading">Ustawienia</div>
-            <div v-if="langPage.current === 'en'" class="header__heading">Setings</div>
+            <span>{{ translation.settingsModal?.settings[lang.current] }}</span>
             <button popovertarget="settingsModal" class="btn btn--icon btn--close">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path
@@ -34,7 +33,8 @@ import { inject } from 'vue';
 export default {
     data() {
         return {
-            langPage: inject('lang') as any,
+            lang: inject('lang') as any,
+            translation: inject('translation') as any,
         }
     },
 }
