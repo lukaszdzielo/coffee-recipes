@@ -1,8 +1,4 @@
 <template>
-    <div>{{ lang.current }}</div>
-    <hr>
-    <div>{{ recipe.langs }}</div>
-    <hr>
     <dialog id="recipeDialog" popover="manual">
         <header>
             <div class="header__image">
@@ -37,7 +33,6 @@
                 </section>
                 <section v-if="getRecipe('preparation')" class="preparation">
                     <span class="heading">{{ translation.recipeModal?.preparation[lang.current] }}</span>
-
                     <div v-html="getRecipe('preparation')"></div>
                 </section>
             </main>
