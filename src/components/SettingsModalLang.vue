@@ -4,7 +4,9 @@
         <div class="customSelect">
             <select @change="change($event)">
                 <option value="auto">auto</option>
-                <option v-for="language of translation?.langList" :value="language">{{ language }}</option>
+                <option v-for="language of translation?.langList" :value="language" :selected="local === language">
+                    {{ language }}
+                </option>
             </select>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path
@@ -19,6 +21,7 @@ import { inject } from 'vue';
 export default {
     data() {
         return {
+            local: localStorage.getItem('pageLang'),
             lang: inject('lang') as any,
             translation: inject('translation') as any,
             langChange: inject('langChange') as any,
