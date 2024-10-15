@@ -17,27 +17,31 @@
                 </svg>
             </button>
         </header>
-        <main>
-            <section v-if="getRecipe('ingredients')" class="ingredients">
-                <span class="heading">{{ translation.recipeModal?.ingredients[lang.current] }}</span>
-                <ul v-show="getRecipe('ingredients')">
-                    <li v-for="listItem of getRecipe('ingredients')">
-                        <template v-if="typeof listItem === 'object'">
-                            <template v-if="true">{{ listItem[0] }}</template>
-                            <ul>
-                                <li v-for="subListItem of listItem.slice(1)">{{ subListItem }}</li>
-                            </ul>
-                        </template>
-                        <template v-else>{{ listItem }}</template>
-                    </li>
-                </ul>
-            </section>
-            <section v-if="getRecipe('preparation')" class="preparation">
-                <span class="heading">{{ translation.recipeModal?.preparation[lang.current] }}</span>
+        <div class="dialog__wrapper">
+            <div v-if="!recipe.langs?.[lang.current]" class="noTranslationInfo"> {{
+                translation.recipeModal?.noTranslation[lang.current] }}</div>
+            <main>
+                <section v-if="getRecipe('ingredients')" class="ingredients">
+                    <span class="heading">{{ translation.recipeModal?.ingredients[lang.current] }}</span>
+                    <ul v-show="getRecipe('ingredients')">
+                        <li v-for="listItem of getRecipe('ingredients')">
+                            <template v-if="typeof listItem === 'object'">
+                                <template v-if="true">{{ listItem[0] }}</template>
+                                <ul>
+                                    <li v-for="subListItem of listItem.slice(1)">{{ subListItem }}</li>
+                                </ul>
+                            </template>
+                            <template v-else>{{ listItem }}</template>
+                        </li>
+                    </ul>
+                </section>
+                <section v-if="getRecipe('preparation')" class="preparation">
+                    <span class="heading">{{ translation.recipeModal?.preparation[lang.current] }}</span>
 
-                <div v-html="getRecipe('preparation')"></div>
-            </section>
-        </main>
+                    <div v-html="getRecipe('preparation')"></div>
+                </section>
+            </main>
+        </div>
     </dialog>
 </template>
 
@@ -52,10 +56,14 @@ export default {
             thumbnailDefault: 'recipes/img/recipeCard-placeholder.svg',
         }
     },
+    computed: {
+        getLanguage() {
+            return this.recipe.langs?.[this.lang.current] ? this.lang.current : this.recipe.langs?.langDefault;
+        }
+    },
     methods: {
         getRecipe(content: string) {
-            return this.recipe.langs?.[this.lang.current]?.[content] ||
-                this.recipe.langs?.[this.recipe.langs.langDefault]?.[content]
+            return this.recipe.langs?.[this.getLanguage]?.[content]
         },
     }
 }
@@ -138,12 +146,15 @@ header {
     }
 }
 
+.dialog__wrapper {
+    overflow: auto;
+}
+
 main {
     display: grid;
     gap: 1rem;
     padding: 1rem 1rem 2rem;
     font-size: .875rem;
-    overflow: auto;
 
     @media (min-width: 48rem) {
         grid-template-columns: 1fr 1fr;
@@ -170,5 +181,12 @@ main {
             margin-top: 1rem;
         }
     }
+}
+
+.noTranslationInfo {
+    padding: .5rem 1rem .5rem;
+    background-color: #ffc107;
+    color: #332701;
+    text-align: center;
 }
 </style>
