@@ -29,6 +29,10 @@
         "preparation": {
             "en": "Preparation",
             "pl": "Przygotowanie"
+        },
+        "noTranslation": {
+            "en": "This recipe is only available in the original language.",
+            "pl": "Ten przepis jest dostępny jedynie w języku oryginalnym."
         }
     }
 }
