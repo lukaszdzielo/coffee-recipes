@@ -5,7 +5,7 @@
             <select @change="change($event)">
                 <option value="auto">auto</option>
                 <option v-for="language of translation?.langList" :value="language" :selected="local === language">
-                    {{ language }}
+                    {{ language.toUpperCase() }}
                 </option>
             </select>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">

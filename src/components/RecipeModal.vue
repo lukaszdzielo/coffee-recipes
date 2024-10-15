@@ -1,11 +1,15 @@
 <template>
+    <div>{{ lang.current }}</div>
+    <hr>
+    <div>{{ recipe.langs }}</div>
+    <hr>
     <dialog id="recipeDialog" popover="manual">
         <header>
             <div class="header__image">
                 <img v-if="recipe.thumbnail" :src="recipe.thumbnail" :alt="recipe.name">
                 <img v-else="data.thumbnail" :src="thumbnailDefault" :alt="recipe.name">
             </div>
-            <div v-show="recipe.name" class="header__heading">{{ recipe.name }}</div>
+            <div v-show="getRecipe('name')" class="header__heading">{{ getRecipe('name') }}</div>
             <button popovertarget="recipeDialog" @click="$emit('close')" class="btn btn--icon btn--close">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path
@@ -14,10 +18,10 @@
             </button>
         </header>
         <main>
-            <section v-if="recipe.ingredients" class="ingredients">
-                <span class="heading">Składniki:</span>
-                <ul v-show="recipe.ingredients">
-                    <li v-for="listItem of recipe.ingredients">
+            <section v-if="getRecipe('ingredients')" class="ingredients">
+                <span class="heading">{{ translation.recipeModal?.ingredients[lang.current] }}</span>
+                <ul v-show="getRecipe('ingredients')">
+                    <li v-for="listItem of getRecipe('ingredients')">
                         <template v-if="typeof listItem === 'object'">
                             <template v-if="true">{{ listItem[0] }}</template>
                             <ul>
@@ -28,21 +32,31 @@
                     </li>
                 </ul>
             </section>
-            <section v-if="recipe.preparation" class="preparation">
-                <span class="heading">Przygotowanie:</span>
-                <div v-html="recipe.preparation"></div>
+            <section v-if="getRecipe('preparation')" class="preparation">
+                <span class="heading">{{ translation.recipeModal?.preparation[lang.current] }}</span>
+
+                <div v-html="getRecipe('preparation')"></div>
             </section>
         </main>
     </dialog>
 </template>
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
     props: ['recipe'],
     data() {
         return {
+            lang: inject('lang') as any,
+            translation: inject('translation') as any,
             thumbnailDefault: 'recipes/img/recipeCard-placeholder.svg',
         }
+    },
+    methods: {
+        getRecipe(content: string) {
+            return this.recipe.langs?.[this.lang.current]?.[content] ||
+                this.recipe.langs?.[this.recipe.langs.langDefault]?.[content]
+        },
     }
 }
 </script>

@@ -3,17 +3,20 @@
         <div class="image" style="display: flex;">
             <img v-if="data.thumbnail" :src="data.thumbnail" :alt="data.name">
             <img v-else="data.thumbnail" :src="thumbnailDefault" :alt="data.name">
+            <span v-if="!data.langs?.[lang.current]" class="langInfo">{{ data.langs.langDefault.toUpperCase() }}</span>
         </div>
-        <div class="content">{{ data.name }}</div>
+        <div class="content">{{ data.langs?.[lang.current]?.name || data.langs?.[data.langs.langDefault]?.name }}</div>
         <button popovertarget="recipeDialog" @click="$emit('open', data)"></button>
     </div>
 </template>
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
     props: ['data', 'slug'],
     data() {
         return {
+            lang: inject('lang') as any,
             thumbnailDefault: 'recipes/img/recipeCard-placeholder.svg',
         }
     }
@@ -34,6 +37,7 @@ export default {
     box-sizing: border-box;
 
     & .image {
+        position: relative;
         display: flex;
         background-color: var(--gray-300);
         border-radius: .25rem;
@@ -56,5 +60,15 @@ export default {
         padding: 0;
         cursor: pointer;
     }
+}
+
+.langInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 .25rem 0;
+    padding: .25rem .5rem .25rem;
+    background-color: var(--gray-200);
+    font-size: 0.75rem;
 }
 </style>
