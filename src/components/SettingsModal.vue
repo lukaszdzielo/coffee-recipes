@@ -36,7 +36,7 @@ export default {
             dialogId: 'settingsModal',
             lang: inject('lang') as any,
             translation: inject('translation') as any,
-            modalElem: document.querySelector('dialog#settingsModal') as any,
+            modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
         }
     },
     mounted() {

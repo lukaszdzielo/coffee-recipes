@@ -45,7 +45,7 @@ import { inject } from 'vue';
 export default {
     props: ['recipe'],
     data() {
-        return {
+        return { 
             lang: inject('lang') as any,
             translation: inject('translation') as any,
             thumbnailDefault: 'recipes/img/recipeCard-placeholder.svg',

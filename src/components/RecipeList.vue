@@ -19,7 +19,7 @@ export default {
             dialogId: 'recipeModal',
             recipes: {} as any,
             dialogRecipe: {},
-            modalElem: document.querySelector('dialog#settingsModal') as any,
+            modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
         }
     },
     created() {
