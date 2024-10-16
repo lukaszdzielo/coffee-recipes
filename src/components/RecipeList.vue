@@ -31,13 +31,7 @@ export default {
             } catch (error) {
                 console.error(error);
             }
-        },
-        // openModal(recipeSlug: { name: String }) {
-        //     this.dialogRecipe = recipeSlug;
-        // },
-        // closeModal() {
-        //     this.dialogRecipe = {};
-        // },
+        }
     }
 }
 </script>
