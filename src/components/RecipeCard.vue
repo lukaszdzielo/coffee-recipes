@@ -1,12 +1,11 @@
 <template>
-    <div class="recipeCard">
+    <div class="recipeCard" @click="$emit('openRecipeModal', slug)">
         <div class="image" style="display: flex;">
             <img v-if="data.thumbnail" :src="data.thumbnail" :alt="data.name">
             <img v-else="data.thumbnail" :src="thumbnailDefault" :alt="data.name">
             <span v-if="!data.langs?.[lang.current]" class="langInfo">{{ data.langs.langDefault.toUpperCase() }}</span>
         </div>
         <div class="content">{{ data.langs?.[lang.current]?.name || data.langs?.[data.langs.langDefault]?.name }}</div>
-        <button popovertarget="recipeDialog" @click="$emit('open', data)"></button>
     </div>
 </template>
 
