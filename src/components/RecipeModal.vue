@@ -59,7 +59,7 @@ export default {
     methods: {
         getRecipe(content: string) {
             return this.recipe.langs?.[this.getLanguage]?.[content]
-        },
+        }
     }
 }
 </script>

@@ -39,6 +39,8 @@ export default {
     & .image {
         position: relative;
         display: flex;
+        width: 100%;
+        aspect-ratio: 1/1;
         background-color: var(--gray-300);
         border-radius: .25rem;
         overflow: hidden;
