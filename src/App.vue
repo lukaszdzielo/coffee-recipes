@@ -22,7 +22,6 @@ export default {
       lang: {
         default: '',
         current: '',
-        translation: {},
       },
       translation: {},
     }
@@ -39,7 +38,6 @@ export default {
       try {
         const response = await fetch('./langs.json');
         const json = await response.json();
-        this.lang.translation = json || {};
         Object.assign(this.translation, json)
       } catch (error) {
         console.error(error);
