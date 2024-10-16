@@ -23,9 +23,6 @@ export default {
     created() {
         this.fetchData();
     },
-    mounted() {
-        this.modalRecipe = document.querySelector('dialog');
-    },
     methods: {
         async fetchData() {
             try {
