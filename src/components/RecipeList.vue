@@ -17,7 +17,7 @@ export default {
         return {
             recipes: {},
             dialogRecipe: {},
-            modalRecipe: document.querySelector('dialog'),
+            modalElem: document.querySelector('dialog'),
         }
     },
     created() {
@@ -35,7 +35,7 @@ export default {
         openModal(recipeSlug: { name: String }) {
             this.dialogRecipe = recipeSlug;
         },
-        closeDialog() {
+        closeModal() {
             this.dialogRecipe = {};
         },
     }

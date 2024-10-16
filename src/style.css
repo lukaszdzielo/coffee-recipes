@@ -79,16 +79,8 @@ h1,
   }
 }
 
-body:has(dialog:popover-open) {
+body:has(dialog[open]) {
   overflow: hidden;
-  /* 
-  pointer-events: none;
-  user-select: none; */
-
-  dialog:popover-open {
-    /* pointer-events: auto; */
-    /* user-select: none; */
-  }
 }
 
 button {
