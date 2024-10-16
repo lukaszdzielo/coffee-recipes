@@ -32,12 +32,12 @@ export default {
                 console.error(error);
             }
         },
-        openModal(recipeSlug: { name: String }) {
-            this.dialogRecipe = recipeSlug;
-        },
-        closeModal() {
-            this.dialogRecipe = {};
-        },
+        // openModal(recipeSlug: { name: String }) {
+        //     this.dialogRecipe = recipeSlug;
+        // },
+        // closeModal() {
+        //     this.dialogRecipe = {};
+        // },
     }
 }
 </script>
