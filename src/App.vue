@@ -23,15 +23,18 @@ export default {
         default: '',
         current: '',
       },
-      translation: {},
+      translation: {
+        langList: [],
+      },
     }
   },
-  created() {
-    this.lang.default = navigator.language.split('-')[0];
-    const localLang = localStorage.getItem('pageLang');
-    this.lang.current = localLang || this.lang.default;
+  async created() {
+    const browserLang = navigator.language.split('-')[0];
+    await this.fetchData();
+    const langList = this.translation.langList;
+    this.lang.default = langList.find(lang => lang === browserLang) ? browserLang : langList[0];
+    this.lang.current = localStorage.getItem('pageLang') || this.lang.default;
     document.documentElement.lang = this.lang.current;
-    this.fetchData();
   },
   methods: {
     async fetchData() {
