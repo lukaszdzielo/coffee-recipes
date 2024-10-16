@@ -15,13 +15,17 @@ export default {
     props: ['item'],
     data() {
         return {
+            dialogId: 'settingsModal',
             recipes: {},
             dialogRecipe: {},
-            modalElem: document.querySelector('dialog'),
+            modalElem: document.querySelector('dialog#settingsModal') as any,
         }
     },
     created() {
         this.fetchData();
+    },
+    mounted() {
+        this.modalElem = document.querySelector(`#${this.dialogId}`);
     },
     methods: {
         async fetchData() {
@@ -34,9 +38,10 @@ export default {
         },
         openModal(recipeSlug: { name: String }) {
             this.dialogRecipe = recipeSlug;
+            this.modalElem?.showModal();
         },
         closeModal() {
-            this.dialogRecipe = {};
+            this.modalElem?.close();
         },
     }
 }
