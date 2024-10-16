@@ -79,8 +79,11 @@ h1,
   }
 }
 
-body:has(dialog[open]) {
-  overflow: hidden;
+html,
+body {
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
 }
 
 button {
