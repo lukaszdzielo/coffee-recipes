@@ -1,4 +1,5 @@
 <template>
+  {{ lang.default }}
   <AppHeader />
   <div class="container">
     <RecipeList />
@@ -28,7 +29,7 @@ export default {
     }
   },
   created() {
-    this.lang.default = navigator.language;
+    this.lang.default = navigator.language.split('-')[0];
     const localLang = localStorage.getItem('pageLang');
     this.lang.current = localLang || this.lang.default;
     document.documentElement.lang = this.lang.current;
