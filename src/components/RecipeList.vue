@@ -1,6 +1,7 @@
 <template>
     <div class="recipeList">
-        <RecipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal" />
+        <RecipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal"
+            @openRecipeModal="openModal" />
     </div>
     <RecipeModal :recipe="dialogRecipe" @close="closeModal" />
 </template>
@@ -15,8 +16,8 @@ export default {
     props: ['item'],
     data() {
         return {
-            dialogId: 'settingsModal',
-            recipes: {},
+            dialogId: 'recipeModal',
+            recipes: {} as any,
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as any,
         }
@@ -36,8 +37,8 @@ export default {
                 console.error(error);
             }
         },
-        openModal(recipeSlug: { name: String }) {
-            this.dialogRecipe = recipeSlug;
+        openModal(slug: string) {
+            this.dialogRecipe = this.recipes[slug];
             this.modalElem?.showModal();
         },
         closeModal() {
