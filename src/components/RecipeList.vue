@@ -2,7 +2,7 @@
     <div class="recipeList">
         <RecipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal" />
     </div>
-    <RecipeModal :recipe="dialogRecipe" @close="closeDialog" />
+    <RecipeModal :recipe="dialogRecipe" @close="closeModal" />
 </template>
 
 <script setup lang="ts">
@@ -31,7 +31,13 @@ export default {
             } catch (error) {
                 console.error(error);
             }
-        }
+        },
+        openModal(recipeSlug: { name: String }) {
+            this.dialogRecipe = recipeSlug;
+        },
+        closeModal() {
+            this.dialogRecipe = {};
+        },
     }
 }
 </script>
