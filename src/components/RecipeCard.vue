@@ -34,6 +34,7 @@ export default {
     font-size: .875rem;
     text-wrap: balance;
     box-sizing: border-box;
+    cursor: pointer;
 
     & .image {
         position: relative;
