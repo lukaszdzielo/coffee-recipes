@@ -52,7 +52,6 @@ export default {
       'langChange': (newLang: '') => {
         this.lang.current = newLang;
         document.documentElement.lang = newLang;
-
       },
     }
   }
