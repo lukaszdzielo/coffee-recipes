@@ -1,5 +1,4 @@
 <template>
-  {{ lang.default }}
   <AppHeader />
   <div class="container">
     <RecipeList />
