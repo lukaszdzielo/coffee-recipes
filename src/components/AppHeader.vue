@@ -1,6 +1,7 @@
 <template>
     <header>
         <div class="container">
+            Coffee recipes
             <SettingsModal />
         </div>
     </header>
@@ -14,5 +15,10 @@ import SettingsModal from './SettingsModal.vue';
 header {
     padding-block: .5rem;
     background-color: var(--gray-200);
+}
+
+.container {
+    display: flex;
+    align-items: center;
 }
 </style>
