@@ -1,6 +1,7 @@
 <template>
   <AppHeader />
   <div class="container">
+    <RecipeSearch />
     <RecipeList />
   </div>
   <AppFooter />
@@ -9,13 +10,11 @@
 <script setup lang="ts">
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
+import RecipeSearch from './components/RecipeSearch.vue';
 import RecipeList from './components/RecipeList.vue';
 </script>
 
 <script lang="ts">
-
-
-
 export default {
   data() {
     return {
