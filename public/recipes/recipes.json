@@ -7,6 +7,7 @@
             "langDefault": "pl",
             "pl": {
                 "name": "Frappe truskawkowe",
+                "key": [],
                 "dsc": "",
                 "ingredients": [
                     "5 truskawek do zmiksowania na gładko",
@@ -19,6 +20,7 @@
             },
             "en": {
                 "name": "Strawberry Frappe",
+                "key": [],
                 "dsc": "",
                 "ingredients": [
                     "5 strawberries, blended until smooth",
@@ -39,6 +41,7 @@
             "langDefault": "pl",
             "pl": {
                 "name": "Czekoladowe Frappe z bananem",
+                "key": [],
                 "dsc": "",
                 "ingredients": [
                     "1/2 banana",
@@ -59,6 +62,7 @@
             "langDefault": "pl",
             "pl": {
                 "name": "Migdałowa Mokka",
+                "key": [],
                 "dsc": "",
                 "ingredients": [
                     "10 ml syropu migdałowego",
@@ -80,6 +84,7 @@
             "langDefault": "pl",
             "pl": {
                 "name": "Sweet Cherry",
+                "key": [],
                 "dsc": "",
                 "ingredients": [
                     "7 ml syropu wiśniowego /2 łyżki konfitury wiśniowej",
@@ -100,6 +105,7 @@
             "langDefault": "pl",
             "pl": {
                 "name": "Gruszka z Wanilią",
+                "key": [],
                 "dsc": "",
                 "ingredients": [
                     "10 ml syropu waniliowego",
@@ -120,6 +126,7 @@
             "langDefault": "pl",
             "pl": {
                 "name": "Chilli Mango",
+                "key": [],
                 "dsc": "",
                 "ingredients": [
                     "1/3 mango w puszce / pół świeżego mango (do przygotowania musu)",
@@ -139,6 +146,7 @@
             "langDefault": "pl",
             "pl": {
                 "name": "Peppermint Chai Latte",
+                "key": [],
                 "ingredients": [
                     "20 g Drink Me Chai Peppermint®",
                     "200 ml mleka",
