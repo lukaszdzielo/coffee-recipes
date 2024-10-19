@@ -1,14 +1,19 @@
 <template>
-	<input type="text" placeholder="Testing...">
+	<!-- <input type="text" placeholder="Testing..."> -->
+	<!-- {{ searchedKeys }} -->
 </template>
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
 	data() {
 		return {
-			searched: [],
+			searchedKeys: inject('searchedKeys') as any,
 		}
 	},
+	created() {
+		console.log('?', this.searchedKeys);
+	}
 }
 </script>
 
