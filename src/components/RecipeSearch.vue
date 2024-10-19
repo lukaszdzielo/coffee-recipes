@@ -4,15 +4,16 @@
 </template>
 
 <script lang="ts">
-import { inject } from 'vue';
 export default {
+	inject: ['searchedKeys'],
 	data() {
 		return {
-			searchedKeys: inject('searchedKeys') as any,
+			searchedKeys: this.searchedKeys as any,
 		}
 	},
 	created() {
 		console.log('??', this.searchedKeys);
+		this.searchedKeys.add('asd');
 	}
 }
 </script>
