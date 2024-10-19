@@ -29,13 +29,12 @@ import SettingsModalBaseSize from './SettingsModalBaseSize.vue';
 </script>
 
 <script lang="ts">
-import { inject } from 'vue';
 export default {
     data() {
         return {
             dialogId: 'settingsModal',
-            lang: inject('lang') as any,
-            translation: inject('translation') as any,
+            lang: this.lang as any,
+            translation: this.translation as any,
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
         }
     },

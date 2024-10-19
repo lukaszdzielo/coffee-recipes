@@ -26,13 +26,11 @@
 </template>
 
 <script lang="ts">
-import { inject } from 'vue';
-
 export default {
     data() {
         return {
-            lang: inject('lang') as any,
-            translation: inject('translation') as any,
+            lang: this.lang as any,
+            translation: this.translation as any,
             pageBaseSize: 16,
         }
     },
