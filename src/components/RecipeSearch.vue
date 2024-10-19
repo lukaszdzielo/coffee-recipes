@@ -1,6 +1,6 @@
 <template>
-	<!-- <input type="text" placeholder="Testing..."> -->
-	<!-- {{ searchedKeys }} -->
+	<input type="text" placeholder="Testing...">
+	<div>{{ searchedKeys }}</div>
 </template>
 
 <script lang="ts">
@@ -12,7 +12,7 @@ export default {
 		}
 	},
 	created() {
-		console.log('?', this.searchedKeys);
+		console.log('??', this.searchedKeys);
 	}
 }
 </script>
