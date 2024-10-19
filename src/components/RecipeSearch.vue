@@ -1,6 +1,6 @@
 <template>
-	<!-- <input type="text" placeholder="Testing..."> -->
-	<!-- {{ searchedKeys }} -->
+	<input type="text" placeholder="Testing...">
+	{{ searchedKeys }}
 </template>
 
 <script lang="ts">
