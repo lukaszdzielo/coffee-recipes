@@ -55,7 +55,7 @@ export default {
 				this.lang.current = newLang;
 				document.documentElement.lang = newLang;
 			},
-			'searchedKeys': ['x', 'y', 'z'],
+			'searchedKeys': new Set(),
 		}
 	}
 }
