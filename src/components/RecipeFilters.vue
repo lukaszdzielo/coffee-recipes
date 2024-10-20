@@ -3,7 +3,9 @@
 	<div class="searchedKeys">
 		<button @click="clearSearched" class="btn btn--clearKeys">{{ translation.clearFilters?.[lang.current]
 			}}</button>
-		<button v-for="searchedKey in searchedKeys" class="btn btn--removeKey">{{ searchedKey }}</button>
+		<button v-for="searchedKey in searchedKeys" @click="deleteSearched(searchedKey)" class="btn btn--removeKey"
+			:key="searchedKey">{{ searchedKey
+			}}</button>
 	</div>
 </template>
 
@@ -23,6 +25,9 @@ export default {
 	methods: {
 		clearSearched() {
 			this.searchedKeys.clear();
+		},
+		deleteSearched(key: '') {
+			this.searchedKeys.delete(key)
 		}
 	}
 }
@@ -40,9 +45,14 @@ button {
 	border: 0;
 	border-radius: .375rem;
 	padding: .375rem .5rem;
-	;
 
-	&:hover {
+	@media (hover:hover) {
+		&:hover {
+			--main: var(--gray-300);
+		}
+	}
+
+	&:active {
 		--main: var(--gray-400);
 	}
 }

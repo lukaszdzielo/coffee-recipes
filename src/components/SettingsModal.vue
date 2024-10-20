@@ -62,8 +62,14 @@ export default {
         appearance: none;
         fill: var(--gray-900);
 
-        &:hover {
-            --main: var(--gray-300);
+        @media (hover:hover) {
+            &:hover {
+                --main: var(--gray-300);
+            }
+        }
+
+        &:active {
+            --main: var(--gray-400);
         }
     }
 }
