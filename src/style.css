@@ -21,7 +21,6 @@
 }
 
 html {
-	/* scrollbar-gutter: stable; */
 	font-size: 16px;
 	line-height: 1.4;
 }
@@ -91,6 +90,7 @@ button {
 }
 
 .btn {
+	border: 1px solid;
 	appearance: none;
 
 	&:not(:disabled) {
@@ -103,10 +103,9 @@ button {
 		align-items: center;
 		flex-shrink: 0;
 		border-radius: .375rem;
-		padding: .375rem;
+		padding: calc(.375rem - 1px);
 		width: 2rem;
 		height: 2rem;
-
 		fill: var(--gray-900);
 
 		svg {
