@@ -53,16 +53,6 @@ export default {
 			height: auto;
 		}
 	}
-
-	[popovertarget] {
-		position: absolute;
-		inset: 0;
-		opacity: 0;
-		border: 0;
-		border-radius: .5rem;
-		padding: 0;
-		cursor: pointer;
-	}
 }
 
 .langInfo {

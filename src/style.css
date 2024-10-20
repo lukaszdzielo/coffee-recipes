@@ -91,7 +91,10 @@ button {
 
 .btn {
 	border: 1px solid;
+	border-color: var(--main);
+	background: var(--main);
 	appearance: none;
+	transition: background-color .2s, border-color .2s, color .2s;
 
 	&:not(:disabled) {
 		cursor: pointer;
