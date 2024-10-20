@@ -17,13 +17,14 @@
 </template>
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
     data() {
         return {
             local: localStorage.getItem('pageLang'),
-            lang: this.lang as any,
-            translation: this.translation as any,
-            langChange: this.langChange as any,
+            lang: inject('lang') as any,
+            translation: inject('translation') as any,
+            langChange: inject('langChange') as any,
         };
     },
     methods: {

@@ -10,12 +10,13 @@
 </template>
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
 	props: ['data', 'slug'],
 	inject: ['lang'],
 	data() {
 		return {
-			lang: this.lang as any,
+			lang: inject('lang') as any,
 			thumbnailDefault: 'recipes/img/recipeCard-placeholder.svg',
 		}
 	}
