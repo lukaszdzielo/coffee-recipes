@@ -19,7 +19,7 @@ export default {
 		}
 	},
 	created() {
-		this.searchedKeys.add('123');
+		// this.searchedKeys.add('123');
 	},
 	methods: {
 		clearSearched() {
