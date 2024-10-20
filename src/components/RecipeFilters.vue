@@ -18,9 +18,6 @@ export default {
 	},
 	created() {
 		this.searchedKeys.add('123');
-	},
-	methods() {
-
 	}
 }
 </script>
