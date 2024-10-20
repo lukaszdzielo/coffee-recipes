@@ -2,7 +2,7 @@
 	<AppHeader />
 	<div class="container">
 		<RecipeSearch />
-		<RecipeFilters v-if="searchedKeys.size" />
+		<RecipeFilters v-show="searchedKeys.size" />
 		<RecipeList />
 	</div>
 	<AppFooter />

@@ -1,5 +1,6 @@
 <template>
-	<input type="text" placeholder="Testing...">
+	<input type="text" placeholder="Testing..." v-model="inputValue">
+	<button @click="addSearchedKey">Submit</button>
 </template>
 
 <script lang="ts">
@@ -8,12 +9,19 @@ export default {
 	inject: ['searchedKeys'],
 	data() {
 		return {
+			inputValue: '',
 			searchedKeys: inject('searchedKeys') as any,
 		}
 	},
 	created() {
-		console.log('??', this.searchedKeys);
-		this.searchedKeys.add('asd');
+		// this.searchedKeys.add('asd');
+	},
+	methods: {
+		addSearchedKey() {
+			if (this.inputValue.trim() === '') return;
+			this.searchedKeys.add(this.inputValue);
+			this.inputValue = ''
+		}
 	}
 }
 </script>
