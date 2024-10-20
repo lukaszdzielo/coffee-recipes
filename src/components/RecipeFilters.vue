@@ -1,5 +1,4 @@
 <template>
-	<div>{{ searchedKeys }}</div>
 	<div class="searchedKeys">
 		<button @click="clearSearched" class="btn btn--clearKeys">{{ translation.clearFilters?.[lang.current]
 			}}</button>

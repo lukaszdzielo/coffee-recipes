@@ -2,7 +2,7 @@
 	<AppHeader />
 	<div class="container">
 		<RecipeSearch />
-		<RecipeFilters />
+		<RecipeFilters v-if="searchedKeys.size" />
 		<RecipeList />
 	</div>
 	<AppFooter />
@@ -27,6 +27,7 @@ export default {
 			translation: {
 				langList: [],
 			},
+			searchedKeys: new Set(),
 		}
 	},
 	async created() {
@@ -57,7 +58,7 @@ export default {
 				this.lang.current = newLang;
 				document.documentElement.lang = newLang;
 			},
-			'searchedKeys': new Set(),
+			'searchedKeys': this.searchedKeys,
 		}
 	}
 }
