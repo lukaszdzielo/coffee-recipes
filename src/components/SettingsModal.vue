@@ -56,15 +56,14 @@ export default {
 <style scoped>
 .btn {
     &.btn--settings {
+        --main: var(--white);
         margin: 0;
         margin-left: auto;
-        border: 0;
-        background: var(--white);
         appearance: none;
         fill: var(--gray-900);
 
         &:hover {
-            background: var(--gray-300);
+            --main: var(--gray-300);
         }
     }
 }
@@ -106,8 +105,8 @@ header {
     background-color: var(--white);
 
     .btn--close {
+        --main: transparent;
         margin-left: auto;
-        border: 1px solid transparent;
         padding: 0;
         background: transparent;
         appearance: none;

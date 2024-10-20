@@ -83,7 +83,7 @@ export default {
     }
 
     .btn {
-        border: 1px solid var(--gray-300);
+        border-color: var(--gray-300);
         background: transparent;
         appearance: none;
         fill: var(--gray-900);
