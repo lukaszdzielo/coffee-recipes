@@ -2,6 +2,7 @@
 	<AppHeader />
 	<div class="container">
 		<RecipeSearch />
+		<RecipeFilters />
 		<RecipeList />
 	</div>
 	<AppFooter />
@@ -11,6 +12,7 @@
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import RecipeSearch from './components/RecipeSearch.vue';
+import RecipeFilters from './components/RecipeFilters.vue';
 import RecipeList from './components/RecipeList.vue';
 </script>
 

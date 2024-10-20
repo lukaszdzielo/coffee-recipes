@@ -1,7 +1,6 @@
 <template>
-	<input type="text" placeholder="Testing...">
+	<button>Clear</button>
 	<div>{{ searchedKeys }}</div>
-	<hr>
 </template>
 
 <script lang="ts">
