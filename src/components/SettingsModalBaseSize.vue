@@ -83,20 +83,24 @@ export default {
     }
 
     .btn {
+        --main: transparent;
         border-color: var(--gray-300);
-        background: transparent;
         appearance: none;
         fill: var(--gray-900);
 
         @media (hover: hover) {
             &:hover {
-                background: var(--gray-100);
+                --main: var(--gray-100);
             }
+        }
+
+        &:active {
+            --main: var(--gray-300);
         }
 
         &:disabled {
             background: var(--gray-200);
-            fill: var(--gray-500);
+            fill: var(--gray-400);
         }
     }
 
