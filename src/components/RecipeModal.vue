@@ -41,12 +41,13 @@
 </template>
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
     props: ['recipe'],
     data() {
-        return { 
-            lang: this.lang as any,
-            translation: this.translation as any,
+        return {
+            lang: inject('lang') as any,
+            translation: inject('translation') as any,
             thumbnailDefault: 'recipes/img/recipeCard-placeholder.svg',
         }
     },
