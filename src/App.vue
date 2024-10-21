@@ -27,7 +27,7 @@ export default {
 			translation: {
 				langList: [],
 			},
-			searchedKeys: new Set(),
+			searchedKeys: new Set<string>(),
 		}
 	},
 	async created() {
