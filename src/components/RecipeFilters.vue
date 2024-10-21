@@ -18,9 +18,6 @@ export default {
 			searchedKeys: inject('searchedKeys') as Set<string>,
 		}
 	},
-	created() {
-		// this.searchedKeys.add('123');
-	},
 	methods: {
 		clearSearched() {
 			this.searchedKeys.clear();
@@ -45,6 +42,8 @@ button {
 	border: 0;
 	border-radius: .375rem;
 	padding: .375rem .5rem;
+	color: var(--gray-900);
+	font-size: 1rem;
 
 	@media (hover:hover) {
 		&:hover {
