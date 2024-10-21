@@ -1,5 +1,5 @@
 <template>
-	<input type="text" placeholder="Testing..." v-model="inputValue">
+	<input type="text" placeholder="Testing..." v-model="inputValue" v-on:keyup.enter="addSearchedKey">
 	<button @click="addSearchedKey">Submit</button>
 </template>
 
