@@ -15,7 +15,7 @@ export default {
 		return {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
-			searchedKeys: inject('searchedKeys') as any,
+			searchedKeys: inject('searchedKeys') as Set<string>,
 		}
 	},
 	created() {

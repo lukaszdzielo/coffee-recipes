@@ -10,7 +10,7 @@ export default {
 	data() {
 		return {
 			inputValue: '',
-			searchedKeys: inject('searchedKeys') as any,
+			searchedKeys: inject('searchedKeys') as Set<string>,
 		}
 	},
 	created() {
