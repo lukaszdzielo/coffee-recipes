@@ -2,8 +2,8 @@
 	<div class="searchedKeys">
 		<button @click="clearSearched" class="btn btn--clearKeys">{{ translation.clearFilters?.[lang.current]
 			}}</button>
-		<button v-for="searchedKey in searchedKeys" @click="deleteSearched(searchedKey as '')" class="btn btn--removeKey"
-			:key="searchedKey">{{ searchedKey
+		<button v-for="searchedKey in searchedKeys" @click="deleteSearched(searchedKey as '')"
+			class="btn btn--removeKey" :key="searchedKey">{{ searchedKey
 			}}</button>
 	</div>
 </template>
