@@ -1,27 +1,27 @@
 <template>
 	<div class="searchWrapper">
-		<input type="text" placeholder="Testing..." v-model="inputValue" v-on:keyup.enter="addSearchedKey">
-		<button @click="addSearchedKey" class="btn btn--submit">Submit</button>
+		<input type="text" placeholder="Testing..." v-model="inputValue" v-on:keyup.enter="addSearchedTag">
+		<button @click="addSearchedTag" class="btn btn--submit">Submit</button>
 	</div>
 </template>
 
 <script lang="ts">
 import { inject } from 'vue';
 export default {
-	inject: ['searchedKeys'],
+	// inject: ['searchedKeys'],
 	data() {
 		return {
 			inputValue: '',
-			searchedKeys: inject('searchedKeys') as Set<string>,
+			searchedTags: inject('searchedTags') as Set<string>,
 		}
 	},
 	created() {
 		// this.searchedKeys.add('asd');
 	},
 	methods: {
-		addSearchedKey() {
+		addSearchedTag() {
 			if (this.inputValue.trim() === '') return;
-			this.searchedKeys.add(this.inputValue);
+			this.searchedTags.add(this.inputValue);
 			this.inputValue = ''
 		}
 	}
@@ -45,9 +45,12 @@ input {
 }
 
 .btn--submit {
+	--main: var(--gray-200);
 	border: 1px solid var(--gray-300);
+	padding: .25rem .5rem;
 	border-radius: 0 .5rem .5rem 0;
 	font-size: 1rem;
+	color: var(--gray-900);
 
 	@media (hover:hover) {
 		&:hover {

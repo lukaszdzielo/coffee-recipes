@@ -1,9 +1,9 @@
 <template>
-	<div class="searchedKeys">
+	<div class="searchedTags">
 		<button @click="clearSearched" class="btn btn--clearKeys">{{ translation.clearFilters?.[lang.current]
 			}}</button>
-		<button v-for="searchedKey in searchedKeys" @click="deleteSearched(searchedKey as '')"
-			class="btn btn--removeKey" :key="searchedKey">{{ searchedKey
+		<button v-for="searchedTag in searchedTags" @click="deleteSearched(searchedTag as '')"
+			class="btn btn--removeKey" :key="searchedTag">{{ searchedTag
 			}}</button>
 	</div>
 </template>
@@ -15,22 +15,22 @@ export default {
 		return {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
-			searchedKeys: inject('searchedKeys') as Set<string>,
+			searchedTags: inject('searchedTags') as Set<string>,
 		}
 	},
 	methods: {
 		clearSearched() {
-			this.searchedKeys.clear();
+			this.searchedTags.clear();
 		},
 		deleteSearched(key: '') {
-			this.searchedKeys.delete(key)
+			this.searchedTags.delete(key)
 		}
 	}
 }
 </script>
 
 <style scoped>
-.searchedKeys {
+.searchedTags {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 8px;
