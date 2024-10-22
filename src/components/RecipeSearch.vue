@@ -1,7 +1,7 @@
 <template>
 	<div class="searchWrapper">
 		<input type="text" placeholder="Testing..." v-model="inputValue" v-on:keyup.enter="addSearchedTag">
-		<button @click="addSearchedTag" class="btn btn--submit">Submit</button>
+		<button @click="addSearchedTag" class="btn btn--submit">{{ translation.search?.[lang.current] }}</button>
 	</div>
 </template>
 
@@ -11,6 +11,8 @@ export default {
 	// inject: ['searchedKeys'],
 	data() {
 		return {
+			lang: inject('lang') as any,
+			translation: inject('translation') as any,
 			inputValue: '',
 			searchedTags: inject('searchedTags') as Set<string>,
 		}
