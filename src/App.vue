@@ -2,7 +2,7 @@
 	<AppHeader />
 	<div class="container">
 		<RecipeSearch />
-		<RecipeFilters v-show="searchedKeys.size" />
+		<SearchedTags v-show="searchedTags.size" />
 		<RecipeList />
 	</div>
 	<AppFooter />
@@ -12,7 +12,7 @@
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import RecipeSearch from './components/RecipeSearch.vue';
-import RecipeFilters from './components/RecipeFilters.vue';
+import SearchedTags from './components/SearchedTags.vue';
 import RecipeList from './components/RecipeList.vue';
 </script>
 
@@ -27,7 +27,7 @@ export default {
 			translation: {
 				langList: [],
 			},
-			searchedKeys: new Set<string>(),
+			searchedTags: new Set<string>(),
 		}
 	},
 	async created() {
@@ -58,7 +58,7 @@ export default {
 				this.lang.current = newLang;
 				document.documentElement.lang = newLang;
 			},
-			'searchedKeys': this.searchedKeys,
+			'searchedTags': this.searchedTags,
 		}
 	}
 }

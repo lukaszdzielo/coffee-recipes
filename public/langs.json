@@ -38,5 +38,9 @@
     "clearFilters": {
         "en": "Clear filters",
         "pl": "Wyczyść filtry"
+    },
+    "search": {
+        "en": "Search",
+        "pl": "Szukaj"
     }
 }
