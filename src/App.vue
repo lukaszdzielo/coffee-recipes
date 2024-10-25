@@ -39,11 +39,7 @@ export default {
 		this.lang.current = localStorage.getItem('pageLang') || this.lang.default;
 		document.documentElement.lang = this.lang.current;
 
-		// console.log('1', this.searchedTags);
-		// this.searchedTags.set('tags', this.getUrlParams('tags'))
-		//  = new Set<string>(this.getUrlParams('tags'));
-		// console.log('2', this.searchedTags);
-
+		this.getUrlParams('tags')
 	},
 	methods: {
 		async fetchData() {
@@ -55,12 +51,14 @@ export default {
 				console.error(error);
 			}
 		},
-		getUrlParams(key: string) {
-			return this.urlParams.get(key)?.split(',');
-		},
 		langChange(newLang: '') {
 			this.lang.current = newLang;
 			document.documentElement.lang = newLang;
+		},
+		getUrlParams(key: string) {
+			this.urlParams.get(key)?.split(',')?.forEach(elem => {
+				this.searchedTags.add(elem);
+			})
 		},
 		setNewUrlParam(key: string, value: string) {
 			const isEmpty = value.trim() === '';
