@@ -49,42 +49,37 @@ export default {
 				console.error(error);
 			}
 		},
+		langChange(newLang: '') {
+			this.lang.current = newLang;
+			document.documentElement.lang = newLang;
+		},
+		setNewUrlParam(key: string, value: string) {
+			const isEmpty = value.trim() === '';
+			const isAlreadyInTags = this.urlParams.get(key)?.split(',').find((elem: string) => elem === value);
+
+			if (isEmpty || isAlreadyInTags) return;
+
+			this.searchedTags.add(value);
+
+			this.urlParams.set(key, `${[...this.searchedTags]}`);
+			this.urlParams.sort()
+
+			let newPArams = '';
+			for (var [key, value] of this.urlParams.entries()) {
+				newPArams += `${newPArams === '' ? '?' : '&'}${key}=${value}`;
+			}
+			history.replaceState(null, '', newPArams);
+		}
 	},
 
 	provide() {
 		return {
 			'translation': this.translation,
 			'lang': this.lang,
-			'langChange': (newLang: '') => {
-				this.lang.current = newLang;
-				document.documentElement.lang = newLang;
-			},
+			'langChange': this.langChange,
 			'searchedTags': this.searchedTags,
 			'urlParams': this.urlParams,
-			'setNewUrlParam': (key: string, value: string) => {
-				const isEmpty = value.trim() === '';
-				const isAlreadyInTags = this.urlParams.get(key)?.split(',').find((elem: string) => elem === value);
-
-				if (isEmpty || isAlreadyInTags) return;
-
-				this.searchedTags.add(value);
-
-				this.urlParams.set(key, `${[...this.searchedTags]}`);
-				this.urlParams.sort()
-
-				let newPArams = '';
-				for (var [key, value] of this.urlParams.entries()) {
-					newPArams += `${newPArams === '' ? '?' : '&'}${key}=${value}`;
-				}
-				history.replaceState(null, '', newPArams);
-
-				// if (value.trim() === '') return;
-				// this.searchedTags.add(value);
-
-				// this.urlParams.set(key, `${[...this.searchedTags]}`);
-				// this.urlParams.sort()
-				// history.replaceState(null, '', "?" + this.urlParams.toString());
-			}
+			'setNewUrlParam': this.setNewUrlParam,
 		}
 	}
 }
