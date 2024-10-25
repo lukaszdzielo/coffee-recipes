@@ -28,6 +28,7 @@ export default {
 				langList: [],
 			},
 			searchedTags: new Set<string>(),
+			// urlParams: new URLSearchParams(window.location.search),
 		}
 	},
 	async created() {
@@ -59,6 +60,7 @@ export default {
 				document.documentElement.lang = newLang;
 			},
 			'searchedTags': this.searchedTags,
+			// 'urlParams': this.urlParams,
 		}
 	}
 }
