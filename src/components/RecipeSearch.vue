@@ -17,7 +17,7 @@ export default {
 			inputValue: '',
 			setNewUrlParam: inject('setNewUrlParam') as any,
 		}
-	}
+	},
 }
 </script>
 
