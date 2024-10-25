@@ -28,7 +28,7 @@ export default {
 				langList: [],
 			},
 			searchedTags: new Set<string>(),
-			// urlParams: new URLSearchParams(window.location.search),
+			urlParams: new URLSearchParams(window.location.search),
 		}
 	},
 	async created() {
@@ -60,7 +60,31 @@ export default {
 				document.documentElement.lang = newLang;
 			},
 			'searchedTags': this.searchedTags,
-			// 'urlParams': this.urlParams,
+			'urlParams': this.urlParams,
+			'setNewUrlParam': (key: string, value: string) => {
+				const isEmpty = value.trim() === '';
+				const isAlreadyInTags = this.urlParams.get(key)?.split(',').find((elem: string) => elem === value);
+
+				if (isEmpty || isAlreadyInTags) return;
+
+				this.searchedTags.add(value);
+
+				this.urlParams.set(key, `${[...this.searchedTags]}`);
+				this.urlParams.sort()
+
+				let newPArams = '';
+				for (var [key, value] of this.urlParams.entries()) {
+					newPArams += `${newPArams === '' ? '?' : '&'}${key}=${value}`;
+				}
+				history.replaceState(null, '', newPArams);
+
+				// if (value.trim() === '') return;
+				// this.searchedTags.add(value);
+
+				// this.urlParams.set(key, `${[...this.searchedTags]}`);
+				// this.urlParams.sort()
+				// history.replaceState(null, '', "?" + this.urlParams.toString());
+			}
 		}
 	}
 }

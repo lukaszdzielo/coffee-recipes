@@ -1,7 +1,9 @@
 <template>
 	<div class="searchWrapper">
-		<input type="text" placeholder="Testing..." v-model="inputValue" v-on:keyup.enter="addSearchedTag">
-		<button @click="addSearchedTag" class="btn btn--submit">{{ translation.search?.[lang.current] }}</button>
+		<input type="text" placeholder="Testing..." v-model="inputValue"
+			v-on:keyup.enter="setNewUrlParam('tags', inputValue)">
+		<button @click="setNewUrlParam('tags', inputValue)" class="btn btn--submit">{{
+			translation.search?.[lang.current] }}</button>
 	</div>
 </template>
 
@@ -13,37 +15,7 @@ export default {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
 			inputValue: '',
-			searchedTags: inject('searchedTags') as Set<string>,
-			urlParams: new URLSearchParams(window.location.search)
-		}
-	},
-	created() {
-		console.log('====', this.urlParams);
-	},
-	methods: {
-		addSearchedTag() {
-			const isEmpty = this.inputValue.trim() === '';
-			const isAlreadyInTags = this.urlParams.get('tags')?.split(',').find(elem => elem === this.inputValue);
-
-			if (isEmpty || isAlreadyInTags) return;
-
-			this.searchedTags.add(this.inputValue);
-
-			this.urlParams.set('tags', `${[...this.searchedTags]}`);
-			this.urlParams.sort()
-
-			let newPArams = '';
-			for (var [key, value] of this.urlParams.entries()) {
-				newPArams += `${newPArams === '' ? '?' : '&'}${key}=${value}`;
-			}
-			history.replaceState(null, '', newPArams);
-
-			// if (this.inputValue.trim() === '') return;
-			// this.searchedTags.add(this.inputValue);
-
-			// this.urlParams.set('tags', `${[...this.searchedTags]}`);
-			// this.urlParams.sort()
-			// history.replaceState(null, '', "?" + this.urlParams.toString());
+			setNewUrlParam: inject('setNewUrlParam') as any,
 		}
 	}
 }
