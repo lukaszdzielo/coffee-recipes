@@ -22,7 +22,11 @@ export default {
 	},
 	methods: {
 		addSearchedTag() {
-			if (this.inputValue.trim() === '') return;
+			const isEmpty = this.inputValue.trim() === '';
+			const isAlreadyInTags = this.params.get('tags')?.split(',').find(elem => elem === this.inputValue);
+
+			if (isEmpty || isAlreadyInTags) return;
+
 			this.searchedTags.add(this.inputValue);
 
 			this.params.set('tags', `${[...this.searchedTags]}`);
@@ -33,11 +37,6 @@ export default {
 				newPArams += `${newPArams === '' ? '?' : '&'}${key}=${value}`;
 			}
 			history.replaceState(null, '', newPArams);
-
-
-
-
-
 
 			// if (this.inputValue.trim() === '') return;
 			// this.searchedTags.add(this.inputValue);
