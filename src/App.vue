@@ -28,7 +28,7 @@ export default {
 				langList: [],
 			},
 			urlParams: new URLSearchParams(window.location.search),
-			searchedTags: new Set<string>() as any,
+			searchedTags: new Set<string>(),
 		}
 	},
 	async created() {
@@ -39,10 +39,10 @@ export default {
 		this.lang.current = localStorage.getItem('pageLang') || this.lang.default;
 		document.documentElement.lang = this.lang.current;
 
-		console.log('1', this.searchedTags);
-		this.searchedTags.set('tags', this.getUrlParams('tags'))
+		// console.log('1', this.searchedTags);
+		// this.searchedTags.set('tags', this.getUrlParams('tags'))
 		//  = new Set<string>(this.getUrlParams('tags'));
-		console.log('2', this.searchedTags);
+		// console.log('2', this.searchedTags);
 
 	},
 	methods: {
