@@ -14,22 +14,22 @@ export default {
 			translation: inject('translation') as any,
 			inputValue: '',
 			searchedTags: inject('searchedTags') as Set<string>,
-			urlParams: new URLSearchParams(window.location.search)
+			params: new URLSearchParams(window.location.search)
 		}
 	},
 	created() {
-		console.log('====', this.urlParams);
+		console.log('====', this.params);
 	},
 	methods: {
 		addSearchedTag() {
 			if (this.inputValue.trim() === '') return;
 			this.searchedTags.add(this.inputValue);
 
-			this.urlParams.set('tags', `${[...this.searchedTags]}`);
-			this.urlParams.sort()
+			this.params.set('tags', `${[...this.searchedTags]}`);
+			this.params.sort()
 
 			let newPArams = '';
-			for (var [key, value] of this.urlParams.entries()) {
+			for (var [key, value] of this.params.entries()) {
 				newPArams += `${newPArams === '' ? '?' : '&'}${key}=${value}`;
 			}
 			history.replaceState(null, '', newPArams);
@@ -42,9 +42,9 @@ export default {
 			// if (this.inputValue.trim() === '') return;
 			// this.searchedTags.add(this.inputValue);
 
-			// this.urlParams.set('tags', `${[...this.searchedTags]}`);
-			// this.urlParams.sort()
-			// history.replaceState(null, '', "?" + this.urlParams.toString());
+			// this.params.set('tags', `${[...this.searchedTags]}`);
+			// this.params.sort()
+			// history.replaceState(null, '', "?" + this.params.toString());
 		}
 	}
 }
