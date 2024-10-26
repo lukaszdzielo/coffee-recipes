@@ -1,8 +1,8 @@
 <template>
 	<div class="searchWrapper">
 		<input type="text" placeholder="Testing..." v-model="inputValue"
-			v-on:keyup.enter="setNewUrlParam('tags', inputValue), inputValue = ''">
-		<button @click="setNewUrlParam('tags', inputValue), inputValue = ''" class="btn btn--submit">{{
+			v-on:keyup.enter="urlParam.set('tags', inputValue), inputValue = ''">
+		<button @click="urlParam.set('tags', inputValue), inputValue = ''" class="btn btn--submit">{{
 			translation.search?.[lang.current] }}</button>
 	</div>
 </template>
@@ -15,7 +15,7 @@ export default {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
 			inputValue: '',
-			setNewUrlParam: inject('setNewUrlParam') as any,
+			urlParam: inject('urlParam') as any,
 		}
 	},
 }
