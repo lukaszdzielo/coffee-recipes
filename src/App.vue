@@ -51,15 +51,18 @@ export default {
 				console.error(error);
 			}
 		},
+
 		langChange(newLang: '') {
 			this.lang.current = newLang;
 			document.documentElement.lang = newLang;
 		},
+
 		getUrlParams(key: string) {
-			this.urlParams.get(key)?.split(',')?.forEach(elem => {
-				this.searchedTags.add(elem);
+			this.urlParams.get(key)?.split(',')?.forEach(param => {
+				this.searchedTags.add(param);
 			})
 		},
+
 		setNewUrlParam(key: string, value: string) {
 			const isEmpty = value.trim() === '';
 			const isAlreadyInTags = this.urlParams.get(key)?.split(',').find((elem: string) => elem === value);
@@ -75,17 +78,40 @@ export default {
 			for (var [key, value] of this.urlParams.entries()) {
 				newPArams += `${newPArams === '' ? '?' : '&'}${key}=${value}`;
 			}
-			history.replaceState(null, '', newPArams);
+			this.changeUrlParams(newPArams);
+		},
+
+		changeUrlParams(params: string) {
+			history.replaceState(null, '', params);
+		},
+		removeUrlParams() {
+			console.log('removeUrlParams');
+		},
+		clearUrlParams() {
+			console.log('clearUrlParams');
 		}
 	},
 
 	provide() {
 		return {
+			'language': {
+				'default': '',
+				'current': '',
+				'change': this.langChange,
+				'translation': {}
+			},
 			'translation': this.translation,
 			'lang': this.lang,
 			'langChange': this.langChange,
 			'searchedTags': this.searchedTags,
 			'urlParams': this.urlParams,
+			'urlParam': {
+				params: this.urlParams,
+				get: this.getUrlParams,
+				set: this.setNewUrlParam,
+				remove: this.removeUrlParams,
+				clear: this.clearUrlParams,
+			},
 			'setNewUrlParam': this.setNewUrlParam,
 		}
 	}
