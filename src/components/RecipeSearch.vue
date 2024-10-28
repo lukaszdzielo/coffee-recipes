@@ -1,8 +1,7 @@
 <template>
 	<div class="searchWrapper">
-		<input type="text" placeholder="Testing..." v-model="inputValue"
-			v-on:keyup.enter="urlParam.set('tags', inputValue), inputValue = ''">
-		<button @click="urlParam.set('tags', inputValue), inputValue = ''" class="btn btn--submit">{{
+		<input type="text" placeholder="Testing..." v-model="inputValue" v-on:keyup.enter="addTag(inputValue)">
+		<button @click="addTag(inputValue)" class="btn btn--submit">{{
 			translation.search?.[lang.current] }}</button>
 	</div>
 </template>
@@ -15,9 +14,28 @@ export default {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
 			inputValue: '',
+			searchedTags: inject('searchedTags') as any,
 			urlParam: inject('urlParam') as any,
 		}
 	},
+	methods: {
+		addTag(value: string) {
+			const key = 'tags';
+			const isEmpty = value.trim() === '';
+			const isAlreadyInTags = this.searchedTags.has(value);
+			if (isEmpty || isAlreadyInTags) return;
+
+			this.searchedTags.add(value);
+			this.urlParam.add(key, `${[...this.searchedTags]}`)
+
+
+			// console.log('b', this.searchedTags);
+			// this.searchedTags.add(value);
+			// console.log('a', this.searchedTags);
+
+			this.inputValue = '';
+		}
+	}
 }
 </script>
 

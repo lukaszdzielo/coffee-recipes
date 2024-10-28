@@ -39,7 +39,7 @@ export default {
 		this.lang.current = localStorage.getItem('pageLang') || this.lang.default;
 		document.documentElement.lang = this.lang.current;
 
-		this.getUrlParams('tags')
+		this.getUrlParam('tags')
 	},
 	methods: {
 		async fetchData() {
@@ -57,22 +57,18 @@ export default {
 			document.documentElement.lang = newLang;
 		},
 
-		getUrlParams(key: string) {
-			this.urlParams.get(key)?.split(',')?.forEach(param => {
-				this.searchedTags.add(param);
-			})
+		getUrlParam(key: string) {
+			if (this.urlParams.has(key) && this.urlParams.get(key)?.length) {
+				this.urlParams.get(key)?.split(',')?.forEach(param => {
+					this.searchedTags.add(param);
+				})
+			}
 		},
 
-		setNewUrlParam(key: string, value: string) {
-			const isEmpty = value.trim() === '';
-			const isAlreadyInTags = this.urlParams.get(key)?.split(',').find((elem: string) => elem === value);
+		addUrlParam(key: string, value: string) {
 
-			if (isEmpty || isAlreadyInTags) return;
 
-			this.searchedTags.add(value);
-
-			this.urlParams.set(key, `${[...this.searchedTags]}`);
-			this.urlParams.sort()
+			this.urlParams.set(key, value);
 
 			let newPArams = '';
 			for (var [key, value] of this.urlParams.entries()) {
@@ -84,7 +80,7 @@ export default {
 		changeUrlParams(params: string) {
 			history.replaceState(null, '', params);
 		},
-		removeUrlParams() {
+		removeUrlParam() {
 			console.log('removeUrlParams');
 		},
 		clearUrlParams() {
@@ -94,25 +90,16 @@ export default {
 
 	provide() {
 		return {
-			'language': {
-				'default': '',
-				'current': '',
-				'change': this.langChange,
-				'translation': {}
-			},
 			'translation': this.translation,
 			'lang': this.lang,
 			'langChange': this.langChange,
 			'searchedTags': this.searchedTags,
-			'urlParams': this.urlParams,
 			'urlParam': {
-				params: this.urlParams,
-				get: this.getUrlParams,
-				set: this.setNewUrlParam,
-				remove: this.removeUrlParams,
+				get: this.getUrlParam,
+				add: this.addUrlParam,
+				remove: this.removeUrlParam,
 				clear: this.clearUrlParams,
 			},
-			'setNewUrlParam': this.setNewUrlParam,
 		}
 	}
 }

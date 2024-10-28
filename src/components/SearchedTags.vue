@@ -15,15 +15,18 @@ export default {
 		return {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
+			urlParam: inject('urlParam') as any,
 			searchedTags: inject('searchedTags') as Set<string>,
 		}
 	},
 	methods: {
 		clearSearched() {
 			this.searchedTags.clear();
+			this.urlParam.add('tags', `${[...this.searchedTags]}`)
 		},
 		deleteSearched(key: '') {
-			this.searchedTags.delete(key)
+			this.searchedTags.delete(key);
+			this.urlParam.add('tags', `${[...this.searchedTags]}`)
 		}
 	}
 }
