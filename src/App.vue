@@ -83,7 +83,7 @@ export default {
 			this.urlParams.delete(key);
 			this.changeUrlParams();
 		},
-		clearUrlParams(key: string) {
+		clearUrlParams() {
 			console.log('clearUrlParams');
 		}
 	},
