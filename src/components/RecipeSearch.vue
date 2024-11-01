@@ -26,7 +26,7 @@ export default {
 			if (isEmpty || isAlreadyInTags) return;
 
 			this.searchedTags.add(value);
-			this.urlParam.add(key, `${[...this.searchedTags]}`)
+			this.urlParam.update(key, `${[...this.searchedTags]}`)
 
 
 			// console.log('b', this.searchedTags);
