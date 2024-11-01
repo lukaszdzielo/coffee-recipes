@@ -22,11 +22,15 @@ export default {
 	methods: {
 		clearSearched() {
 			this.searchedTags.clear();
-			this.urlParam.add('tags', `${[...this.searchedTags]}`)
+			this.urlParam.delete('tags');
 		},
-		deleteSearched(key: '') {
+		deleteSearched(key: string) {
 			this.searchedTags.delete(key);
-			this.urlParam.add('tags', `${[...this.searchedTags]}`)
+			if (this.searchedTags.size === 0) {
+				this.urlParam.delete('tags');
+			} else {
+				this.urlParam.update('tags', `${[...this.searchedTags]}`)
+			}
 		}
 	}
 }
