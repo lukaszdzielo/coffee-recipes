@@ -81,7 +81,7 @@ export default {
 		},
 		deleteUrlParam(key: string) {
 			this.urlParams.delete(key);
-			this.changeUrlParams();
+			history.replaceState(null, '', window.location.href.split('?')[0]);
 		},
 		clearUrlParams() {
 			console.log('clearUrlParams');

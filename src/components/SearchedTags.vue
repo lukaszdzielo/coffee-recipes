@@ -2,7 +2,7 @@
 	<div class="searchedTags">
 		<button @click="clearSearched" class="btn btn--clearKeys">{{ translation.clearFilters?.[lang.current]
 			}}</button>
-		<button v-for="searchedTag in searchedTags" @click="deleteSearched(searchedTag as '')"
+		<button v-for="searchedTag in searchedTags" @click="deleteSearched(searchedTag as string)"
 			class="btn btn--removeKey" :key="searchedTag">{{ searchedTag
 			}}</button>
 	</div>
