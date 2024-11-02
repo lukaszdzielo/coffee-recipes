@@ -51,12 +51,10 @@ export default {
 				console.error(error);
 			}
 		},
-
 		langChange(newLang: string) {
 			this.lang.current = newLang;
 			document.documentElement.lang = newLang;
 		},
-
 		getUrlParam(key: string) {
 			if (this.urlParams.has(key) && this.urlParams.get(key)?.length) {
 				this.urlParams.get(key)?.split(',')?.forEach(param => {
@@ -64,27 +62,19 @@ export default {
 				})
 			}
 		},
-		changeUrlParams() {
+		updateUrlParam() {
 			let params: string = '';
 			for (var [key, value] of this.urlParams.entries()) {
 				params += `${params === '' ? '?' : '&'}${key}=${value}`;
 			}
 			history.replaceState(null, '', params);
 		},
-		updateUrlParam(key: string, value: string) {
-			this.urlParams.set(key, value);
-			let newPArams = '';
-			for (var [key, value] of this.urlParams.entries()) {
-				newPArams += `${newPArams === '' ? '?' : '&'}${key}=${value}`;
-			}
-			this.changeUrlParams();
-		},
 		deleteUrlParam(key: string) {
 			this.urlParams.delete(key);
-			history.replaceState(null, '', window.location.href.split('?')[0]);
+			(this.urlParams.size > 0) ? this.updateUrlParam() : this.clearUrlParams();
 		},
 		clearUrlParams() {
-			console.log('clearUrlParams');
+			history.replaceState(null, '', window.location.href.split('?')[0]);
 		}
 	},
 
@@ -95,7 +85,7 @@ export default {
 			'langChange': this.langChange,
 			'searchedTags': this.searchedTags,
 			'urlParam': {
-				get: this.getUrlParam,
+				params: this.urlParams,
 				update: this.updateUrlParam,
 				delete: this.deleteUrlParam,
 				clear: this.clearUrlParams,

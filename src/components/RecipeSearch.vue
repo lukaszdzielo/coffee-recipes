@@ -20,18 +20,13 @@ export default {
 	},
 	methods: {
 		addTag(value: string) {
-			const key = 'tags';
 			const isEmpty = value.trim() === '';
 			const isAlreadyInTags = this.searchedTags.has(value);
 			if (isEmpty || isAlreadyInTags) return;
 
 			this.searchedTags.add(value);
-			this.urlParam.update(key, `${[...this.searchedTags]}`)
-
-
-			// console.log('b', this.searchedTags);
-			// this.searchedTags.add(value);
-			// console.log('a', this.searchedTags);
+			this.urlParam.params.set('tags', `${[...this.searchedTags]}`);
+			this.urlParam.update();
 
 			this.inputValue = '';
 		}

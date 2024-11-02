@@ -29,7 +29,8 @@ export default {
 			if (this.searchedTags.size === 0) {
 				this.urlParam.delete('tags');
 			} else {
-				this.urlParam.update('tags', `${[...this.searchedTags]}`)
+				this.urlParam.params.set('tags', `${[...this.searchedTags]}`)
+				this.urlParam.update()
 			}
 		}
 	}
