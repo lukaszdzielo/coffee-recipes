@@ -2,7 +2,7 @@
 	<AppHeader />
 	<div class="container">
 		<RecipeSearch />
-		<SearchedTags v-show="searchedTags.size" />
+		<SearchedTags v-show="searchedTags.length" />
 		<RecipeList />
 	</div>
 	<AppFooter />
@@ -28,7 +28,7 @@ export default {
 				langList: [],
 			},
 			urlParams: new URLSearchParams(window.location.search),
-			searchedTags: new Set<string>(),
+			searchedTags: [] as Array<string>,
 		}
 	},
 	async created() {
@@ -39,7 +39,7 @@ export default {
 		this.lang.current = localStorage.getItem('pageLang') || this.lang.default;
 		document.documentElement.lang = this.lang.current;
 
-		this.getUrlParam('tags')
+		this.getUrlTagsParam('tags')
 	},
 	methods: {
 		async fetchData() {
@@ -55,11 +55,10 @@ export default {
 			this.lang.current = newLang;
 			document.documentElement.lang = newLang;
 		},
-		getUrlParam(key: string) {
+		getUrlTagsParam(key: string) {
 			if (this.urlParams.has(key) && this.urlParams.get(key)?.length) {
-				this.urlParams.get(key)?.split(',')?.forEach(param => {
-					this.searchedTags.add(param);
-				})
+				const urlTags = this.urlParams.get(key)?.split(',') || [];
+				this.searchedTags.push(...urlTags);
 			}
 		},
 		updateUrlParam() {
