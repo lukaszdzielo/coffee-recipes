@@ -39,7 +39,7 @@ export default {
 		this.lang.current = localStorage.getItem('pageLang') || this.lang.default;
 		document.documentElement.lang = this.lang.current;
 
-		this.getUrlTagsParam('tags')
+		this.getUrlTagsParam()
 	},
 	methods: {
 		async fetchData() {
@@ -55,10 +55,17 @@ export default {
 			this.lang.current = newLang;
 			document.documentElement.lang = newLang;
 		},
-		getUrlTagsParam(key: string) {
+		getUrlTagsParam() {
+			const key = 'tags';
 			if (this.urlParams.has(key) && this.urlParams.get(key)?.length) {
 				const urlTags = this.urlParams.get(key)?.split(',') || [];
-				this.searchedTags.push(...urlTags);
+				const unique = [...new Set(urlTags.map(elem => elem.toLowerCase()))];
+				this.searchedTags.push(...unique);
+
+				if (urlTags.length !== unique.length) {
+					this.urlParams.set('tags', `${this.searchedTags}`);
+					this.updateUrlParam()
+				};
 			}
 		},
 		updateUrlParam() {
