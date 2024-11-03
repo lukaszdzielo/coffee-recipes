@@ -2,9 +2,8 @@
 	<div class="searchedTags">
 		<button @click="clearSearched" class="btn btn--clearKeys">{{ translation.clearFilters?.[lang.current]
 			}}</button>
-		<button v-for="searchedTag in searchedTags" @click="deleteSearched(searchedTag as string)"
-			class="btn btn--removeKey" :key="searchedTag">{{ searchedTag
-			}}</button>
+		<button v-for="tag in searchedTags" @click="deleteSearched(tag as string)" class="btn btn--removeKey"
+			:key="tag">{{ tag }}</button>
 	</div>
 </template>
 
@@ -16,17 +15,18 @@ export default {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
 			urlParam: inject('urlParam') as any,
-			searchedTags: inject('searchedTags') as Set<string>,
+			searchedTags: inject('searchedTags') as Array<string>,
+			searchedTag: inject('searchedTag') as [],
 		}
 	},
 	methods: {
 		clearSearched() {
-			this.searchedTags.clear();
+			this.searchedTags.length = 0;
 			this.urlParam.delete('tags');
 		},
 		deleteSearched(key: string) {
-			this.searchedTags.delete(key);
-			if (this.searchedTags.size === 0) {
+			this.searchedTags.splice(this.searchedTags.indexOf(key), 1)
+			if (this.searchedTags.length === 0) {
 				this.urlParam.delete('tags');
 			} else {
 				this.urlParam.params.set('tags', `${[...this.searchedTags]}`)

@@ -14,18 +14,20 @@ export default {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
 			inputValue: '',
-			searchedTags: inject('searchedTags') as any,
+			searchedTags: inject('searchedTags') as Array<string>,
 			urlParam: inject('urlParam') as any,
 		}
 	},
 	methods: {
 		addTag(value: string) {
 			const isEmpty = value.trim() === '';
-			const isAlreadyInTags = this.searchedTags.has(value);
+			const isAlreadyInTags = this.searchedTags.find(elem => elem === value);
 			if (isEmpty || isAlreadyInTags) return;
 
-			this.searchedTags.add(value);
-			this.urlParam.params.set('tags', `${[...this.searchedTags]}`);
+			this.searchedTags.push(value);
+			this.searchedTags.sort();
+
+			this.urlParam.params.set('tags', `${this.searchedTags}`);
 			this.urlParam.update();
 
 			this.inputValue = '';
