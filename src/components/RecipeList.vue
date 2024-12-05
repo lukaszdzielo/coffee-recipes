@@ -1,6 +1,6 @@
 <template>
     <div class="recipeList">
-        <RecipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal"
+        <RecipeCard v-for="(recipe, slug) in filteredRecipes" :data="recipe" :slug="slug" @open="openModal"
             @openRecipeModal="openModal" />
     </div>
     <RecipeModal :recipe="dialogRecipe" @close="closeModal" />
@@ -12,14 +12,17 @@ import RecipeModal from './RecipeModal.vue';
 </script>
 
 <script lang="ts">
+import { inject } from 'vue';
 export default {
     props: ['item'],
     data() {
         return {
             dialogId: 'recipeModal',
             recipes: {} as any,
+            filteredRecipes: {} as any,
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
+            searchedTags: inject('searchedTags') as Array<string>,
         }
     },
     created() {
@@ -27,6 +30,23 @@ export default {
     },
     mounted() {
         this.modalElem = document.querySelector(`#${this.dialogId}`);
+    },
+    computed: {
+        filteredRecipes() {
+            const filteredObj: any = {};
+            const searchedTags = [...this.searchedTags]
+
+            for (const [key, value] of Object.entries(this.recipes)) {
+                const recipeTags: {} = [...value?.langs['pl'].tags];
+                const isAllTagsInRecipe = searchedTags.every(tag => recipeTags.includes(tag));
+
+                if (isAllTagsInRecipe) {
+                    filteredObj[key] = value;
+                }
+            }
+
+            return filteredObj;
+        }
     },
     methods: {
         async fetchData() {
