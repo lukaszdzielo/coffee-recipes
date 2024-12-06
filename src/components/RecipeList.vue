@@ -1,6 +1,10 @@
 <template>
-    <div class="recipeList">
+    <div class="recipeList" style="background-color: lightblue">
         <RecipeCard v-for="(recipe, slug) in filteredRecipes" :data="recipe" :slug="slug" @open="openModal"
+            @openRecipeModal="openModal" />
+    </div>
+    <div class="recipeList">
+        <RecipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal"
             @openRecipeModal="openModal" />
     </div>
     <RecipeModal :recipe="dialogRecipe" @close="closeModal" />
@@ -38,6 +42,8 @@ export default {
             const searchedTags: string[] = [...this.searchedTags];
 
             for (const name in this.recipes) {
+                console.log('n', name, this.recipes[name]);
+
                 const recipeTags: string[] = [...this.recipes[name].langs['pl'].tags];
                 const isAllTagsInRecipe = searchedTags.every(tag => recipeTags.includes(tag));
 
