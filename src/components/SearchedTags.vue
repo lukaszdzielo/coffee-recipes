@@ -15,7 +15,7 @@ export default {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
 			urlParam: inject('urlParam') as any,
-			searchedTags: inject('searchedTags') as Array<string>,
+			searchedTags: inject('searchedTags') as string[],
 			searchedTag: inject('searchedTag') as [],
 		}
 	},
