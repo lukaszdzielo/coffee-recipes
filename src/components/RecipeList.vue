@@ -45,7 +45,7 @@ export default {
             const filteredObj: { [key: string]: {} } = {};
             const searchedTags: string[] = [...this.searchedTags]
 
-            for (const [key, value] of ) {
+            for (const [key, value] of Object.entries(this.recipes)) {
                 const recipeTags: string[] = value.langs['pl'].tags;
                 const isAllTagsInRecipe = searchedTags.every(tag => recipeTags.includes(tag));
 
