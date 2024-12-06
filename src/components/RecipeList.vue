@@ -31,13 +31,17 @@ export default {
         }
     },
     created() {
+        console.log('created');
+
         this.fetchData();
     },
     mounted() {
+        console.log('mounted');
         this.modalElem = document.querySelector(`#${this.dialogId}`);
     },
     computed: {
         filteredRecipes() {
+            console.log('filteredRecipes');
             const filteredObj: any = {};
             const searchedTags: string[] = [...this.searchedTags];
 
