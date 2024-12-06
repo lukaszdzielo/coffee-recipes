@@ -1,5 +1,6 @@
 <template>
     <div class="recipeList" style="background-color: lightblue">
+        <div>test: {{ filteredRecipes }}</div>
         <RecipeCard v-for="(recipe, slug) in filteredRecipes" :data="recipe" :slug="slug" @open="openModal"
             @openRecipeModal="openModal" />
     </div>
