@@ -18,6 +18,7 @@ export default {
     props: ['item'],
     data() {
         return {
+            lang: inject('lang') as any,
             dialogId: 'recipeModal',
             recipes: {} as any,
             dialogRecipe: {},
@@ -37,15 +38,18 @@ export default {
             const searchedTags: string[] = [...this.searchedTags];
 
             for (const name in this.recipes) {
-                const recipeTags: string[] = [...this.recipes[name].langs['pl'].tags];
-                const isAllTagsInRecipe = searchedTags.every(tag => recipeTags.includes(tag));
+                const lang: string = this.getLang(this.recipes[name]);
+                const recipe: any = this.recipes[name];
+                const tags: string[] = [...recipe.langs[lang].tags];
 
-                if (isAllTagsInRecipe) filteredObj[name] = this.recipes[name];
+                const isAllTagsInRecipe = searchedTags.every(tag => tags.includes(tag));
 
+                if (isAllTagsInRecipe) filteredObj[name] = recipe;
             }
 
+
             return filteredObj;
-        }
+        },
     },
     methods: {
         async fetchData() {
@@ -63,6 +67,9 @@ export default {
         closeModal() {
             this.modalElem?.close();
         },
+        getLang(recipe: any) {
+            return recipe.langs?.[this.lang.current] ? this.lang.current : recipe.langs?.langDefault;
+        }
     }
 }
 </script>
