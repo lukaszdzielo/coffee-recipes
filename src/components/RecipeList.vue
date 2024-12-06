@@ -13,6 +13,15 @@ import RecipeModal from './RecipeModal.vue';
 
 <script lang="ts">
 import { inject } from 'vue';
+
+interface Recipe {
+    langs: {
+        pl: {
+            tags: string[];
+        };
+    };
+}
+
 export default {
     props: ['item'],
     data() {
@@ -33,11 +42,11 @@ export default {
     },
     computed: {
         filteredRecipes() {
-            const filteredObj: any = {};
+            const filteredObj: { [key: string]: {} } = {};
             const searchedTags: string[] = [...this.searchedTags]
 
-            for (const [key, value] of Object.entries(this.recipes)) {
-                const recipeTags: {} = [...value?.langs['pl'].tags];
+            for (const [key, value] of ) {
+                const recipeTags: string[] = value.langs['pl'].tags;
                 const isAllTagsInRecipe = searchedTags.every(tag => recipeTags.includes(tag));
 
                 if (isAllTagsInRecipe) {
