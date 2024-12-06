@@ -1,11 +1,6 @@
 <template>
-    <div style="font-size: 10px;">test: {{ filteredRecipes }}</div>
-    <div class="recipeList" style="background-color: lightblue">
-        <RecipeCard v-for="(recipe, slug) in filteredRecipes" :data="recipe" :slug="slug" @open="openModal"
-            @openRecipeModal="openModal" />
-    </div>
     <div class="recipeList">
-        <RecipeCard v-for="(recipe, slug) in recipes" :data="recipe" :slug="slug" @open="openModal"
+        <RecipeCard v-for="(recipe, slug) in filteredRecipes" :data="recipe" :slug="slug" @open="openModal"
             @openRecipeModal="openModal" />
     </div>
     <RecipeModal :recipe="dialogRecipe" @close="closeModal" />
@@ -25,24 +20,19 @@ export default {
         return {
             dialogId: 'recipeModal',
             recipes: {} as any,
-            // filteredRecipes: {} as any,
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
             searchedTags: inject('searchedTags') as Array<string>,
         }
     },
     created() {
-        console.log('created');
-
         this.fetchData();
     },
     mounted() {
-        console.log('mounted');
         this.modalElem = document.querySelector(`#${this.dialogId}`);
     },
     computed: {
         filteredRecipes() {
-            console.log('filteredRecipes');
             const filteredObj: any = {};
             const searchedTags: string[] = [...this.searchedTags];
 
