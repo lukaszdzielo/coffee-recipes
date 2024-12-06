@@ -34,7 +34,7 @@ export default {
     computed: {
         filteredRecipes() {
             const filteredObj: any = {};
-            const searchedTags = [...this.searchedTags]
+            const searchedTags: string[] = [...this.searchedTags]
 
             for (const [key, value] of Object.entries(this.recipes)) {
                 const recipeTags: {} = [...value?.langs['pl'].tags];
