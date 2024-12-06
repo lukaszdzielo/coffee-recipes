@@ -1,6 +1,6 @@
 <template>
+    <div style="font-size: 10px;">test: {{ filteredRecipes }}</div>
     <div class="recipeList" style="background-color: lightblue">
-        <div>test: {{ filteredRecipes }}</div>
         <RecipeCard v-for="(recipe, slug) in filteredRecipes" :data="recipe" :slug="slug" @open="openModal"
             @openRecipeModal="openModal" />
     </div>
@@ -25,7 +25,7 @@ export default {
         return {
             dialogId: 'recipeModal',
             recipes: {} as any,
-            filteredRecipes: {} as any,
+            // filteredRecipes: {} as any,
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
             searchedTags: inject('searchedTags') as Array<string>,
