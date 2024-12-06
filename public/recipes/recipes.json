@@ -22,7 +22,8 @@
 					"kawy",
 					"kawe",
 					"lód",
-					"kostka"
+					"kostka",
+					"czarna"
 				],
 				"dsc": "",
 				"ingredients": [
@@ -37,11 +38,14 @@
 			"en": {
 				"name": "Strawberry Frappe",
 				"tags": [
+					"frappe",
+					"strawberry",
 					"strawberries",
 					"milk",
 					"vanilla",
 					"ice",
 					"cream",
+					"cubes",
 					"espresso",
 					"black"
 				],

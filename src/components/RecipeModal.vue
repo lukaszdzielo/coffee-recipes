@@ -51,14 +51,12 @@ export default {
             thumbnailDefault: 'recipes/img/recipeCard-placeholder.svg',
         }
     },
-    computed: {
-        getLanguage() {
-            return this.recipe.langs?.[this.lang.current] ? this.lang.current : this.recipe.langs?.langDefault;
-        }
-    },
     methods: {
+        getLang() {
+            return this.recipe.langs?.[this.lang.current] ? this.lang.current : this.recipe.langs?.langDefault;
+        },
         getRecipe(content: string) {
-            return this.recipe.langs?.[this.getLanguage]?.[content]
+            return this.recipe.langs?.[this.getLang()]?.[content]
         }
     }
 }
