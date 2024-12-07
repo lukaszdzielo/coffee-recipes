@@ -25,7 +25,6 @@
 
 <style scoped>
 footer {
-    margin-block-start: 2rem;
     padding-block: 1.5rem 2.5rem;
     background-color: var(--gray-200);
     color: var(--gray-600);

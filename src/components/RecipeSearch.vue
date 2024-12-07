@@ -44,7 +44,6 @@ export default {
 <style scoped>
 .searchWrapper {
 	display: flex;
-	margin-top: 1rem;
 }
 
 input {
