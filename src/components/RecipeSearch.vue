@@ -1,10 +1,14 @@
 <template>
 	<div class="searchWrapper">
-		<input type="text" placeholder="Testing..." v-model="inputValue"
+		<input type="text" :placeholder="translation?.filters?.searchPlaceholder?.[lang.current]" v-model="inputValue"
 			v-on:keyup.enter="addTag(inputValue.toLowerCase())">
 		<button @click="addTag(inputValue.toLowerCase())" class="btn btn--submit">{{
-			translation.search?.[lang.current] }}</button>
+			translation?.filters?.search?.[lang.current] }}</button>
 	</div>
+	<!-- <div class="formControl">
+		<input type="checkbox" name="" id="languageSearch">
+		<label for="languageSearch">{{ translation?.filters?.searchOtherLang?.[lang.current] }}</label>
+	</div> -->
 </template>
 
 <script lang="ts">

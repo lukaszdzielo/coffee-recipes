@@ -17,6 +17,20 @@
             <div v-if="!recipe.langs?.[lang.current]" class="noTranslationInfo"> {{
                 translation.recipeModal?.noTranslation[lang.current] }}</div>
             <main>
+                <!-- <section>
+                    <p>
+                        {{ translation.recipeModal?.author[lang.current] }}:
+                        {{ recipe.author }}
+                    </p>
+                    <p>
+                        {{ translation.recipeModal?.tags[lang.current] }}:
+                    <ul>
+                        <li v-for="(tag, i) of getRecipe('tags')">
+                            {{ tag }}<template v-if="i !== getRecipe('tags').length - 1">, </template>
+</li>
+</ul>
+</p>
+</section> -->
                 <section v-if="getRecipe('ingredients')" class="ingredients">
                     <span class="heading">{{ translation.recipeModal?.ingredients[lang.current] }}</span>
                     <ul v-show="getRecipe('ingredients')">
