@@ -23,7 +23,7 @@ export default {
             recipes: {} as any,
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
-            searchedTags: inject('searchedTags') as Array<string>,
+            searchedTags: inject('searchedTags') as string[],
         }
     },
     created() {
