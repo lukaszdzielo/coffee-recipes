@@ -1,10 +1,10 @@
 <template>
 	<AppHeader />
-	<div class="container">
+	<main class="container">
 		<RecipeSearch />
 		<SearchedTags v-show="searchedTags.length" />
 		<RecipeList />
-	</div>
+	</main>
 	<AppFooter />
 </template>
 
