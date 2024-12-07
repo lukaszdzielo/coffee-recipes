@@ -1,6 +1,6 @@
 <template>
 	<div class="searchedTags">
-		<button @click="clearSearched" class="btn btn--clearKeys">{{ translation.clearFilters?.[lang.current]
+		<button @click="clearSearched" class="btn btn--clearKeys">{{ translation?.filters?.clearFilters?.[lang.current]
 			}}</button>
 		<button v-for="tag in searchedTags" @click="deleteSearched(tag as string)" class="btn btn--removeKey"
 			:key="tag">{{ tag }}</button>

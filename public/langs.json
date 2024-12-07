@@ -22,6 +22,14 @@
         }
     },
     "recipeModal": {
+        "author": {
+            "en": "Author",
+            "pl": "Autor"
+        },
+        "tags": {
+            "en": "Tags",
+            "pl": "Tagi"
+        },
         "ingredients": {
             "en": "Ingredients",
             "pl": "Składniki"
@@ -35,12 +43,22 @@
             "pl": "Ten przepis jest dostępny jedynie w języku oryginalnym."
         }
     },
-    "clearFilters": {
-        "en": "Clear filters",
-        "pl": "Wyczyść filtry"
-    },
-    "search": {
-        "en": "Search",
-        "pl": "Szukaj"
+    "filters": {
+        "searchPlaceholder": {
+            "en": "I'm looking for...",
+            "pl": "Szukam..."
+        },
+        "search": {
+            "en": "Search",
+            "pl": "Szukaj"
+        },
+        "searchOtherLang": {
+            "en": "Also search the default recipe language if the current one is unavailable",
+            "pl": "Przeszukaj też domyślny język przepisu jeśli aktualny jest niedostępny."
+        },
+        "clearFilters": {
+            "en": "Clear filters",
+            "pl": "Wyczyść filtry"
+        }
     }
 }
