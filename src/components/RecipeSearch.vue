@@ -1,7 +1,7 @@
 <template>
 	<div class="searchWrapper">
 		<input type="text" :placeholder="translation?.filters?.searchPlaceholder?.[lang.current]" v-model="inputValue"
-			v-on:keyup.enter="addTag(inputValue.toLowerCase())">
+			v-on:keydown.enter="addTag(inputValue.toLowerCase())" v-on:keydown.space="addTag(inputValue.toLowerCase())">
 		<button @click="addTag(inputValue.toLowerCase())" class="btn btn--submit">{{
 			translation?.filters?.search?.[lang.current] }}</button>
 	</div>
