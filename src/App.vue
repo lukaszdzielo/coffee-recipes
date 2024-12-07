@@ -28,7 +28,7 @@ export default {
 				langList: [],
 			},
 			urlParams: new URLSearchParams(window.location.search),
-			searchedTags: [] as Array<string>,
+			searchedTags: [] as string[],
 		}
 	},
 	async created() {

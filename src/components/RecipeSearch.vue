@@ -19,7 +19,7 @@ export default {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
 			inputValue: '',
-			searchedTags: inject('searchedTags') as Array<string>,
+			searchedTags: inject('searchedTags') as string[],
 			urlParam: inject('urlParam') as any,
 		}
 	},
