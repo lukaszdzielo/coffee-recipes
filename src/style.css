@@ -20,6 +20,37 @@
 	}
 }
 
+/* :root {
+	color-scheme: light;
+
+	--app--bg: white;
+	--app--color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: dark;
+
+		--app--bg: black;
+		--app--color: white;
+	}
+}
+
+[color-scheme="light"] {
+	color-scheme: light;
+
+	--app--bg: white;
+	--app--color: black;
+}
+
+[color-scheme="dark"] {
+	color-scheme: dark;
+
+	--app--bg: black;
+	--app--color: white;
+} */
+
+
 html {
 	font-size: 16px;
 	line-height: 1.4;
@@ -40,12 +71,12 @@ body {
 	background-color: var(----gray-300);
 	color: var(--gray-900);
 	font-family: sans-serif;
-}
 
-main {
-	flex-grow: 1;
-	margin-block: 1rem 2rem;
+	>main {
+		flex-grow: 1;
+		margin-block: 1rem 2rem;
 
+	}
 }
 
 h6,

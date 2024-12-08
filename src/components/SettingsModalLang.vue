@@ -1,9 +1,9 @@
 <template>
     <section class="lang">
-        <span>{{ translation.settingsModal?.language[lang.current] }}</span>
+        <span>{{ translation?.settingsModal?.language?.[lang.current] }}</span>
         <div class="customSelect">
             <select @change="change($event)">
-                <option value="auto">auto</option>
+                <option value="auto">Auto</option>
                 <option v-for="language of translation?.langList" :value="language" :selected="local === language">
                     {{ language.toUpperCase() }}
                 </option>

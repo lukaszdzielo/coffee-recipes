@@ -12,6 +12,10 @@
             "en": "Settings",
             "pl": "Ustawienia"
         },
+        "theme": {
+            "en": "Theme",
+            "pl": "Motyw"
+        },
         "language": {
             "en": "Language",
             "pl": "Język"

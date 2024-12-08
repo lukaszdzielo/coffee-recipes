@@ -15,16 +15,16 @@
             </button>
         </header>
         <div class="dialog__wrapper">
-            <div v-if="!recipe.langs?.[lang.current]" class="noTranslationInfo"> {{
-                translation.recipeModal?.noTranslation[lang.current] }}</div>
+            <div v-if="!recipe?.langs?.[lang.current]" class="noTranslationInfo"> {{
+                translation?.recipeModal?.noTranslation?.[lang.current] }}</div>
             <main>
                 <!-- <section>
                     <p>
-                        {{ translation.recipeModal?.author[lang.current] }}:
+                        {{ translation?.recipeModal?.author?.[lang.current] }}:
                         {{ recipe.author }}
                     </p>
                     <p>
-                        {{ translation.recipeModal?.tags[lang.current] }}:
+                        {{ translation?.recipeModal?.tags?.[lang.current] }}:
                     <ul>
                         <li v-for="(tag, i) of getRecipe('tags')">
                             {{ tag }}<template v-if="i !== getRecipe('tags').length - 1">, </template>
@@ -33,7 +33,7 @@
 </p>
 </section> -->
                 <section v-if="getRecipe('ingredients')" class="ingredients">
-                    <span class="heading">{{ translation.recipeModal?.ingredients[lang.current] }}</span>
+                    <span class="heading">{{ translation?.recipeModal?.ingredients?.[lang.current] }}</span>
                     <ul v-show="getRecipe('ingredients')">
                         <li v-for="listItem of getRecipe('ingredients')">
                             <template v-if="typeof listItem === 'object'">
@@ -47,7 +47,7 @@
                     </ul>
                 </section>
                 <section v-if="getRecipe('preparation')" class="preparation">
-                    <span class="heading">{{ translation.recipeModal?.preparation[lang.current] }}</span>
+                    <span class="heading">{{ translation?.recipeModal?.preparation?.[lang.current] }}</span>
                     <div v-html="getRecipe('preparation')"></div>
                 </section>
             </main>
