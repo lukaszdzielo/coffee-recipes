@@ -92,7 +92,7 @@ select {
 
 :has(:disabled) {
     svg {
-        fill: var(--gray-500);
+        fill: var(--gray-900);
     }
 }
 </style>
