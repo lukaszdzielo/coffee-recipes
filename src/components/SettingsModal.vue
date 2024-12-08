@@ -18,6 +18,7 @@
             </button>
         </header>
         <main>
+            <settingsModalTheme />
             <settingsModalLang />
             <SettingsModalBaseSize />
         </main>
@@ -25,6 +26,7 @@
 </template>
 
 <script setup lang="ts">
+import settingsModalTheme from './SettingsModalTheme.vue';
 import settingsModalLang from './SettingsModalLang.vue';
 import SettingsModalBaseSize from './SettingsModalBaseSize.vue';
 </script>
