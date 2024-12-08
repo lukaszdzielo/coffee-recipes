@@ -1,5 +1,5 @@
 <template>
-    {{ getScheme || setScheme }}
+    {{ getScheme() || setScheme() }}
     <section class="theme">
         <span>{{ translation?.settingsModal?.theme?.[lang.current] }}</span>
         <div class="customSelect">
@@ -48,8 +48,6 @@ export default {
             //                 localStorage.setItem('pageLang', e.target.value);
             //             }
         },
-    },
-    computed: {
         getScheme() {
             return localStorage.getItem('AppScheme');
         },
@@ -57,6 +55,15 @@ export default {
         setScheme() {
             return localStorage.setItem('AppScheme', '123')
         }
+    },
+    computed: {
+        // getScheme() {
+        //     return localStorage.getItem('AppScheme');
+        // },
+
+        // setScheme() {
+        //     return localStorage.setItem('AppScheme', '123')
+        // }
     }
 };
 </script>
