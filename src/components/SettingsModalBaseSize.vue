@@ -1,6 +1,6 @@
 <template>
     <section class="baseSize">
-        <span>{{ translation.settingsModal?.baseSize[lang.current] }}</span>
+        <span>{{ translation?.settingsModal?.baseSize?.[lang.current] }}</span>
         <div class="btn__group">
             <button class="btn btn--icon btn--minus" @click="decreaseSize" :disabled="pageBaseSize <= 12">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">

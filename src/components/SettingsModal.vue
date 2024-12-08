@@ -8,7 +8,7 @@
 
     <dialog :id="dialogId">
         <header>
-            <span>{{ translation.settingsModal?.settings[lang.current] }}</span>
+            <span>{{ translation?.settingsModal?.settings?.[lang.current] }}</span>
             <button @click="closeModal" class="btn btn--icon btn--close">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="undefined">
