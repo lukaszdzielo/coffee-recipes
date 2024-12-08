@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import { inject } from 'vue';
+// import { inject } from 'vue';
 export default {
     data() {
         //         return {
