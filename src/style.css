@@ -20,7 +20,7 @@
 	}
 }
 
-/* :root {
+:root {
 	color-scheme: light;
 
 	--app--bg: white;
@@ -48,7 +48,7 @@
 
 	--app--bg: black;
 	--app--color: white;
-} */
+}
 
 
 html {
