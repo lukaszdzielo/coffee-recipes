@@ -27,7 +27,7 @@
 :root {
 	color-scheme: light dark;
 
-	--app--bg: light-dark(var(--gray-300), var(--gray-800));
+	--app--bg: light-dark(var(--white), var(--gray-800));
 	--app--color: light-dark(var(--gray-900), var(--gray-300));
 
 	--appHeader--bg: light-dark(var(--gray-200), var(--gray-900));
@@ -69,7 +69,7 @@
 [color-scheme="light"] {
 	color-scheme: light;
 
-	--app--bg: var(--gray-300);
+	--app--bg: var(--white);
 	--app--color: var(--gray-900);
 
 	--appHeader--bg: var(--gray-200);
