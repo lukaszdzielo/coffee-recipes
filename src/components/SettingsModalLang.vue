@@ -70,12 +70,12 @@ export default {
 }
 
 select {
-    border-color: var(--gray-300);
+    border-color: var(--input--borderColor);
     border-radius: .375rem;
     padding: 0 2rem 0 .75rem;
     height: 2rem;
     background-color: transparent;
-    color: var(--gray-900);
+    color: var(--input--color);
     font-size: 1rem;
     appearance: none;
 

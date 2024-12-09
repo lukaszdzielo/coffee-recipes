@@ -90,8 +90,8 @@ dialog {
     max-height: var(--dialog-mh);
 
     &::backdrop {
-        background-color: var(--gray-900);
-        opacity: .5;
+        background-color: var(--modal--backdrop--bg);
+        opacity: var(--modal--backdrop--opacity);
     }
 
     @media (min-width: 576px) {
@@ -119,8 +119,9 @@ header {
     align-items: center;
     gap: .75rem;
     padding: 1rem;
-    border-bottom: 1px solid var(--gray-400);
-    background-color: var(--white);
+    border-bottom: 1px solid var(--gray-40--modal--borderColor);
+    background-color: var(--modal--bg);
+    color: var(--modal--color);
 
     .header__image {
         flex-shrink: 0;
@@ -162,6 +163,8 @@ main {
     display: grid;
     gap: 1rem;
     padding: 1rem 1rem 2rem;
+    background-color: var(--modal--bg);
+    color: var(--modal--color);
     font-size: .875rem;
 
     @media (min-width: 48rem) {
@@ -193,8 +196,8 @@ main {
 
 .noTranslationInfo {
     padding: .5rem 1rem .5rem;
-    background-color: #ffc107;
-    color: #332701;
+    background-color: var(--recipeCard--badgeNoTranslation--bg);
+    color: var(--recipeCard--badgeNoTranslation--color);
     text-align: center;
 }
 </style>

@@ -8,8 +8,8 @@
                     <defs>
                         <linearGradient id="a" x1="201.42" y1="229.25" x2="351.8" y2="379.62"
                             gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="var(--gray-600)"></stop>
-                            <stop offset="1" stop-color="var(--gray-600)"></stop>
+                            <stop offset="0" stop-color="var(--appFooter--color)"></stop>
+                            <stop offset="1" stop-color="var(--appFooter--color)"></stop>
                         </linearGradient>
                     </defs>
                     <path
@@ -26,8 +26,8 @@
 <style scoped>
 footer {
     padding-block: 1.5rem 2.5rem;
-    background-color: var(--gray-200);
-    color: var(--gray-600);
+    background-color: var(--appFooter--bg);
+    color: var(--appFooter--color);
     font-size: 0.75rem;
     text-align: center;
 }

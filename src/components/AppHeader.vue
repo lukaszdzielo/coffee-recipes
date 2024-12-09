@@ -21,13 +21,16 @@ import SettingsModal from './SettingsModal.vue';
 <style scoped>
 header {
     padding-block: .5rem;
-    background-color: var(--gray-200);
+    background-color: var(--appHeader--bg);
+    color: var(--appHeader--color)
 }
 
 header .logo {
     display: flex;
     align-items: center;
     gap: 8px;
+    color: var(--appHeader--logo);
+    fill: var(--appHeader--logo);
 }
 
 .container {
