@@ -31,7 +31,7 @@ export default {
 	gap: .5rem;
 	border-radius: .5rem;
 	padding: .75rem;
-	background-color: var(--gray-200);
+	background-color: var(--recipeCard--bg);
 	font-size: .875rem;
 	text-wrap: balance;
 	box-sizing: border-box;
@@ -42,7 +42,6 @@ export default {
 		display: flex;
 		width: 100%;
 		aspect-ratio: 1/1;
-		background-color: var(--gray-300);
 		border-radius: .25rem;
 		overflow: hidden;
 
@@ -59,9 +58,9 @@ export default {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	border-radius: 0 .25rem 0;
+	border-radius: 0 .25rem 0 0;
 	padding: .25rem .5rem .25rem;
-	background-color: var(--gray-200);
+	background-color: var(--recipeCard--bg);
 	font-size: 0.75rem;
 }
 </style>
