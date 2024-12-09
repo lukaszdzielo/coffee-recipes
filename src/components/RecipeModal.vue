@@ -119,7 +119,7 @@ header {
     align-items: center;
     gap: .75rem;
     padding: 1rem;
-    border-bottom: 1px solid var(--gray-40--modal--borderColor);
+    border-bottom: 1px solid var(--modal--borderColor);
     background-color: var(--modal--bg);
     color: var(--modal--color);
 
