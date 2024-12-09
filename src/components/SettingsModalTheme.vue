@@ -1,12 +1,11 @@
 <template>
-    {{ getScheme() || setScheme() }}
     <section class="theme">
         <span>{{ translation?.settingsModal?.theme?.[lang.current] }}</span>
         <div class="customSelect">
             <select @change="change($event)">
                 <option value="auto">Auto</option>
-                <option v-for="theme of themes" :value="theme">
-                    {{ theme }}
+                <option v-for="theme of themes" :value="theme" :selected="'123' === theme">
+                    {{ capitalizeFirstLetter(theme) }}
                 </option>
             </select>
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -27,43 +26,34 @@ export default {
             local: localStorage.getItem('pageLang'),
             lang: inject('lang') as any,
             translation: inject('translation') as any,
-            themes: ["Light", "Dark"]
+            themes: ["light", "dark"],
+            theme: localStorage.getItem('appScheme'),
         };
+    },
+    created() {
+        const currentTheme: any = this.getStorageScheme() || this.setStorageScheme('auto');
+        document?.firstElementChild?.setAttribute('color-scheme', currentTheme);
     },
     methods: {
         change(e: any) {
-            if (e.target.value === 'auto') {
-                console.log('auto');
-
-            } else {
-                console.log('else');
-            }
-            //             this.langChange(e.target.value);
-            //             if (e.target.value === 'auto') {
-            //                 const defaultLang = this.lang.default;
-            //                 this.langChange(defaultLang);
-            //                 localStorage.removeItem('pageLang');
-            //             } else {
-            //                 this.langChange(e.target.value);
-            //                 localStorage.setItem('pageLang', e.target.value);
-            //             }
+            this.setScheme(e.target.value)
+            this.setStorageScheme(e.target.value)
         },
-        getScheme() {
-            return localStorage.getItem('AppScheme');
+        getStorageScheme() {
+            return localStorage.getItem('appScheme');
         },
 
-        setScheme() {
-            return localStorage.setItem('AppScheme', '123')
+        setStorageScheme(value: string) {
+            localStorage.setItem('appScheme', value)
+        },
+
+        setScheme(value: string) {
+            document?.firstElementChild?.setAttribute('color-scheme', value);
+        },
+
+        capitalizeFirstLetter(value: string) {
+            return value.charAt(0).toUpperCase() + String(value).slice(1);
         }
-    },
-    computed: {
-        // getScheme() {
-        //     return localStorage.getItem('AppScheme');
-        // },
-
-        // setScheme() {
-        //     return localStorage.setItem('AppScheme', '123')
-        // }
     }
 };
 </script>
