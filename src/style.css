@@ -35,21 +35,35 @@
 	--appHeader--logo: light-dark(var(--gray-900), var(--gray-300));
 
 	--appFooter--bg: light-dark(var(--gray-200), var(--gray-900));
-	--appFooter--color: light-dark(var(--gray-600) var(--gray-600));
+	--appFooter--color: var(--gray-600);
 
 	--input--borderColor: light-dark(var(--gray-300), var(--gray-200));
 	--input--color: light-dark(var(--gray-900), var(--app--color));
+	--input--color--hover: red;
+	--input--color--active: red;
+	--input--color--disabled: red;
 
 	--modal--bg: light-dark(var(--white), var(--gray-900));
 	--modal--borderColor: light-dark(var(--gray-300), var(--gray-800));
 	--modal--color: light-dark(var(--gray-900), var(--gray-200));
 	--modal--backdrop--bg: light-dark(var(--gray-900), var(--gray-800));
-	--modal--backdrop--opacity: light-dark(., .8);
 
 	--recipeCard--bg: light-dark(var(--gray-200), var(--gray-900));
-	--recipeCard--color: light-dark(var(--app--color), var(--app--color));
-	--recipeCard--badgeNoTranslation--bg: light-dark(var(--amber-500), var(--amber-500));
-	--recipeCard--badgeNoTranslation--color: light-dark(var(--app--color), var(--gray-900));
+	--recipeCard--color: var(--app--color);
+	--recipeCard--badgeNoTranslation--bg: var(--amber-500);
+	--recipeCard--badgeNoTranslation--color: var(--gray-900);
+}
+
+:root {
+	color-scheme: light;
+	--modal--backdrop--opacity: .5;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: dark;
+		--modal--backdrop--opacity: .8;
+	}
 }
 
 [color-scheme="light"] {
@@ -77,7 +91,7 @@
 	--recipeCard--bg: var(--gray-200);
 	--recipeCard--color: var(--app--color);
 	--recipeCard--badgeNoTranslation--bg: var(--amber-500);
-	--recipeCard--badgeNoTranslation--color: var(--app--color);
+	--recipeCard--badgeNoTranslation--color: var(--gray-900);
 }
 
 [color-scheme="dark"] {
