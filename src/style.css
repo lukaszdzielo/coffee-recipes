@@ -21,27 +21,26 @@
 }
 
 :root {
-	color-scheme: light dark;
 
 	--app--bg: light-dark(var(--white), var(--gray-800));
 	--app--color: light-dark(var(--gray-900), var(--gray-300));
 
 	--appHeader--bg: light-dark(var(--gray-200), var(--gray-900));
-	--appHeader--color: light-dark(var(--gray-900), var(--gray-300));
-	--appHeader--logo: light-dark(var(--gray-900), var(--gray-300));
+	--appHeader--color: var(--app--color);
+	--appHeader--logo: var(--app--color);
 
 	--appFooter--bg: light-dark(var(--gray-200), var(--gray-900));
 	--appFooter--color: var(--gray-600);
 
-	--input--borderColor: light-dark(var(--gray-300), var(--gray-200));
-	--input--color: light-dark(var(--gray-900), var(--app--color));
-	--input--color--hover: red;
-	--input--color--active: red;
-	--input--color--disabled: red;
+	/* --input--borderColor: light-dark(var(--gray-300), var(--gray-200)); */
+	/* --input--color: light-dark(var(--gray-900), var(--app--color)); */
+	/* --input--color--hover: red; */
+	/* --input--color--active: red; */
+	/* --input--color--disabled: red; */
 
 	--modal--bg: light-dark(var(--white), var(--gray-900));
 	--modal--borderColor: light-dark(var(--gray-300), var(--gray-800));
-	--modal--color: light-dark(var(--gray-900), var(--gray-200));
+	--modal--color: var(--app--color);
 	--modal--backdrop--bg: light-dark(var(--gray-900), var(--gray-800));
 	--modal--close--color: var(--app--color);
 
@@ -49,25 +48,6 @@
 	--recipeCard--color: var(--app--color);
 	--recipeCard--badgeNoTranslation--bg: var(--amber-500);
 	--recipeCard--badgeNoTranslation--color: var(--gray-900);
-
-	.customSelect {
-		--borderColor: light-dark(var(--gray-300), var(--gray-600));
-		--borderColor--hover: light-dark(var(--gray-200), var(--gray-500));
-		--borderColor--active: light-dark(var(--gray-400), var(--gray-400));
-		--borderColor--disabled: light-dark(var(--gray-300), var(--gray-700));
-		--bg: transparent;
-		--bg--hover: light-dark(var(--gray-100), var(--gray-800));
-		--bg--active: light-dark(var(--gray-200), var(--gray-700));
-		--bg--disabled: light-dark(var(--gray-200), var(--gray-800));
-		--color: var(--app--color);
-		--color--hover: var(--app--color);
-		--color--active: var(--app--color);
-		--color--disabled: light-dark(var(--gray-400), var(--gray-600));
-		--icon--color: var(--app--color);
-		--icon--color--hover: var(--app--color);
-		--icon--color--active: var(--app--color);
-		--icon--color--disabled: light-dark(var(--gray-400), var(--gray-600));
-	}
 }
 
 :root {
@@ -114,6 +94,7 @@ body {
 	background-color: var(--app--bg);
 	color: var(--app--color);
 	font-family: sans-serif;
+	overflow-y: scroll;
 
 	>main {
 		flex-grow: 1;
