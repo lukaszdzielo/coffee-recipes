@@ -47,7 +47,8 @@ export default {
 }
 
 input {
-	border: 1px solid var(--gray-300);
+	background: transparent;
+	border: 1px solid light-dark(var(--gray-300), var(--gray-700));
 	border-width: 1px 0 1px 1px;
 	border-radius: .5rem 0 0 .5rem;
 	padding: .25rem .5rem;
@@ -57,21 +58,23 @@ input {
 }
 
 .btn--submit {
-	--main: var(--gray-200);
-	border: 1px solid var(--gray-300);
+	--borderColor: light-dark(var(--gray-300), var(--gray-700));
+	--bg: light-dark(var(--gray-200), var(--gray-700));
+
 	padding: .25rem .5rem;
 	border-radius: 0 .5rem .5rem 0;
 	font-size: 1rem;
-	color: var(--gray-900);
+	color: var(--app--color);
 
 	@media (hover:hover) {
 		&:hover {
-			--main: var(--gray-300);
+			--bg: light-dark(var(--gray-300), var(--gray-700));
 		}
 	}
 
 	&:active {
-		--main: var(--gray-400);
+		--borderColor: light-dark(var(--gray-400), var(--gray-700));
+		--bg: light-dark(var(--gray-400), var(--gray-700));
 	}
 }
 </style>

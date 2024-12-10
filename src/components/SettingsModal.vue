@@ -59,20 +59,25 @@ export default {
 <style scoped>
 .btn {
     &.btn--settings {
-        --main: var(--white);
+        --borderColor: var(--white);
+        --bg: var(--white);
         margin: 0;
         margin-left: auto;
         appearance: none;
         fill: var(--gray-900);
 
-        @media (hover:hover) {
-            &:hover {
-                --main: var(--gray-300);
+        &:not(:disabled) {
+            @media (hover:hover) {
+                &:hover {
+                    --borderColor: var(--gray-300);
+                    --bg: var(--gray-300);
+                }
             }
-        }
 
-        &:active {
-            --main: var(--gray-400);
+            &:active {
+                --borderColor: var(--gray-400);
+                --bg: var(--gray-400);
+            }
         }
     }
 }
@@ -96,11 +101,6 @@ dialog {
     @media (min-width: 576px) {
         --container-mw: calc(540px);
     }
-
-    &:popover-open {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 header {
@@ -115,7 +115,6 @@ header {
     color: var(--modal--color);
 
     .btn--close {
-        --main: transparent;
         margin-left: auto;
         padding: 0;
         background: transparent;
