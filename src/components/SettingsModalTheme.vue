@@ -74,39 +74,66 @@ export default {
     display: flex;
     align-items: center;
 
+    select {
+        border-radius: .375rem;
+        padding: 0 2rem 0 .75rem;
+        height: 2rem;
+        font-size: 1rem;
+        appearance: none;
+        transition: .3s;
+
+        &:not(:disabled) {
+            border-color: var(--borderColor);
+            background-color: var(--bg);
+            color: var(--color);
+            cursor: pointer;
+
+            @media (hover: hover) {
+                &:hover {
+                    border-color: var(--borderColor--hover);
+                    background-color: var(--bg--hover);
+                    color: var(--color--hover);
+                }
+            }
+
+            &:active {
+                border-color: var(--borderColor--active);
+                background-color: var(--bg--active);
+                color: var(--color--active);
+            }
+        }
+
+        &:disabled {
+            opacity: 1;
+            border-color: var(--borderColor--disabled);
+            background: var(--bg--disabled);
+            color: var(--color--disabled);
+        }
+    }
+
     svg {
         position: absolute;
         right: 0;
         width: 2rem;
         height: 2rem;
         pointer-events: none;
-    }
-}
-
-select {
-    border-color: var(--gray-300);
-    border-radius: .375rem;
-    padding: 0 2rem 0 .75rem;
-    height: 2rem;
-    background-color: transparent;
-    color: var(--gray-900);
-    font-size: 1rem;
-    appearance: none;
-
-    &:not(:disabled) {
-        cursor: pointer;
+        transition: .3s;
     }
 
-    &:disabled {
-        background: var(--gray-200);
-        color: var(--gray-500);
-        fill: var(--gray-500);
-    }
-}
+    &:has(select:not(:disabled)) {
+        fill: var(--icon--color);
 
-:has(:disabled) {
-    svg {
-        fill: var(--gray-900);
+        &:has(select:hover) {
+            fill: var(--icon--color--hover);
+        }
+
+        &:has(select:active) {
+            fill: var(--icon--color--active);
+        }
+    }
+
+    &:has(select:disabled) {
+        fill: var(--icon--color--disabled);
     }
 }
 </style>

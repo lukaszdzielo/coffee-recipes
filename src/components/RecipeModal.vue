@@ -151,7 +151,7 @@ header {
         border: 1px solid transparent;
         padding: 0;
         background: transparent;
-
+        fill: var(--modal--close--color);
     }
 }
 

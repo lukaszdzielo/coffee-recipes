@@ -47,11 +47,31 @@
 	--modal--borderColor: light-dark(var(--gray-300), var(--gray-800));
 	--modal--color: light-dark(var(--gray-900), var(--gray-200));
 	--modal--backdrop--bg: light-dark(var(--gray-900), var(--gray-800));
+	--modal--close--color: var(--app--color);
 
 	--recipeCard--bg: light-dark(var(--gray-200), var(--gray-900));
 	--recipeCard--color: var(--app--color);
 	--recipeCard--badgeNoTranslation--bg: var(--amber-500);
 	--recipeCard--badgeNoTranslation--color: var(--gray-900);
+
+	.customSelect {
+		--borderColor: light-dark(var(--gray-300), var(--gray-600));
+		--borderColor--hover: light-dark(var(--gray-200), var(--gray-500));
+		--borderColor--active: light-dark(var(--gray-400), var(--gray-400));
+		--borderColor--disabled: light-dark(var(--gray-300), var(--gray-700));
+		--bg: transparent;
+		--bg--hover: light-dark(var(--gray-100), var(--gray-800));
+		--bg--active: light-dark(var(--gray-200), var(--gray-700));
+		--bg--disabled: light-dark(var(--gray-200), var(--gray-800));
+		--color: var(--app--color);
+		--color--hover: var(--app--color);
+		--color--active: var(--app--color);
+		--color--disabled: light-dark(var(--gray-400), var(--gray-600));
+		--icon--color: var(--app--color);
+		--icon--color--hover: var(--app--color);
+		--icon--color--active: var(--app--color);
+		--icon--color--disabled: light-dark(var(--gray-400), var(--gray-600));
+	}
 }
 
 :root {
@@ -68,58 +88,10 @@
 
 [color-scheme="light"] {
 	color-scheme: light;
-
-	--app--bg: var(--white);
-	--app--color: var(--gray-900);
-
-	--appHeader--bg: var(--gray-200);
-	--appHeader--color: var(--gray-900);
-	--appHeader--logo: var(--gray-900);
-
-	--appFooter--bg: var(--gray-200);
-	--appFooter--color: var(--gray-600);
-
-	--input--borderColor: var(--gray-300);
-	--input--color: var(--gray-900);
-
-	--modal--bg: var(--white);
-	--modal--borderColor: var(--gray-300);
-	--modal--color: var(--gray-900);
-	--modal--backdrop--bg: var(--gray-900);
-	--modal--backdrop--opacity: .5;
-
-	--recipeCard--bg: var(--gray-200);
-	--recipeCard--color: var(--app--color);
-	--recipeCard--badgeNoTranslation--bg: var(--amber-500);
-	--recipeCard--badgeNoTranslation--color: var(--gray-900);
 }
 
 [color-scheme="dark"] {
 	color-scheme: dark;
-
-	--app--bg: var(--gray-800);
-	--app--color: var(--gray-300);
-
-	--appHeader--bg: var(--gray-900);
-	--appHeader--color: var(--gray-300);
-	--appHeader--logo: var(--gray-300);
-
-	--appFooter--bg: var(--gray-900);
-	--appFooter--color: var(--gray-600);
-
-	--input--borderColor: red;
-	--input--color: red;
-
-	--modal--bg: var(--gray-900);
-	--modal--borderColor: var(--gray-800);
-	--modal--color: var(--gray-200);
-	--modal--backdrop--bg: var(--gray-800);
-	--modal--backdrop--opacity: .8;
-
-	--recipeCard--bg: var(--gray-900);
-	--recipeCard--color: var(--app--color);
-	--recipeCard--badgeNoTranslation--bg: var(--amber-500);
-	--recipeCard--badgeNoTranslation--color: var(--gray-900);
 }
 
 
@@ -227,7 +199,6 @@ button {
 		padding: calc(.375rem - 1px);
 		width: 2rem;
 		height: 2rem;
-		fill: var(--gray-900);
 
 		svg {
 			width: 100%;
