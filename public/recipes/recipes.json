@@ -9,22 +9,13 @@
 				"name": "Frappe truskawkowe",
 				"tags": [
 					"frappe",
-					"truskawka",
-					"truskawke",
-					"truskawkowe",
-					"truskawki",
-					"mleko",
-					"mleka",
-					"lody",
-					"wanilia",
-					"waniliowych",
-					"waniliowe",
+					"truskawka", "truskawke", "truskawkowe", "truskawki",
+					"mleko", "mleka", "mlekiem",
+					"lod", "lody", "lodem", "lodami",
+					"wanilia", "waniliowe", "waniliowy", "waniliowych", "waniliowego",
 					"espresso",
-					"kawa",
-					"kawe",
-					"kawy",
-					"lod",
-					"kostka",
+					"kawa", "kawe", "kawy",
+					"kostka", "kostke", "kostki", "kostek",
 					"czarna"
 				],
 				"dsc": "",
@@ -73,8 +64,15 @@
 				"name": "Czekoladowe Frappe z bananem",
 				"tags": [
 					"frappe",
-					"banana",
-					"miód"
+					"banan", "banany", "bananowe", "bananowy", "bananem",
+					"miod", "miodem", "miodowa", "miodowe", "miody", "miodowego",
+					"lod", "lody", "lodem", "lodami",
+					"galka",
+					"czekolada", "czekolade", "czekoladowe", "czekoladowym", "czekolady", "czekoladzie", "czekoladowego",
+					"espresso",
+					"kawa", "kawe", "kawy",
+					"kostka", "kostke", "kostki", "kostek",
+					"czarna"
 				],
 				"dsc": "",
 				"ingredients": [
@@ -96,7 +94,22 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Migdałowa Mokka",
-				"tags": [],
+				"tags": [
+					"syrop", "syropu", "syropem",
+					"migdal", "migdala", "migdalem", "migdaly", "migdalowym", "migdalowa",
+					"mokka",
+					"mleko", "mleka", "mlekiem",
+					"sos", "sosu", "sosem", "sosy",
+					"czekolada", "czekolade", "czekoladowe", "czekoladowym", "czekolady", "czekoladzie", "czekoladowego",
+					"kostka", "kostke", "kostki", "kostek",
+					"espresso",
+					"kawa",
+					"kawa", "kawe", "kawy",
+					"czarna",
+					"bita",
+					"smietana", "smietane", "smietanka", "smietanke", "smietany", "smietanki", "smietanyi", "smietankowe",
+					"platka", "platki", "platkiem", "platki", "platkow"
+				],
 				"dsc": "",
 				"ingredients": [
 					"10 ml syropu migdałowego",
@@ -118,7 +131,18 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Sweet Cherry",
-				"tags": [],
+				"tags": [
+					"sweet", "cherry",
+					"syrop",
+					"wisnia",
+					"lyzka",
+					"konfitura",
+					"mleko",
+					"biala",
+					"czekolada",
+					"kostka",
+					"lod"
+				],
 				"dsc": "",
 				"ingredients": [
 					"7 ml syropu wiśniowego /2 łyżki konfitury wiśniowej",
@@ -139,7 +163,17 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Gruszka z Wanilią",
-				"tags": [],
+				"tags": [
+					"syrop",
+					"wanilia",
+					"lyzeczka",
+					"mus",
+					"gruszka",
+					"mleko",
+					"espresso",
+					"kawa",
+					"czara"
+				],
 				"dsc": "",
 				"ingredients": [
 					"10 ml syropu waniliowego",
@@ -160,7 +194,14 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Chilli Mango",
-				"tags": [],
+				"tags": [
+					"mango",
+					"chili", "chilli",
+					"mleko",
+					"espresso",
+					"kawa", 
+					"czarna"
+				],
 				"dsc": "",
 				"ingredients": [
 					"1/3 mango w puszce / pół świeżego mango (do przygotowania musu)",
@@ -180,7 +221,13 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Peppermint Chai Latte",
-				"tags": [],
+				"tags": [
+					"pepperming", "chai", "latte",
+					"mleko",
+					"sos",
+					"czekolada",
+					"espresso"
+				],
 				"ingredients": [
 					"20 g Drink Me Chai Peppermint®",
 					"200 ml mleka",
@@ -199,7 +246,14 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Spiced Raspberry",
-				"tags": [],
+				"tags": [
+					"spiced",
+					"rosberry",
+					"mleko",
+					"syrop",
+					"malina",
+					"espresso"
+				],
 				"dsc": "",
 				"ingredients": [
 					"20 g Drink Me Chai Spiced®",
@@ -219,7 +273,18 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Jaśminowe Espresso",
-				"tags": [],
+				"tags": [
+					"espresso",
+					"pomarancza",
+					"woda",
+					"lyzeczka",
+					"melasa",
+					"trzcina",
+					"napar",
+					"zielona",
+					"herbata",
+					"jasminowa", "jasminowe"
+				],
 				"dsc": "",
 				"ingredients": [
 					"1 pomarańcza",
@@ -261,7 +326,18 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Apple pie americano",
-				"tags": [],
+				"tags": [
+					"apple", "pie", "americano",
+					"syrop", "szarlotka",
+					"sok", "jablko", "szklanka", "cukier", "brazowy",
+					"sok", "cytryna",
+					"gozdzik",
+					"lyzeczka",
+					"galka",
+					"muszkatolowa",
+					"ekstrakt",
+					"wanilia"
+				],
 				"dsc": "",
 				"ingredients": [
 					"Kawa Americano",
@@ -288,7 +364,13 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Coconut matcha latte",
-				"tags": [],
+				"tags": [
+					"coconut",
+					"matcha", "latte",
+					"lyzeczka",
+					"mleko",
+					"espresso"
+				],
 				"dsc": "",
 				"ingredients": [
 					"1 ½ łyżeczki matcha w proszku",
@@ -407,7 +489,7 @@
 					"suszona" , "suszone", "suszony", "suszonym", "suszonych", "suszonego",
 					"wanilia", "waniliowe", "waniliowy", "waniliowych", "waniliowego",
 					"kostka", "kostke", "kostki", "kostek",
-					"lody", "lod"
+					"lod", "lody", "lodem", "lodami"
 				],
 				"dsc": "",
 				"ingredients": [
@@ -521,7 +603,7 @@
 					"espresso",
 					"tonic", "tonik",
 					"kostka",
-					"lody", "lod",
+					"lod", "lody", "lodem", "lodami",
 					"limonka", "limonke", "limonki", "limonkowego",
 					"owoc", "owoce", "owocowa", "owocowy", "owocowego"
 				],
@@ -548,7 +630,7 @@
 					"zamrozona",
 					"espress",
 					"mleko", "mleka", "mlekiem",
-					"lody", "lod", 
+					"lod", "lody", "lodem", "lodami",
 					"galka",
 					"wanilia", "waniliowe", "waniliowy", "waniliowych", "waniliowego",
 					"bita",
