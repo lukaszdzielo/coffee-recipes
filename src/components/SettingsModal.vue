@@ -120,7 +120,7 @@ header {
         padding: 0;
         background: transparent;
         appearance: none;
-        fill: var(--gray-900);
+        fill: var(--modal--close--color);
 
         svg {
             width: 100%;
