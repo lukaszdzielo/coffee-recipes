@@ -9,19 +9,21 @@
 				"name": "Frappe truskawkowe",
 				"tags": [
 					"frappe",
+					"truskawka",
+					"truskawke",
 					"truskawkowe",
 					"truskawki",
-					"truskawka",
 					"mleko",
+					"mleka",
 					"lody",
 					"wanilia",
 					"waniliowych",
 					"waniliowe",
 					"espresso",
 					"kawa",
-					"kawy",
 					"kawe",
-					"lód",
+					"kawy",
+					"lod",
 					"kostka",
 					"czarna"
 				],
@@ -306,7 +308,17 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Czekoladowe cappuccino ze słonym karmelem",
-				"tags": [],
+				"tags": [
+					"czekolada", "czekolade", "czekoladowe", "czekoladowym", "czekolady", "czekoladzie", "czekoladowego",
+					"cappuccino",
+					"slona", "slone", "slony", "sloynm",
+					"karmel", "karmelem", "karmelowe", "karmelowym", "karmelu",
+					"cukier", "cukru", "cukrem", "cukrowy", "cukrowym",
+					"smietana", "smietane", "smietanka", "smietanke", "smietany", "smietanki", "smietanyi", "smietankowe",
+					"maslo", "masla", "maslem",
+					"lyzka", "lyzke", "lyzeczka", "lyzeczke", "lyzeczki",
+					"sol", "sola", "soli"
+				],
 				"dsc": "",
 				"ingredients": [
 					[
@@ -331,7 +343,11 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Malinowa mocha",
-				"tags": [],
+				"tags": [
+					"malina", "maline", "malin", "maliny", "malinowa", "malinowe", "malinowego",
+					"mocha",
+					"syrop", "syropu", "syropem"
+				],
 				"dsc": "",
 				"ingredients": [
 					"20 ml roztopionej czekolady",
@@ -350,7 +366,16 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Różane latte macchiato",
-				"tags": [],
+				"tags": [
+					"roza", "roze", "rozane", "rozy",
+					"latte",
+					"macchiato",
+					"mleko", "mleka", "mlekiem",
+					"suszona" , "suszone", "suszony", "suszonym", "suszonych", "suszonego",
+					"platka", "platki", "platkiem", "platki", "platkow",
+					"lyzka", "lyzke", "lyzeczka", "lyzeczke", "lyzeczki",
+					"miod", "miodem", "miodowa", "miodowe", "miody", "miodowego"
+				],
 				"dsc": "",
 				"ingredients": [
 					"200 ml mleka",
@@ -370,7 +395,20 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Miodowo - lawendowa kawa na zimno",
-				"tags": [],
+				"tags": [
+					"espresso",
+					"podwojne",
+					"miod", "miodem", "miodowa", "miodowe", "miody", "miodowego",
+					"lawenda", "lawende", "lawendowa", "lawendowe", "ladwendowego",
+					"kawa", "kawe", "kawy",
+					"zimna", "zimne", "zimno",
+					"mleko", "mleka", "mlekiem",
+					"lyzka", "lyzke", "lyzeczka", "lyzeczke", "lyzeczki",
+					"suszona" , "suszone", "suszony", "suszonym", "suszonych", "suszonego",
+					"wanilia", "waniliowe", "waniliowy", "waniliowych", "waniliowego",
+					"kostka", "kostke", "kostki", "kostek",
+					"lody", "lod"
+				],
 				"dsc": "",
 				"ingredients": [
 					"Podwójne espresso",
@@ -392,7 +430,14 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Espresso z powidłami i białą czekoladą",
-				"tags": [],
+				"tags": [
+					"espresso",
+					"powidla", "powidlo", "powidlem", "powidlami",
+					"smietana", "smietane", "smietanka", "smietanke", "smietany", "smietanki", "smietanyi", "smietankowe"
+					"kostka", "kostke", "kostki", "kostek",
+					"biala", "biale", "bialym", "bialego",
+					"czekolada", "czekolade", "czekoladowe", "czekoladowym", "czekolady", "czekoladzie", "czekoladowego"
+				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso z dodatkowym ristretto",
@@ -415,7 +460,15 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Latte dyniowa",
-				"tags": [],
+				"tags": [
+					"latte",
+					"espresso",
+					"dynia", "dynie", "dyni", "dyniowa", "dyniowe", "dyniowego",
+					"mleko", "mleka", "mlekiem",
+					"syrop", "syropu", "syropem",
+					"bita",
+					"smietana", "smietane", "smietanka", "smietanke", "smietany", "smietanki", "smietanyi", "smietankowe"
+				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso",
@@ -435,7 +488,15 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Czekoladowo wiśniowa latte",
-				"tags": [],
+				"tags": [
+					"latte",
+					"espresso",
+					"mleko", "mleka", "mlekiem",
+					"czekolada", "czekolade", "czekoladowe", "czekoladowym", "czekolady", "czekoladzie", "czekoladowego",
+					"syrop", "syropu", "syropem",
+					"wisnia", "wisnie", "wisniowy", "wisniowa", "wisniowym", "wisni", "wisniowego",
+					"kakao", "kakaa", "kakaem", "kakaowego"
+				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso",
@@ -456,7 +517,14 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Espresso tonic",
-				"tags": [],
+				"tags": [
+					"espresso",
+					"tonic", "tonik",
+					"kostka",
+					"lody", "lod",
+					"limonka", "limonke", "limonki", "limonkowego",
+					"owoc", "owoce", "owocowa", "owocowy", "owocowego"
+				],
 				"dsc": "",
 				"ingredients": [
 					"30-40 ml espresso",
@@ -476,7 +544,16 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Zamrożona wanilia",
-				"tags": [],
+				"tags": [
+					"zamrozona",
+					"espress",
+					"mleko", "mleka", "mlekiem",
+					"lody", "lod", 
+					"galka",
+					"wanilia", "waniliowe", "waniliowy", "waniliowych", "waniliowego",
+					"bita",
+					"smietana", "smietane", "smietanka", "smietanke", "smietany", "smietanki", "smietanyi", "smietankowe"
+				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso",
@@ -497,7 +574,11 @@
 			"langDefault": "pl",
 			"pl": {
 				"name": "Café bombón",
-				"tags": [],
+				"tags": [
+					"cafe", "bombon",
+					"espress",
+					"mleko", "mleka", "mlekiem"
+				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso",
