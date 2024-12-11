@@ -33,7 +33,7 @@ export default {
 	},
 	async created() {
 		const browserLang = navigator.language.split('-')[0];
-		await this.fetchData();
+		Object.assign(this.translation, await this.fetchData('./langs.json'))
 		const langList = this.translation.langList;
 		this.lang.default = langList.find(lang => lang === browserLang) ? browserLang : langList[0];
 		this.lang.current = localStorage.getItem('pageLang') || this.lang.default;
@@ -42,11 +42,10 @@ export default {
 		this.getUrlTagsParam()
 	},
 	methods: {
-		async fetchData() {
+		async fetchData(url: string) {
 			try {
-				const response = await fetch('./langs.json');
-				const json = await response.json();
-				Object.assign(this.translation, json)
+				const response = await fetch(url);
+				return await response.json();
 			} catch (error) {
 				console.error(error);
 			}

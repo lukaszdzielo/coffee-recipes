@@ -27,9 +27,8 @@ export default {
         }
     },
     async created() {
-        console.log('b ?', this.recipes);
-        this.recipes = await this.fetchData();
-        console.log('a ?', this.recipes);
+        this.recipes = await this.fetchData('recipes/recipes.json');
+
     },
     mounted() {
         this.modalElem = document.querySelector(`#${this.dialogId}`);
@@ -52,9 +51,9 @@ export default {
         },
     },
     methods: {
-        async fetchData() {
+        async fetchData(url: string) {
             try {
-                const response = await fetch('recipes/recipes.json');
+                const response = await fetch(url);
                 return await response.json();
             } catch (error) {
                 console.error(error);
