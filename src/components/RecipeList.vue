@@ -20,14 +20,16 @@ export default {
         return {
             lang: inject('lang') as any,
             dialogId: 'recipeModal',
-            recipes: {} as any,
+            recipes: {} as { [name: string]: {} },
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
             searchedTags: inject('searchedTags') as string[],
         }
     },
-    created() {
-        this.fetchData();
+    async created() {
+        console.log('b ?', this.recipes);
+        this.recipes = await this.fetchData();
+        console.log('a ?', this.recipes);
     },
     mounted() {
         this.modalElem = document.querySelector(`#${this.dialogId}`);
@@ -43,10 +45,8 @@ export default {
                 const tags: string[] = [...recipe.langs[lang].tags];
 
                 const isAllTagsInRecipe = searchedTags.every(tag => tags.includes(tag));
-
                 if (isAllTagsInRecipe) filteredObj[name] = recipe;
             }
-
 
             return filteredObj;
         },
@@ -55,9 +55,10 @@ export default {
         async fetchData() {
             try {
                 const response = await fetch('recipes/recipes.json');
-                this.recipes = await response.json();
+                return await response.json();
             } catch (error) {
                 console.error(error);
+                return {}
             }
         },
         openModal(slug: string) {
