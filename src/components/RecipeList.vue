@@ -29,11 +29,12 @@ export default {
     },
     async created() {
         this.recipes = await this.fetchData('recipes/recipes.json');
-        this.ingredientsTags = await this.fetchData('recipes/recipes.json');
+        this.ingredientsTags = await this.fetchData('recipes/ingredientsTags.json');
 
-        Object.values(this.recipes).forEach(recipe => {
-            console.log(recipe);
-        })
+        // Object.values(this.recipes).forEach(recipe => {
+        // console.log('?', this.ingredientsTags?.[recipe?.ingredientsTags]);
+        // console.log(recipe?.ingredientsTags);
+        // })
         console.log('?', this.recipes);
 
     },
