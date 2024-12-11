@@ -1,0 +1,22 @@
+{
+    "milk": {
+        "en": ["milk"],
+        "pl": ["mleko", "mleka", "mlek"]
+    },
+    "strawberry": {
+        "en": ["strawberry", "strawberries"],
+        "pl": ["truskawka", "truskawke", "truskawki", "truskawkowe"]
+    },
+    "vanilla": {
+        "en": [],
+        "pl": []
+    },
+    "coffee": {
+        "en": [],
+        "pl": []
+    },
+    "banana": {
+        "en": [],
+        "pl": []
+    }
+}
