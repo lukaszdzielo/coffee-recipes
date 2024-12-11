@@ -24,10 +24,17 @@ export default {
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
             searchedTags: inject('searchedTags') as string[],
+            ingredientsTags: {},
         }
     },
     async created() {
         this.recipes = await this.fetchData('recipes/recipes.json');
+        this.ingredientsTags = await this.fetchData('recipes/recipes.json');
+
+        Object.values(this.recipes).forEach(recipe => {
+            console.log(recipe);
+        })
+        console.log('?', this.recipes);
 
     },
     mounted() {
