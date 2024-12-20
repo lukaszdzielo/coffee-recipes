@@ -24,18 +24,20 @@ export default {
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
             searchedTags: inject('searchedTags') as string[],
-            ingredientsTags: {},
+            ingredientsTags: {} as any,
         }
     },
     async created() {
         this.recipes = await this.fetchData('recipes/recipes.json');
         this.ingredientsTags = await this.fetchData('recipes/ingredientsTags.json');
 
+
         // Object.values(this.recipes).forEach(recipe => {
         // console.log('?', this.ingredientsTags?.[recipe?.ingredientsTags]);
         // console.log(recipe?.ingredientsTags);
         // })
-        console.log('?', this.recipes);
+
+        // this.sortIngredients();
 
     },
     mounted() {
@@ -77,6 +79,22 @@ export default {
         },
         getLang(recipe: any) {
             return recipe.langs?.[this.lang.current] ? this.lang.current : recipe.langs?.langDefault;
+        },
+
+        sortIngredients() {
+            const sortedKeys = Object.keys(this.ingredientsTags).sort();
+
+            const sortedObject: any = {};
+            for (const key of sortedKeys) {
+                sortedObject[key] = {};
+
+                for (const lang in this.ingredientsTags[key]) {
+                    sortedObject[key][lang] = [...new Set(this.ingredientsTags[key][lang])];
+                }
+            }
+            console.log(`Copy and paste below into ingredientsTags.json:
+
+${JSON.stringify(sortedObject)}`);
         }
     }
 }
