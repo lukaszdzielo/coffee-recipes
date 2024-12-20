@@ -59,24 +59,24 @@ export default {
 <style scoped>
 .btn {
     &.btn--settings {
-        --borderColor: var(--white);
-        --bg: var(--white);
+        --borderColor: light-dark(var(--white), var(--gray-800));
+        --bg: light-dark(var(--white), var(--gray-800));
         margin: 0;
         margin-left: auto;
         appearance: none;
-        fill: var(--gray-900);
+        fill: var(--app--color);
 
         &:not(:disabled) {
             @media (hover:hover) {
                 &:hover {
-                    --borderColor: var(--gray-300);
-                    --bg: var(--gray-300);
+                    --borderColor: light-dark(var(--gray-300), var(--gray-700));
+                    --bg: light-dark(var(--gray-300), var(--gray-700));
                 }
             }
 
             &:active {
-                --borderColor: var(--gray-400);
-                --bg: var(--gray-400);
+                --borderColor: light-dark(var(--gray-400), var(--gray-600));
+                --bg: light-dark(var(--gray-400), var(--gray-600));
             }
         }
     }
