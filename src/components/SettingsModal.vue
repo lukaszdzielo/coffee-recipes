@@ -80,6 +80,28 @@ export default {
             }
         }
     }
+
+    &.btn--close {
+        margin-left: auto;
+        padding: 0;
+        --borderColor: light-dark(var(--gray-200), var(--gray-800));
+        --bg: light-dark(var(--gray-200), var(--gray-800));
+        fill: var(--modal--close--color);
+
+        &:not(:disabled) {
+            @media (hover:hover) {
+                &:hover {
+                    --borderColor: light-dark(var(--gray-300), var(--gray-700));
+                    --bg: light-dark(var(--gray-300), var(--gray-700));
+                }
+            }
+
+            &:active {
+                --borderColor: light-dark(var(--gray-400), var(--gray-600));
+                --bg: light-dark(var(--gray-400), var(--gray-600));
+            }
+        }
+    }
 }
 
 dialog {
@@ -113,19 +135,6 @@ header {
     border-bottom: 1px solid var(--modal--borderColor);
     background-color: var(--modal--bg);
     color: var(--modal--color);
-
-    .btn--close {
-        margin-left: auto;
-        padding: 0;
-        background: transparent;
-        appearance: none;
-        fill: var(--modal--close--color);
-
-        svg {
-            width: 100%;
-            height: 100%;
-        }
-    }
 }
 
 main {

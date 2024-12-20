@@ -148,10 +148,24 @@ header {
 
     .btn--close {
         margin-left: auto;
-        border: 1px solid transparent;
         padding: 0;
-        background: transparent;
+        --borderColor: light-dark(var(--gray-200), var(--gray-800));
+        --bg: light-dark(var(--gray-200), var(--gray-800));
         fill: var(--modal--close--color);
+
+        &:not(:disabled) {
+            @media (hover:hover) {
+                &:hover {
+                    --borderColor: light-dark(var(--gray-300), var(--gray-700));
+                    --bg: light-dark(var(--gray-300), var(--gray-700));
+                }
+            }
+
+            &:active {
+                --borderColor: light-dark(var(--gray-400), var(--gray-600));
+                --bg: light-dark(var(--gray-400), var(--gray-600));
+            }
+        }
     }
 }
 
