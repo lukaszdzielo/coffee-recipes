@@ -6,7 +6,7 @@
                 <img v-else="data.thumbnail" :src="thumbnailDefault" :alt="recipe.name">
             </div>
             <div v-show="getRecipe('name')" class="header__heading">{{ getRecipe('name') }}</div>
-            <button @click="$emit('close')" class="btn btn--icon btn--close">
+            <button @click="$emit('close')" class="btn btn--icon btn--modal--close">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="undefined">
                     <path
@@ -144,28 +144,6 @@ header {
         font-size: 1rem;
         line-height: 1.2;
         text-wrap: balance;
-    }
-
-    .btn--close {
-        margin-left: auto;
-        padding: 0;
-        --borderColor: light-dark(var(--gray-200), var(--gray-800));
-        --bg: light-dark(var(--gray-200), var(--gray-800));
-        fill: var(--modal--close--color);
-
-        &:not(:disabled) {
-            @media (hover:hover) {
-                &:hover {
-                    --borderColor: light-dark(var(--gray-300), var(--gray-700));
-                    --bg: light-dark(var(--gray-300), var(--gray-700));
-                }
-            }
-
-            &:active {
-                --borderColor: light-dark(var(--gray-400), var(--gray-600));
-                --bg: light-dark(var(--gray-400), var(--gray-600));
-            }
-        }
     }
 }
 
