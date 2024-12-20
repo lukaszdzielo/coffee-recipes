@@ -150,6 +150,12 @@ body {
 
 button {
 	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+
+input,
+select {
+	outline: none;
 }
 
 .btn {
