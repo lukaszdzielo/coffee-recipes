@@ -3,31 +3,22 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/strawberry-frappe-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"milk",
+		"tags": [
+			"frappe",
 			"strawberry",
-			"vanilla"
+			"strawberries",
+			"milk",
+			"vanilla",
+			"ice",
+			"cream",
+			"cubes",
+			"espresso",
+			"black"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Frappe truskawkowe",
-				"tags": [
-					"frappe",
-					"lod",
-					"lody",
-					"lodem",
-					"lodami",
-					"espresso",
-					"kawa",
-					"kawe",
-					"kawy",
-					"kostka",
-					"kostke",
-					"kostki",
-					"kostek",
-					"czarna"
-				],
 				"dsc": "",
 				"ingredients": [
 					"5 truskawek do zmiksowania na gładko",
@@ -40,18 +31,6 @@
 			},
 			"en": {
 				"name": "Strawberry Frappe",
-				"tags": [
-					"frappe",
-					"strawberry",
-					"strawberries",
-					"milk",
-					"vanilla",
-					"ice",
-					"cream",
-					"cubes",
-					"espresso",
-					"black"
-				],
 				"dsc": "",
 				"ingredients": [
 					"5 strawberries, blended until smooth",
@@ -68,32 +47,27 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/chocolate-banana-frappe-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"banana",
-			"honey",
-			"chocolate"
+		"tags": [
+			"frappe",
+			"lod",
+			"lody",
+			"lodem",
+			"lodami",
+			"galka",
+			"espresso",
+			"kawa",
+			"kawe",
+			"kawy",
+			"kostka",
+			"kostke",
+			"kostki",
+			"kostek",
+			"czarna"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Czekoladowe Frappe z bananem",
-				"tags": [
-					"frappe",
-					"lod",
-					"lody",
-					"lodem",
-					"lodami",
-					"galka",
-					"espresso",
-					"kawa",
-					"kawe",
-					"kawy",
-					"kostka",
-					"kostke",
-					"kostki",
-					"kostek",
-					"czarna"
-				],
 				"dsc": "",
 				"ingredients": [
 					"1/2 banana",
@@ -110,42 +84,36 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/almond-mocha-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"almond",
-			"milk",
-			"chocolate",
-			"cream"
+		"tags": [
+			"syrop",
+			"syropu",
+			"syropem",
+			"mokka",
+			"sos",
+			"sosu",
+			"sosem",
+			"sosy",
+			"kostka",
+			"kostke",
+			"kostki",
+			"kostek",
+			"espresso",
+			"kawa",
+			"kawa",
+			"kawe",
+			"kawy",
+			"czarna",
+			"bita",
+			"platka",
+			"platki",
+			"platkiem",
+			"platki",
+			"platkow"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Migdałowa Mokka",
-				"tags": [
-					"syrop",
-					"syropu",
-					"syropem",
-					"mokka",
-					"sos",
-					"sosu",
-					"sosem",
-					"sosy",
-					"kostka",
-					"kostke",
-					"kostki",
-					"kostek",
-					"espresso",
-					"kawa",
-					"kawa",
-					"kawe",
-					"kawy",
-					"czarna",
-					"bita",
-					"platka",
-					"platki",
-					"platkiem",
-					"platki",
-					"platkow"
-				],
 				"dsc": "",
 				"ingredients": [
 					"10 ml syropu migdałowego",
@@ -163,22 +131,19 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/sweet-cherry-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"cherry"
+		"tags": [
+			"sweet",
+			"syrop",
+			"lyzka",
+			"konfitura",
+			"biala",
+			"kostka",
+			"lod"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Sweet Cherry",
-				"tags": [
-					"sweet",
-					"syrop",
-					"lyzka",
-					"konfitura",
-					"biala",
-					"kostka",
-					"lod"
-				],
 				"dsc": "",
 				"ingredients": [
 					"7 ml syropu wiśniowego /2 łyżki konfitury wiśniowej",
@@ -195,23 +160,18 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/pear-with-vanilla-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"vanilla",
-			"milk",
-			"pear"
+		"tags": [
+			"syrop",
+			"lyzeczka",
+			"mus",
+			"espresso",
+			"kawa",
+			"czara"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Gruszka z Wanilią",
-				"tags": [
-					"syrop",
-					"lyzeczka",
-					"mus",
-					"espresso",
-					"kawa",
-					"czara"
-				],
 				"dsc": "",
 				"ingredients": [
 					"10 ml syropu waniliowego",
@@ -228,21 +188,18 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/chilli-mango-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"milk"
+		"tags": [
+			"mango",
+			"chili",
+			"chilli",
+			"espresso",
+			"kawa",
+			"czarna"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Chilli Mango",
-				"tags": [
-					"mango",
-					"chili",
-					"chilli",
-					"espresso",
-					"kawa",
-					"czarna"
-				],
 				"dsc": "",
 				"ingredients": [
 					"1/3 mango w puszce / pół świeżego mango (do przygotowania musu)",
@@ -258,21 +215,18 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/peppermint-chai-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"milk",
-			"chocolate"
+		
+		"tags": [
+			"pepperming",
+			"chai",
+			"latte",
+			"sos",
+			"espresso"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Peppermint Chai Latte",
-				"tags": [
-					"pepperming",
-					"chai",
-					"latte",
-					"sos",
-					"espresso"
-				],
 				"ingredients": [
 					"20 g Drink Me Chai Peppermint®",
 					"200 ml mleka",
@@ -287,20 +241,16 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/spiced-raspberry-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"milk",
-			"raspberry"
+		"tags": [
+			"spiced",
+			"rosberry",
+			"syrop",
+			"espresso"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Spiced Raspberry",
-				"tags": [
-					"spiced",
-					"rosberry",
-					"syrop",
-					"espresso"
-				],
 				"dsc": "",
 				"ingredients": [
 					"20 g Drink Me Chai Spiced®",
@@ -316,25 +266,21 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/jasmine-espresso-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"orange",
-			"water"
+		"tags": [
+			"espresso",
+			"lyzeczka",
+			"melasa",
+			"trzcina",
+			"napar",
+			"zielona",
+			"herbata",
+			"jasminowa",
+			"jasminowe"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Jaśminowe Espresso",
-				"tags": [
-					"espresso",
-					"lyzeczka",
-					"melasa",
-					"trzcina",
-					"napar",
-					"zielona",
-					"herbata",
-					"jasminowa",
-					"jasminowe"
-				],
 				"dsc": "",
 				"ingredients": [
 					"1 pomarańcza",
@@ -351,15 +297,11 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/black-coffee-with-orange-liqueur-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"orange",
-			"water"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Czarna kawa z likierem pomarańczowym",
-				"tags": [],
 				"dsc": "",
 				"ingredients": [
 					"1 pomarańcza",
@@ -376,32 +318,29 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/apple-pie-americano-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"vanilla"
+		"tags": [
+			"apple",
+			"pie",
+			"americano",
+			"syrop",
+			"szarlotka",
+			"sok",
+			"jablko",
+			"szklanka",
+			"cukier",
+			"brazowy",
+			"sok",
+			"cytryna",
+			"gozdzik",
+			"lyzeczka",
+			"galka",
+			"muszkatolowa",
+			"ekstrakt"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Apple pie americano",
-				"tags": [
-					"apple",
-					"pie",
-					"americano",
-					"syrop",
-					"szarlotka",
-					"sok",
-					"jablko",
-					"szklanka",
-					"cukier",
-					"brazowy",
-					"sok",
-					"cytryna",
-					"gozdzik",
-					"lyzeczka",
-					"galka",
-					"muszkatolowa",
-					"ekstrakt"
-				],
 				"dsc": "",
 				"ingredients": [
 					"Kawa Americano",
@@ -424,20 +363,17 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/coconut-matcha-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"milk"
+		"tags": [
+			"coconut",
+			"matcha",
+			"latte",
+			"lyzeczka",
+			"espresso"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Coconut matcha latte",
-				"tags": [
-					"coconut",
-					"matcha",
-					"latte",
-					"lyzeczka",
-					"espresso"
-				],
 				"dsc": "",
 				"ingredients": [
 					"1 ½ łyżeczki matcha w proszku",
@@ -453,42 +389,38 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/chocolate-cappuccino-with-salted-caramel-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"chocolate",
-			"cream"
+		"tags": [
+			"cappuccino",
+			"slona",
+			"slone",
+			"slony",
+			"sloynm",
+			"karmel",
+			"karmelem",
+			"karmelowe",
+			"karmelowym",
+			"karmelu",
+			"cukier",
+			"cukru",
+			"cukrem",
+			"cukrowy",
+			"cukrowym",
+			"maslo",
+			"masla",
+			"maslem",
+			"lyzka",
+			"lyzke",
+			"lyzeczka",
+			"lyzeczke",
+			"lyzeczki",
+			"sol",
+			"sola",
+			"soli"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Czekoladowe cappuccino ze słonym karmelem",
-				"tags": [
-					"cappuccino",
-					"slona",
-					"slone",
-					"slony",
-					"sloynm",
-					"karmel",
-					"karmelem",
-					"karmelowe",
-					"karmelowym",
-					"karmelu",
-					"cukier",
-					"cukru",
-					"cukrem",
-					"cukrowy",
-					"cukrowym",
-					"maslo",
-					"masla",
-					"maslem",
-					"lyzka",
-					"lyzke",
-					"lyzeczka",
-					"lyzeczke",
-					"lyzeczki",
-					"sol",
-					"sola",
-					"soli"
-				],
 				"dsc": "",
 				"ingredients": [
 					[
@@ -509,19 +441,16 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/raspberry-mocha-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"raspberry"
+		"tags": [
+			"mocha",
+			"syrop",
+			"syropu",
+			"syropem"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Malinowa mocha",
-				"tags": [
-					"mocha",
-					"syrop",
-					"syropu",
-					"syropem"
-				],
 				"dsc": "",
 				"ingredients": [
 					"20 ml roztopionej czekolady",
@@ -536,38 +465,34 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/rose-latte-macchiato-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"honey",
-			"milk"
+		"tags": [
+			"roza",
+			"roze",
+			"rozane",
+			"rozy",
+			"latte",
+			"macchiato",
+			"suszona",
+			"suszone",
+			"suszony",
+			"suszonym",
+			"suszonych",
+			"suszonego",
+			"platka",
+			"platki",
+			"platkiem",
+			"platki",
+			"platkow",
+			"lyzka",
+			"lyzke",
+			"lyzeczka",
+			"lyzeczke",
+			"lyzeczki"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Różane latte macchiato",
-				"tags": [
-					"roza",
-					"roze",
-					"rozane",
-					"rozy",
-					"latte",
-					"macchiato",
-					"suszona",
-					"suszone",
-					"suszony",
-					"suszonym",
-					"suszonych",
-					"suszonego",
-					"platka",
-					"platki",
-					"platkiem",
-					"platki",
-					"platkow",
-					"lyzka",
-					"lyzke",
-					"lyzeczka",
-					"lyzeczke",
-					"lyzeczki"
-				],
 				"dsc": "",
 				"ingredients": [
 					"200 ml mleka",
@@ -583,51 +508,47 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/honey-and-lavender-cold-coffee-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"honey",
-			"vanilla"
+		"tags": [
+			"espresso",
+			"podwojne",
+			"lawenda",
+			"lawende",
+			"lawendowa",
+			"lawendowe",
+			"ladwendowego",
+			"kawa",
+			"kawe",
+			"kawy",
+			"zimna",
+			"zimne",
+			"zimno",
+			"mleko",
+			"mleka",
+			"mlekiem",
+			"lyzka",
+			"lyzke",
+			"lyzeczka",
+			"lyzeczke",
+			"lyzeczki",
+			"suszona",
+			"suszone",
+			"suszony",
+			"suszonym",
+			"suszonych",
+			"suszonego",
+			"kostka",
+			"kostke",
+			"kostki",
+			"kostek",
+			"lod",
+			"lody",
+			"lodem",
+			"lodami"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Miodowo - lawendowa kawa na zimno",
-				"tags": [
-					"espresso",
-					"podwojne",
-					"lawenda",
-					"lawende",
-					"lawendowa",
-					"lawendowe",
-					"ladwendowego",
-					"kawa",
-					"kawe",
-					"kawy",
-					"zimna",
-					"zimne",
-					"zimno",
-					"mleko",
-					"mleka",
-					"mlekiem",
-					"lyzka",
-					"lyzke",
-					"lyzeczka",
-					"lyzeczke",
-					"lyzeczki",
-					"suszona",
-					"suszone",
-					"suszony",
-					"suszonym",
-					"suszonych",
-					"suszonego",
-					"kostka",
-					"kostke",
-					"kostki",
-					"kostek",
-					"lod",
-					"lody",
-					"lodem",
-					"lodami"
-				],
 				"dsc": "",
 				"ingredients": [
 					"Podwójne espresso",
@@ -645,29 +566,25 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/espresso-with-jam-and-white-chocolate-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"cream",
-			"chocolate"
+		"tags": [
+			"espresso",
+			"powidla",
+			"powidlo",
+			"powidlem",
+			"powidlami",
+			"kostka",
+			"kostke",
+			"kostki",
+			"kostek",
+			"biala",
+			"biale",
+			"bialym",
+			"bialego"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Espresso z powidłami i białą czekoladą",
-				"tags": [
-					"espresso",
-					"powidla",
-					"powidlo",
-					"powidlem",
-					"powidlami",
-					"kostka",
-					"kostke",
-					"kostki",
-					"kostek",
-					"biala",
-					"biale",
-					"bialym",
-					"bialego"
-				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso z dodatkowym ristretto",
@@ -686,28 +603,24 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/pumpkin-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"milk",
-			"cream"
+		"tags": [
+			"latte",
+			"espresso",
+			"dynia",
+			"dynie",
+			"dyni",
+			"dyniowa",
+			"dyniowe",
+			"dyniowego",
+			"syrop",
+			"syropu",
+			"syropem",
+			"bita"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Latte dyniowa",
-				"tags": [
-					"latte",
-					"espresso",
-					"dynia",
-					"dynie",
-					"dyni",
-					"dyniowa",
-					"dyniowe",
-					"dyniowego",
-					"syrop",
-					"syropu",
-					"syropem",
-					"bita"
-				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso",
@@ -723,26 +636,21 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/chocolate-cherry-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"milk",
-			"chocolate",
-			"cherry"
+		"tags": [
+			"latte",
+			"espresso",
+			"syrop",
+			"syropu",
+			"syropem",
+			"kakao",
+			"kakaa",
+			"kakaem",
+			"kakaowego"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Czekoladowo wiśniowa latte",
-				"tags": [
-					"latte",
-					"espresso",
-					"syrop",
-					"syropu",
-					"syropem",
-					"kakao",
-					"kakaa",
-					"kakaem",
-					"kakaowego"
-				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso",
@@ -759,30 +667,29 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/espresso-tonic-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [],
+		"tags": [
+			"espresso",
+			"tonic",
+			"tonik",
+			"kostka",
+			"lod",
+			"lody",
+			"lodem",
+			"lodami",
+			"limonka",
+			"limonke",
+			"limonki",
+			"limonkowego",
+			"owoc",
+			"owoce",
+			"owocowa",
+			"owocowy",
+			"owocowego"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Espresso tonic",
-				"tags": [
-					"espresso",
-					"tonic",
-					"tonik",
-					"kostka",
-					"lod",
-					"lody",
-					"lodem",
-					"lodami",
-					"limonka",
-					"limonke",
-					"limonki",
-					"limonkowego",
-					"owoc",
-					"owoce",
-					"owocowa",
-					"owocowy",
-					"owocowego"
-				],
 				"dsc": "",
 				"ingredients": [
 					"30-40 ml espresso",
@@ -798,25 +705,20 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/frozen-vanilla-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
-			"milk",
-			"vanilla",
-			"cream"
+		"tags": [
+			"zamrozona",
+			"espress",
+			"lod",
+			"lody",
+			"lodem",
+			"lodami",
+			"galka",
+			"bita"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Zamrożona wanilia",
-				"tags": [
-					"zamrozona",
-					"espress",
-					"lod",
-					"lody",
-					"lodem",
-					"lodami",
-					"galka",
-					"bita"
-				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso",
@@ -833,18 +735,16 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/cafe-bombon-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"ingredientsTags": [
+		"tags": [
+			"cafe",
+			"bombon",
+			"espress",
 			"milk"
 		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
 				"name": "Café bombón",
-				"tags": [
-					"cafe",
-					"bombon",
-					"espress"
-				],
 				"dsc": "",
 				"ingredients": [
 					"Espresso",
