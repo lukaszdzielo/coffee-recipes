@@ -49,9 +49,8 @@ export default {
             const searchedTags: string[] = [...this.searchedTags];
 
             for (const name in this.recipes) {
-                const lang: string = this.getLang(this.recipes[name]);
                 const recipe: any = this.recipes[name];
-                const tags: string[] = [...recipe.langs[lang].tags];
+                const tags: string[] = [...recipe.tags];
 
                 const isAllTagsInRecipe = searchedTags.every(tag => tags.includes(tag));
                 if (isAllTagsInRecipe) filteredObj[name] = recipe;
