@@ -64,5 +64,9 @@
             "en": "Clear filters",
             "pl": "Wyczyść filtry"
         }
+    },
+    "noRecipeMatchingSearch": {
+        "en": "There is no recipe matching this search",
+        "pl": "Nie ma przepisu pasującego do tego wyszukiwania"
     }
 }
