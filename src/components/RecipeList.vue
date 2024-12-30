@@ -1,8 +1,9 @@
 <template>
-    <div class="recipeList">
+    <div v-if="!!Object.keys(filteredRecipes).length" class="recipeList recipeList--list">
         <RecipeCard v-for="(recipe, slug) in filteredRecipes" :data="recipe" :slug="slug" @open="openModal"
             @openRecipeModal="openModal" />
     </div>
+    <div v-else class="recipeList recipeList--empty">{{ translation?.noRecipeMatchingSearch?.[lang.current] }}</div>
     <RecipeModal :recipe="dialogRecipe" @close="closeModal" />
 </template>
 
@@ -19,6 +20,7 @@ export default {
     data() {
         return {
             lang: inject('lang') as any,
+            translation: inject('translation') as any,
             dialogId: 'recipeModal',
             recipes: {} as { [name: string]: {} },
             dialogRecipe: {},
@@ -101,10 +103,22 @@ ${JSON.stringify(sortedObject)}`);
 
 <style scoped>
 .recipeList {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
-    flex-wrap: wrap;
-    gap: .75rem;
-    margin-top: 1rem;
+
+    &.recipeList--list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+        flex-wrap: wrap;
+        gap: .75rem;
+        margin-top: 1rem;
+    }
+
+    &.recipeList--empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        margin-top: 2rem;
+        text-align: center;
+    }
 }
 </style>
