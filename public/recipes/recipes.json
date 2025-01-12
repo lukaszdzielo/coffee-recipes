@@ -48,21 +48,9 @@
 		"thumbnail": "recipes/img/chocolate-banana-frappe-thumbnail.jpg",
 		"author": "Marcin Kozicki",
 		"tags": [
-			"frappe",
-			"lod",
-			"lody",
-			"lodem",
-			"lodami",
-			"galka",
-			"espresso",
-			"kawa",
-			"kawe",
-			"kawy",
-			"kostka",
-			"kostke",
-			"kostki",
-			"kostek",
-			"czarna"
+			"banana",
+			"honey",
+			""
 		],
 		"langs": {
 			"langDefault": "pl",
@@ -85,30 +73,10 @@
 		"thumbnail": "recipes/img/almond-mocha-thumbnail.jpg",
 		"author": "Marcin Kozicki",
 		"tags": [
-			"syrop",
-			"syropu",
-			"syropem",
-			"mokka",
-			"sos",
-			"sosu",
-			"sosem",
-			"sosy",
-			"kostka",
-			"kostke",
-			"kostki",
-			"kostek",
-			"espresso",
-			"kawa",
-			"kawa",
-			"kawe",
-			"kawy",
-			"czarna",
-			"bita",
-			"platka",
-			"platki",
-			"platkiem",
-			"platki",
-			"platkow"
+			"syrup",
+			"milk",
+			"",
+			"cream"
 		],
 		"langs": {
 			"langDefault": "pl",
@@ -131,15 +99,7 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/sweet-cherry-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"sweet",
-			"syrop",
-			"lyzka",
-			"konfitura",
-			"biala",
-			"kostka",
-			"lod"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -160,14 +120,7 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/pear-with-vanilla-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"syrop",
-			"lyzeczka",
-			"mus",
-			"espresso",
-			"kawa",
-			"czara"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -188,14 +141,7 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/chilli-mango-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"mango",
-			"chili",
-			"chilli",
-			"espresso",
-			"kawa",
-			"czarna"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -215,13 +161,9 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/peppermint-chai-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		
 		"tags": [
-			"pepperming",
-			"chai",
-			"latte",
-			"sos",
-			"espresso"
+			"milk",
+			""
 		],
 		"langs": {
 			"langDefault": "pl",
@@ -242,10 +184,8 @@
 		"thumbnail": "recipes/img/spiced-raspberry-thumbnail.jpg",
 		"author": "Marcin Kozicki",
 		"tags": [
-			"spiced",
-			"rosberry",
-			"syrop",
-			"espresso"
+			"milk",
+			""
 		],
 		"langs": {
 			"langDefault": "pl",
@@ -266,17 +206,7 @@
 		"ebook": 2018,
 		"thumbnail": "recipes/img/jasmine-espresso-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"espresso",
-			"lyzeczka",
-			"melasa",
-			"trzcina",
-			"napar",
-			"zielona",
-			"herbata",
-			"jasminowa",
-			"jasminowe"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -318,25 +248,7 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/apple-pie-americano-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"apple",
-			"pie",
-			"americano",
-			"syrop",
-			"szarlotka",
-			"sok",
-			"jablko",
-			"szklanka",
-			"cukier",
-			"brazowy",
-			"sok",
-			"cytryna",
-			"gozdzik",
-			"lyzeczka",
-			"galka",
-			"muszkatolowa",
-			"ekstrakt"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -363,13 +275,7 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/coconut-matcha-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"coconut",
-			"matcha",
-			"latte",
-			"lyzeczka",
-			"espresso"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -389,34 +295,7 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/chocolate-cappuccino-with-salted-caramel-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"cappuccino",
-			"slona",
-			"slone",
-			"slony",
-			"sloynm",
-			"karmel",
-			"karmelem",
-			"karmelowe",
-			"karmelowym",
-			"karmelu",
-			"cukier",
-			"cukru",
-			"cukrem",
-			"cukrowy",
-			"cukrowym",
-			"maslo",
-			"masla",
-			"maslem",
-			"lyzka",
-			"lyzke",
-			"lyzeczka",
-			"lyzeczke",
-			"lyzeczki",
-			"sol",
-			"sola",
-			"soli"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -441,12 +320,7 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/raspberry-mocha-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"mocha",
-			"syrop",
-			"syropu",
-			"syropem"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -465,30 +339,7 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/rose-latte-macchiato-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"roza",
-			"roze",
-			"rozane",
-			"rozy",
-			"latte",
-			"macchiato",
-			"suszona",
-			"suszone",
-			"suszony",
-			"suszonym",
-			"suszonych",
-			"suszonego",
-			"platka",
-			"platki",
-			"platkiem",
-			"platki",
-			"platkow",
-			"lyzka",
-			"lyzke",
-			"lyzeczka",
-			"lyzeczke",
-			"lyzeczki"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -508,43 +359,7 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/honey-and-lavender-cold-coffee-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"espresso",
-			"podwojne",
-			"lawenda",
-			"lawende",
-			"lawendowa",
-			"lawendowe",
-			"ladwendowego",
-			"kawa",
-			"kawe",
-			"kawy",
-			"zimna",
-			"zimne",
-			"zimno",
-			"mleko",
-			"mleka",
-			"mlekiem",
-			"lyzka",
-			"lyzke",
-			"lyzeczka",
-			"lyzeczke",
-			"lyzeczki",
-			"suszona",
-			"suszone",
-			"suszony",
-			"suszonym",
-			"suszonych",
-			"suszonego",
-			"kostka",
-			"kostke",
-			"kostki",
-			"kostek",
-			"lod",
-			"lody",
-			"lodem",
-			"lodami"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -566,21 +381,7 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/espresso-with-jam-and-white-chocolate-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"espresso",
-			"powidla",
-			"powidlo",
-			"powidlem",
-			"powidlami",
-			"kostka",
-			"kostke",
-			"kostki",
-			"kostek",
-			"biala",
-			"biale",
-			"bialym",
-			"bialego"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -603,20 +404,7 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/pumpkin-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"latte",
-			"espresso",
-			"dynia",
-			"dynie",
-			"dyni",
-			"dyniowa",
-			"dyniowe",
-			"dyniowego",
-			"syrop",
-			"syropu",
-			"syropem",
-			"bita"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -636,17 +424,7 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/chocolate-cherry-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"latte",
-			"espresso",
-			"syrop",
-			"syropu",
-			"syropem",
-			"kakao",
-			"kakaa",
-			"kakaem",
-			"kakaowego"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -667,25 +445,7 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/espresso-tonic-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"espresso",
-			"tonic",
-			"tonik",
-			"kostka",
-			"lod",
-			"lody",
-			"lodem",
-			"lodami",
-			"limonka",
-			"limonke",
-			"limonki",
-			"limonkowego",
-			"owoc",
-			"owoce",
-			"owocowa",
-			"owocowy",
-			"owocowego"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -705,16 +465,7 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/frozen-vanilla-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [
-			"zamrozona",
-			"espress",
-			"lod",
-			"lody",
-			"lodem",
-			"lodami",
-			"galka",
-			"bita"
-		],
+		"tags": [],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -738,7 +489,7 @@
 		"tags": [
 			"cafe",
 			"bombon",
-			"espress",
+			"espresso",
 			"milk"
 		],
 		"langs": {

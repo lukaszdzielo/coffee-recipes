@@ -3,7 +3,7 @@
 		<button @click="clearSearched" class="btn btn--clearKeys">{{ translation?.filters?.clearFilters?.[lang.current]
 			}}</button>
 		<button v-for="tag in searchedTags" @click="deleteSearched(tag as string)" class="btn btn--removeKey"
-			:key="tag">{{ tag }}</button>
+			:key="tag">{{ searchTags[tag]?.[lang.current] }}</button>
 	</div>
 </template>
 
@@ -16,10 +16,22 @@ export default {
 			translation: inject('translation') as any,
 			urlParam: inject('urlParam') as any,
 			searchedTags: inject('searchedTags') as string[],
-			searchedTag: inject('searchedTag') as [],
+			searchTags: {} as any,
 		}
 	},
+	async created() {
+		this.searchTags = await this.fetchData('recipes/ingredientsTags.json');
+	},
 	methods: {
+		async fetchData(url: string) {
+			try {
+				const response = await fetch(url);
+				return await response.json();
+			} catch (error) {
+				console.error(error);
+				return {}
+			}
+		},
 		clearSearched() {
 			this.searchedTags.length = 0;
 			this.urlParam.delete('tags');
