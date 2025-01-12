@@ -4,6 +4,13 @@
             @openRecipeModal="openModal" />
     </div>
     <div v-else class="recipeList recipeList--empty">{{ translation?.noRecipeMatchingSearch?.[lang.current] }}</div>
+
+    <div v-if="searchedTags.length" style="margin-top: 1rem;">Pozostałe przepisy</div>
+    <div v-if="!!Object.keys(filteredRecipes).length" class="recipeList recipeList--list">
+        <RecipeCard v-for="(recipe, slug) in filteredRecipes" :data="recipe" :slug="slug" @open="openModal"
+            @openRecipeModal="openModal" />
+    </div>
+
     <RecipeModal :recipe="dialogRecipe" @close="closeModal" />
 </template>
 
@@ -21,29 +28,17 @@ export default {
         return {
             lang: inject('lang') as any,
             translation: inject('translation') as any,
-            dialogId: 'recipeModal',
             recipes: {} as { [name: string]: {} },
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
             searchedTags: inject('searchedTags') as string[],
-            ingredientsTags: {} as any,
         }
     },
     async created() {
         this.recipes = await this.fetchData('recipes/recipes.json');
-        this.ingredientsTags = await this.fetchData('recipes/ingredientsTags.json');
-
-
-        // Object.values(this.recipes).forEach(recipe => {
-        // console.log('?', this.ingredientsTags?.[recipe?.ingredientsTags]);
-        // console.log(recipe?.ingredientsTags);
-        // })
-
-        // this.sortIngredients();
-
     },
     mounted() {
-        this.modalElem = document.querySelector(`#${this.dialogId}`);
+        this.modalElem = document.querySelector(`#recipeModal`);
     },
     computed: {
         filteredRecipes() {
@@ -60,6 +55,9 @@ export default {
 
             return filteredObj;
         },
+        filteredNotMatchedRecipes() {
+
+        }
     },
     methods: {
         async fetchData(url: string) {
@@ -81,29 +79,12 @@ export default {
         getLang(recipe: any) {
             return recipe.langs?.[this.lang.current] ? this.lang.current : recipe.langs?.langDefault;
         },
-
-        sortIngredients() {
-            const sortedKeys = Object.keys(this.ingredientsTags).sort();
-
-            const sortedObject: any = {};
-            for (const key of sortedKeys) {
-                sortedObject[key] = {};
-
-                for (const lang in this.ingredientsTags[key]) {
-                    sortedObject[key][lang] = [...new Set(this.ingredientsTags[key][lang])];
-                }
-            }
-            console.log(`Copy and paste below into ingredientsTags.json:
-
-${JSON.stringify(sortedObject)}`);
-        }
     }
 }
 </script>
 
 <style scoped>
 .recipeList {
-
     &.recipeList--list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
@@ -116,7 +97,6 @@ ${JSON.stringify(sortedObject)}`);
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-grow: 1;
         margin-top: 2rem;
         text-align: center;
     }

@@ -1,251 +1,74 @@
 {
     "almond": {
-        "en": [
-            "almond",
-            "almonds"
-        ],
-        "pl": [
-            "migdal",
-            "migdala",
-            "migdalem",
-            "migdalowy",
-            "migdalowi",
-            "migdale",
-            "migdalach",
-            "migdalami",
-            "migdaly",
-            "migdalow"
-        ]
+        "en": "almond",
+        "pl": "migdał"
     },
     "banana": {
-        "en": [
-            "banana"
-        ],
-        "pl": [
-            "banan",
-            "banana",
-            "banany",
-            "bananowy",
-            "bananowych",
-            "bananowe"
-        ]
+        "en": "banana",
+        "pl": "banan"
     },
     "cherry": {
-        "en": [
-            "cherry",
-            "cherries"
-        ],
-        "pl": [
-            "wisnia",
-            "wisnie",
-            "wisni",
-            "wisniom",
-            "wisniami",
-            "wisniach",
-            "wisniowy"
-        ]
+        "en": "cherry",
+        "pl": "wiśnia"
     },
     "chili": {
-        "en": [
-            "chili",
-            "chilli",
-            "chilies",
-            "chillies"
-        ],
-        "pl": [
-            "chili"
-        ]
+        "en": "chilli",
+        "pl": "chili"
     },
     "chocolate": {
-        "en": [
-            "chocolate"
-        ],
-        "pl": [
-            "czekolada",
-            "czekolade",
-            "czekoladzie",
-            "czekolady",
-            "czekolad",
-            "czekoladom",
-            "czekoladami",
-            "czekoladach"
-        ]
+        "en": "chocolate",
+        "pl": "czekolada"
     },
     "coffee": {
-        "en": [],
-        "pl": [
-            "kawa",
-            "kawe",
-            "kawy",
-            "kawowe",
-            "kawie"
-        ]
+        "en": "coffee",
+        "pl": "kawa"
     },
     "cream": {
-        "en": [
-            "cream"
-        ],
-        "pl": [
-            "smietana",
-            "smiatany",
-            "smiatanie",
-            "smietane",
-            "smietanom",
-            "smietanami",
-            "smietanach"
-        ]
+        "en": "cream",
+        "pl": "śmietana"
     },
     "espresso": {
-        "en": [
-            "espresso"
-        ],
-        "pl": [
-            "espresso"
-        ]
+        "en": "espresso",
+        "pl": "espresso"
     },
     "honey": {
-        "en": [
-            "honey"
-        ],
-        "pl": [
-            "miod",
-            "miodu",
-            "miodowi",
-            "miodem",
-            "miodzie",
-            "miodow",
-            "miodom",
-            "miodowe",
-            "miody",
-            "miodowy",
-            "miodowych",
-            "miodach",
-            "miodami"
-        ]
+        "en": "honey",
+        "pl": "miód"
     },
     "jasmine": {
-        "en": [
-            "jasmine"
-        ],
-        "pl": [
-            "jasmin",
-            "jasminu",
-            "jasminowy",
-            "jasminem",
-            "jasminie",
-            "jasminy",
-            "jasminow",
-            "jasminom"
-        ]
+        "en": "jasmine",
+        "pl": "jaśmin"
     },
     "mango": {
-        "en": [
-            "mango",
-            "mangos",
-            "mangoes"
-        ],
-        "pl": [
-            "mango"
-        ]
+        "en": "mango",
+        "pl": "mango"
     },
     "milk": {
-        "en": [
-            "milk"
-        ],
-        "pl": [
-            "mleko",
-            "mleka",
-            "mlek",
-            "mlekiem"
-        ]
+        "en": "milk",
+        "pl": "mleko"
     },
     "orange": {
-        "en": [
-            "orange"
-        ],
-        "pl": [
-            "pomarancza",
-            "pomaranczy",
-            "pomarancze",
-            "pomaranczowy",
-            "pomarancz",
-            "pomaranczami",
-            "pomaranczowych",
-            "pomaranczach"
-        ]
+        "en": "orange",
+        "pl": "pomarańcza"
     },
     "pear": {
-        "en": [
-            "pear"
-        ],
-        "pl": [
-            "gruszka",
-            "gruszke",
-            "gruszki",
-            "gruszce",
-            "gruszek",
-            "gruszkom",
-            "gruszkami",
-            "gruszkach",
-            "gruszkowy",
-            "gruszkowych"
-        ]
+        "en": "pear",
+        "pl": "gruszka"
     },
     "raspberry": {
-        "en": [
-            "raspberry",
-            "raspberries"
-        ],
-        "pl": [
-            "malina",
-            "maline",
-            "malinie",
-            "malin",
-            "maliny",
-            "malinami",
-            "malinowy",
-            "malinowych",
-            "malinom"
-        ]
+        "en": "raspberry",
+        "pl": "malina"
     },
     "strawberry": {
-        "en": [
-            "strawberry",
-            "strawberries"
-        ],
-        "pl": [
-            "truskawka",
-            "truskawke",
-            "truskawki",
-            "truskawkowe",
-            "truskawkowych",
-            "truskawek"
-        ]
+        "en": "strawberry",
+        "pl": "truskawka"
     },
     "syrup": {
-        "en": [
-            "syrup"
-        ],
-        "pl": [
-            "syrop",
-            "syropu",
-            "syropem",
-            "syropie",
-            "syropami",
-            "syropow",
-            "syropowy"
-        ]
+        "en": "syrup",
+        "pl": "syrop"
     },
     "vanilla": {
-        "en": [
-            "vanilla"
-        ],
-        "pl": [
-            "wanilia",
-            "wanilie",
-            "wanilii",
-            "wanilinowy",
-            "waniliowych"
-        ]
+        "en": "vanilla",
+        "pl": "wanilia"
     }
 }

@@ -32,13 +32,7 @@ export default {
 		}
 	},
 	async created() {
-		const browserLang = navigator.language.split('-')[0];
-		Object.assign(this.translation, await this.fetchData('./langs.json'))
-		const langList = this.translation.langList;
-		this.lang.default = langList.find(lang => lang === browserLang) ? browserLang : langList[0];
-		this.lang.current = localStorage.getItem('pageLang') || this.lang.default;
-		document.documentElement.lang = this.lang.current;
-
+		this.langHandler();
 		this.getUrlTagsParam()
 	},
 	methods: {
@@ -49,6 +43,14 @@ export default {
 			} catch (error) {
 				console.error(error);
 			}
+		},
+		async langHandler() {
+			const browserLang = navigator.language.split('-')[0];
+			Object.assign(this.translation, await this.fetchData('./langs.json'))
+			const langList = this.translation.langList;
+			this.lang.default = langList.find(lang => lang === browserLang) ? browserLang : langList[0];
+			this.lang.current = localStorage.getItem('pageLang') || this.lang.default;
+			document.documentElement.lang = this.lang.current;
 		},
 		langChange(newLang: string) {
 			this.lang.current = newLang;

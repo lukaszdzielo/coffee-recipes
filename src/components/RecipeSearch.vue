@@ -1,14 +1,13 @@
 <template>
 	<div class="searchWrapper">
-		<input type="text" :placeholder="translation?.filters?.searchPlaceholder?.[lang.current]" v-model="inputValue"
-			v-on:keydown.enter="addTag(inputValue.toLowerCase())" v-on:keydown.space="addTag(inputValue.toLowerCase())">
-		<button @click="addTag(inputValue.toLowerCase())" class="btn btn--submit">{{
-			translation?.filters?.search?.[lang.current] }}</button>
+		<select @input="change($event)" v-model="selectedOption">
+			<option value="">Wybierz składnik...</option>
+			<option v-for="(value, key) in notSelectedIngredientTags" :key="key" :value="key">{{ value?.[lang.current]
+				}}
+			</option>
+		</select>
+
 	</div>
-	<!-- <div class="formControl">
-		<input type="checkbox" name="" id="languageSearch">
-		<label for="languageSearch">{{ translation?.filters?.searchOtherLang?.[lang.current] }}</label>
-	</div> -->
 </template>
 
 <script lang="ts">
@@ -18,25 +17,45 @@ export default {
 		return {
 			lang: inject('lang') as any,
 			translation: inject('translation') as any,
-			inputValue: '',
+			searchTags: {} as any,
 			searchedTags: inject('searchedTags') as string[],
 			urlParam: inject('urlParam') as any,
+
+			selectedOption: '',
+		}
+	},
+	async created() {
+		this.searchTags = await this.fetchData('recipes/ingredientsTags.json');
+	},
+	computed: {
+		notSelectedIngredientTags() {
+			const notSelected = Object.keys(this.searchTags).filter(key => !this.searchedTags.includes(key));
+			const filteredObj: any = {};
+			notSelected.forEach(key => filteredObj[key] = this.searchTags[key]);
+			return filteredObj;
 		}
 	},
 	methods: {
-		addTag(value: string) {
-			const isEmpty = value.trim() === '';
-			const isAlreadyInTags = this.searchedTags.find(elem => elem === value);
-			if (isEmpty || isAlreadyInTags) return;
-
-			this.searchedTags.push(value);
+		async fetchData(url: string) {
+			try {
+				const response = await fetch(url);
+				return await response.json();
+			} catch (error) {
+				console.error(error);
+				return {}
+			}
+		},
+		change(e: any) {
+			const isEmpty = e?.target?.value.trim() === '';
+			if (isEmpty) return;
+			this.searchedTags.push(e?.target?.value);
 			this.searchedTags.sort();
 
 			this.urlParam.params.set('tags', `${this.searchedTags}`);
 			this.urlParam.update();
 
-			this.inputValue = '';
-		}
+			this.selectedOption = '';
+		},
 	}
 }
 </script>
