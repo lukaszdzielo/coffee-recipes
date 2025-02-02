@@ -65,6 +65,14 @@
             "pl": "Wyczyść filtry"
         }
     },
+    "search_selectIngredient": {
+        "en": "Select ingredient...",
+        "pl": "Wybierz składnik..."
+    },
+    "recipeList_otherRecipes": {
+        "en": "Other recipes",
+        "pl": "Pozostałe przepisy"
+    },
     "noRecipeMatchingSearch": {
         "en": "There is no recipe matching this search",
         "pl": "Nie ma przepisu pasującego do tego wyszukiwania"
