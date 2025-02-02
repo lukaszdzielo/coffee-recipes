@@ -17,7 +17,7 @@
 	</div>
 	<div>
 
-		<input type="checkbox" id="search" v-model="searchTagObj.minOneIngredient">
+		<input type="checkbox" id="search" v-model="searchObj.minOneIngredient">
 		<label for="search">{{ translation?.search_minOneIngredient?.[lang.current] }}</label>
 	</div>
 </template>
@@ -33,7 +33,7 @@ export default {
 			searchedTags: inject('searchedTags') as string[],
 			urlParam: inject('urlParam') as any,
 			selectedOption: '',
-			searchTagObj: inject('searchTagObj') as any,
+			searchObj: inject('searchObj') as any,
 		}
 	},
 	async created() {
