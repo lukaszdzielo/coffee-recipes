@@ -7,10 +7,6 @@
         "en": "banana",
         "pl": "banan"
     },
-    "cherry": {
-        "en": "cherry",
-        "pl": "wiśnia"
-    },
     "chilli": {
         "en": "chilli",
         "pl": "chili"
@@ -23,17 +19,9 @@
         "en": "cream",
         "pl": "śmietana"
     },
-    "espresso": {
-        "en": "espresso",
-        "pl": "espresso"
-    },
     "honey": {
         "en": "honey",
         "pl": "miód"
-    },
-    "jasmine": {
-        "en": "jasmine",
-        "pl": "jaśmin"
     },
     "mango": {
         "en": "mango",
@@ -46,10 +34,6 @@
     "orange": {
         "en": "orange",
         "pl": "pomarańcza"
-    },
-    "pear": {
-        "en": "pear",
-        "pl": "gruszka"
     },
     "strawberry": {
         "en": "strawberry",
