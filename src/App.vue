@@ -62,9 +62,9 @@ export default {
 			document.documentElement.lang = newLang;
 		},
 		getUrlTagsParam() {
-			const key = 'tags';
-			if (this.urlParams.has(key) && this.urlParams.get(key)?.length) {
-				const urlTags = this.urlParams.get(key)?.split(',') || [];
+			const tags = 'tags';
+			if (this.urlParams.has(tags) && this.urlParams.get(tags)?.length) {
+				const urlTags = this.urlParams.get(tags)?.split(',') || [];
 				const unique = [...new Set(urlTags.map(elem => elem.toLowerCase()))];
 				this.searchedTags.push(...unique);
 
@@ -72,6 +72,12 @@ export default {
 					this.urlParams.set('tags', `${this.searchedTags}`);
 					this.updateUrlParam()
 				};
+			}
+
+			const minOneIngredient = 'minOneIngredient';
+			console.log('??', this.urlParams.has(minOneIngredient));
+			if (this.urlParams.has(minOneIngredient)) {
+				console.log('????? -- minOneIngredient');
 			}
 		},
 		updateUrlParam() {
