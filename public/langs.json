@@ -68,5 +68,9 @@
     "noRecipeMatchingSearch": {
         "en": "There is no recipe matching this search",
         "pl": "Nie ma przepisu pasującego do tego wyszukiwania"
+    },
+    "search_minOneIngredient": {
+        "en": "Find a recipe with at least one of the ingredients you are looking for.",
+        "pl": "Znajdź przepis zawierający przynajmniej jeden ze składników, których szukasz."
     }
 }

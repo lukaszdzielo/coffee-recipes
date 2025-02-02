@@ -16,8 +16,9 @@
 		</div>
 	</div>
 	<div>
+
 		<input type="checkbox" id="search" v-model="searchTagObj.minOneIngredient">
-		<label for="search">Find a recipe with at least one of the ingredients you are looking for</label>
+		<label for="search">{{ translation?.noRecipeMatchingSearch?.[lang.current] }}</label>
 	</div>
 </template>
 
