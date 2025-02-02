@@ -1,12 +1,19 @@
 <template>
-	<div class="searchWrapper">
-		<select @input="change($event)" v-model="selectedOption">
-			<option value="">Wybierz składnik...</option>
-			<option v-for="(value, key) in notSelectedIngredientTags" :key="key" :value="key">{{ value?.[lang.current]
-				}}
-			</option>
-		</select>
-
+	<div class="searchWrapper customSelect">
+		<div class="customSelect">
+			<select @input="change($event)" v-model="selectedOption">
+				<option value="">Wybierz składnik...</option>
+				<option v-for="(value, key) in notSelectedIngredientTags" :key="key" :value="key">{{
+					value?.[lang.current]
+					}}
+				</option>
+			</select>
+			<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+				fill="undefined">
+				<path
+					d="M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z" />
+			</svg>
+		</div>
 	</div>
 </template>
 
@@ -59,41 +66,3 @@ export default {
 	}
 }
 </script>
-
-<style scoped>
-.searchWrapper {
-	display: flex;
-}
-
-input {
-	background: transparent;
-	border: 1px solid light-dark(var(--gray-300), var(--gray-700));
-	border-width: 1px 0 1px 1px;
-	border-radius: .5rem 0 0 .5rem;
-	padding: .25rem .5rem;
-	width: 100%;
-	font-size: 1rem;
-	box-sizing: border-box;
-}
-
-.btn--submit {
-	--borderColor: light-dark(var(--gray-300), var(--gray-700));
-	--bg: light-dark(var(--gray-200), var(--gray-700));
-
-	padding: .25rem .5rem;
-	border-radius: 0 .5rem .5rem 0;
-	font-size: 1rem;
-	color: var(--app--color);
-
-	@media (hover:hover) {
-		&:hover {
-			--bg: light-dark(var(--gray-300), var(--gray-700));
-		}
-	}
-
-	&:active {
-		--borderColor: light-dark(var(--gray-400), var(--gray-700));
-		--bg: light-dark(var(--gray-400), var(--gray-700));
-	}
-}
-</style>

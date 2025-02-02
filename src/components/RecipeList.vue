@@ -5,11 +5,11 @@
     </div>
     <div v-else class="recipeList recipeList--empty">{{ translation?.noRecipeMatchingSearch?.[lang.current] }}</div>
 
-    <!-- <div v-if="searchedTags.length" style="margin-top: 1rem;">Pozostałe przepisy</div>
-    <div v-if="!!Object.keys(filteredRecipes).length" class="recipeList recipeList--list">
-        <RecipeCard v-for="(recipe, slug) in filteredRecipes" :data="recipe" :slug="slug" @open="openModal"
+    <div v-if="searchedTags.length" style="margin-top: 1rem;">Pozostałe przepisy</div>
+    <div v-if="searchedTags.length" class="recipeList recipeList--list">
+        <RecipeCard v-for="(recipe, slug) in filteredNotMatchedRecipes" :data="recipe" :slug="slug" @open="openModal"
             @openRecipeModal="openModal" />
-    </div> -->
+    </div>
 
     <RecipeModal :recipe="dialogRecipe" @close="closeModal" />
 </template>
@@ -56,7 +56,20 @@ export default {
             return filteredObj;
         },
         filteredNotMatchedRecipes() {
+            const filteredObj: any = {};
+            const searchedTags: string[] = [...this.searchedTags];
 
+            for (const name in this.recipes) {
+                const recipe: any = this.recipes[name];
+                const tags: string[] = [...recipe.tags];
+                console.log('tags', tags);
+                console.log('searchedTags', searchedTags);
+
+                const isAllTagsInRecipe = searchedTags.some(tag => !tags.includes(tag));
+                if (isAllTagsInRecipe) filteredObj[name] = recipe;
+            }
+
+            return filteredObj;
         }
     },
     methods: {

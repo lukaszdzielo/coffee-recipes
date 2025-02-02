@@ -68,87 +68,87 @@
         "pl": "wanilia"
     },
     "whipped cream": {
-        "en": "Whipped cream",
-        "pl": "Bita śmietana"
+        "en": "whipped cream",
+        "pl": "bita śmietana"
     },
     "ice cream": {
-        "en": "Ice cream",
+        "en": "ice cream",
         "pl": "lody"
     },
     "ice cubes": {
-        "en": "Ice cubes",
-        "pl": "Kostki lodu"
+        "en": "ice cubes",
+        "pl": "kostki lodu"
     },
     "tonic": {
-        "en": "Tonic",
-        "pl": "Tonik"
+        "en": "tonic",
+        "pl": "tonik"
     },
     "lime": {
-        "en": "Lime",
-        "pl": "Limonka"
+        "en": "lime",
+        "pl": "limonka"
     },
     "cacao": {
-        "en": "Cacao",
-        "pl": "Kakao"
+        "en": "cacao",
+        "pl": "kakao"
     },
     "mousse": {
-        "en": "Mousse",
-        "pl": "Mus"
+        "en": "mousse",
+        "pl": "mus"
     },
     "lavender": {
-        "en": "Lavender",
-        "pl": "Lawenda"
+        "en": "lavender",
+        "pl": "lawenda"
     },
     "rose petals": {
-        "en": "Rose petals",
-        "pl": "Płatków róż"
+        "en": "rose petals",
+        "pl": "płatków róż"
     },
     "sugar": {
-        "en": "Sugar",
-        "pl": "Cukier"
+        "en": "sugar",
+        "pl": "cukier"
     },
     "butter": {
-        "en": "Butter",
-        "pl": "Masło"
+        "en": "butter",
+        "pl": "masło"
     },
     "salt": {
-        "en": "Salt",
-        "pl": "Sól"
+        "en": "salt",
+        "pl": "sól"
     },
     "matcha": {
-        "en": "Matcha",
-        "pl": "Matcha"
+        "en": "matcha",
+        "pl": "matcha"
     },
     "juice": {
-        "en": "Juice",
-        "pl": "Sok"
+        "en": "juice",
+        "pl": "sok"
     },
     "cloves": {
-        "en": "Cloves",
-        "pl": "Goździki"
+        "en": "cloves",
+        "pl": "goździki"
     },
     "nutmeg": {
-        "en": "Nutmeg",
-        "pl": "Gałka muszkatołowa"
+        "en": "nutmeg",
+        "pl": "gałka muszkatołowa"
     },
     "cardamom": {
-        "en": "Cardamom",
-        "pl": "Kardamon"
+        "en": "cardamom",
+        "pl": "kardamon"
     },
     "water": {
-        "en": "Water",
-        "pl": "Woda"
+        "en": "water",
+        "pl": "woda"
     },
     "infusion": {
-        "en": "Infusion",
-        "pl": "Napar"
+        "en": "infusion",
+        "pl": "napar"
     },
     "sauce": {
-        "en": "Sauce",
-        "pl": "Sos"
+        "en": "sauce",
+        "pl": "sos"
     },
     "molasses": {
-        "en": "Molasses",
-        "pl": "Melasa"
+        "en": "molasses",
+        "pl": "melasa"
     }
 }
