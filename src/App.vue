@@ -32,7 +32,7 @@ export default {
 
 			searchTagObj: {
 				tags: [] as string[],
-				minOneIngredient: true,
+				minOneIngredient: true as Boolean,
 			}
 		}
 	},
@@ -96,7 +96,6 @@ export default {
 			'lang': this.lang,
 			'langChange': this.langChange,
 			'searchedTags': this.searchedTags,
-			'minOneIngredient': this.minOneIngredient,
 			'searchTagObj': this.searchTagObj,
 			'urlParam': {
 				params: this.urlParams,

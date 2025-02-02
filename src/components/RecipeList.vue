@@ -45,7 +45,7 @@ export default {
         filteredRecipes() {
             const filteredObj: any = {};
             const searchedTags: string[] = [...this.searchedTags];
-            const { minOneIngredient } = this.searchTagObj;
+            const minOneIngredient = this.searchTagObj.minOneIngredient;
 
             for (const name in this.recipes) {
                 const recipe: any = this.recipes[name];
@@ -60,7 +60,7 @@ export default {
         filteredNotMatchedRecipes() {
             const filteredObj: any = {};
             const searchedTags: string[] = [...this.searchedTags];
-            const { minOneIngredient } = this.searchTagObj;
+            const minOneIngredient = this.searchTagObj.minOneIngredient;
 
             for (const name in this.recipes) {
                 const recipe: any = this.recipes[name];
