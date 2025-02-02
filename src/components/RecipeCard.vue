@@ -13,7 +13,6 @@
 import { inject } from 'vue';
 export default {
 	props: ['data', 'slug'],
-	inject: ['lang'],
 	data() {
 		return {
 			lang: inject('lang') as any,
