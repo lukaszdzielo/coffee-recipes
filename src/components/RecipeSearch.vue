@@ -1,11 +1,11 @@
 <template>
-	<div class="searchWrapper customSelect">
+	<div class="customSelect">
 		<div class="customSelect">
 			<select @input="change($event)" v-model="selectedOption">
 				<option value="">Wybierz składnik...</option>
 				<option v-for="(value, key) in notSelectedIngredientTags" :key="key" :value="key">{{
 					value?.[lang.current]
-					}}
+				}}
 				</option>
 			</select>
 			<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -14,6 +14,10 @@
 					d="M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z" />
 			</svg>
 		</div>
+	</div>
+	<div>
+		<input type="checkbox" id="search" v-model="searchTagObj.minOneIngredient">
+		<label for="search">Find a recipe with at least one of the ingredients you are looking for</label>
 	</div>
 </template>
 
@@ -27,8 +31,8 @@ export default {
 			searchTags: {} as any,
 			searchedTags: inject('searchedTags') as string[],
 			urlParam: inject('urlParam') as any,
-
 			selectedOption: '',
+			searchTagObj: inject('searchTagObj') as any,
 		}
 	},
 	async created() {

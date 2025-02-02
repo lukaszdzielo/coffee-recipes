@@ -32,6 +32,7 @@ export default {
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
             searchedTags: inject('searchedTags') as string[],
+            searchTagObj: inject('searchTagObj') as any,
         }
     },
     async created() {
@@ -44,12 +45,16 @@ export default {
         filteredRecipes() {
             const filteredObj: any = {};
             const searchedTags: string[] = [...this.searchedTags];
+            const { minOneIngredient } = this.searchTagObj;
+
+            console.log('?', searchedTags);
+
 
             for (const name in this.recipes) {
                 const recipe: any = this.recipes[name];
                 const tags: string[] = [...recipe.tags];
 
-                const isAllTagsInRecipe = searchedTags.every(tag => tags.includes(tag));
+                const isAllTagsInRecipe = (searchedTags.length && minOneIngredient) ? searchedTags.some(tag => tags.includes(tag)) : searchedTags.every(tag => tags.includes(tag));
                 if (isAllTagsInRecipe) filteredObj[name] = recipe;
             }
 
@@ -58,14 +63,13 @@ export default {
         filteredNotMatchedRecipes() {
             const filteredObj: any = {};
             const searchedTags: string[] = [...this.searchedTags];
+            const { minOneIngredient } = this.searchTagObj;
 
             for (const name in this.recipes) {
                 const recipe: any = this.recipes[name];
                 const tags: string[] = [...recipe.tags];
-                console.log('tags', tags);
-                console.log('searchedTags', searchedTags);
 
-                const isAllTagsInRecipe = searchedTags.some(tag => !tags.includes(tag));
+                const isAllTagsInRecipe = (searchedTags.length && minOneIngredient) ? searchedTags.every(tag => !tags.includes(tag)) : searchedTags.some(tag => !tags.includes(tag));
                 if (isAllTagsInRecipe) filteredObj[name] = recipe;
             }
 
