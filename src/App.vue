@@ -29,6 +29,11 @@ export default {
 			},
 			urlParams: new URLSearchParams(window.location.search),
 			searchedTags: [] as string[],
+
+			searchTagObj: {
+				tags: [] as string[],
+				minOneIngredient: true,
+			}
 		}
 	},
 	async created() {
@@ -91,6 +96,8 @@ export default {
 			'lang': this.lang,
 			'langChange': this.langChange,
 			'searchedTags': this.searchedTags,
+			'minOneIngredient': this.minOneIngredient,
+			'searchTagObj': this.searchTagObj,
 			'urlParam': {
 				params: this.urlParams,
 				update: this.updateUrlParam,
