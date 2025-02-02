@@ -76,8 +76,6 @@ export default {
 
 			const minOneIngredient = 'minOneIngredient';
 			if (this.urlParams.has(minOneIngredient)) {
-				console.log('????? -- minOneIngredient');
-				console.log('?', this.searchObj.minOneIngredient);
 				this.searchObj.minOneIngredient = !!this.urlParams.get(minOneIngredient)
 			}
 		},
