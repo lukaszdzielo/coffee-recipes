@@ -32,7 +32,7 @@ export default {
             dialogRecipe: {},
             modalElem: document.querySelector('dialog#settingsModal') as HTMLDialogElement | null,
             searchedTags: inject('searchedTags') as string[],
-            searchTagObj: inject('searchTagObj') as any,
+            searchObj: inject('searchObj') as any,
         }
     },
     async created() {
@@ -45,7 +45,7 @@ export default {
         filteredRecipes() {
             const filteredObj: any = {};
             const searchedTags: string[] = [...this.searchedTags];
-            const minOneIngredient = this.searchTagObj.minOneIngredient;
+            const minOneIngredient = this.searchObj.minOneIngredient;
 
             for (const name in this.recipes) {
                 const recipe: any = this.recipes[name];
@@ -60,7 +60,7 @@ export default {
         filteredNotMatchedRecipes() {
             const filteredObj: any = {};
             const searchedTags: string[] = [...this.searchedTags];
-            const minOneIngredient = this.searchTagObj.minOneIngredient;
+            const minOneIngredient = this.searchObj.minOneIngredient;
 
             for (const name in this.recipes) {
                 const recipe: any = this.recipes[name];

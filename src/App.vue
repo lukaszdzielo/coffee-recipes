@@ -30,7 +30,7 @@ export default {
 			urlParams: new URLSearchParams(window.location.search),
 			searchedTags: [] as string[],
 
-			searchTagObj: {
+			searchObj: {
 				tags: [] as string[],
 				minOneIngredient: true as Boolean,
 			}
@@ -102,7 +102,7 @@ export default {
 			'lang': this.lang,
 			'langChange': this.langChange,
 			'searchedTags': this.searchedTags,
-			'searchTagObj': this.searchTagObj,
+			'searchObj': this.searchObj,
 			'urlParam': {
 				params: this.urlParams,
 				update: this.updateUrlParam,
