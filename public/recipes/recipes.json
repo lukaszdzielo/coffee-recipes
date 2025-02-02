@@ -295,7 +295,12 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/chocolate-cappuccino-with-salted-caramel-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [],
+		"tags": [
+			"sugar",
+			"cream",
+			"butter",
+			"salt"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -320,7 +325,10 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/raspberry-mocha-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [],
+		"tags": [
+			"chocolate",
+			"syrup"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -339,7 +347,11 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/rose-latte-macchiato-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [],
+		"tags": [
+			"milk",
+			"rose petals",
+			"honey"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -347,7 +359,7 @@
 				"dsc": "",
 				"ingredients": [
 					"200 ml mleka",
-					"2 łyżki suszonych płatków róż ",
+					"2 łyżki suszonych płatków róż",
 					"Kawa Latte Macchiato",
 					"1 łyżeczka miodu (opcjonalnie)"
 				],
@@ -359,7 +371,13 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/honey-and-lavender-cold-coffee-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [],
+		"tags": [
+			"milk",
+			"lavender",
+			"honey",
+			"vanilla",
+			"ice cubes"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -381,7 +399,11 @@
 		"ebook": 2021,
 		"thumbnail": "recipes/img/espresso-with-jam-and-white-chocolate-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [],
+		"tags": [
+			"mousse",
+			"cream",
+			"chocolate"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -404,7 +426,11 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/pumpkin-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [],
+		"tags": [
+			"milk",
+			"syrup",
+			"whipped cream"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -424,7 +450,12 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/chocolate-cherry-latte-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [],
+		"tags": [
+			"milk",
+			"chocolate",
+			"syrup",
+			"cacao"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -445,7 +476,11 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/espresso-tonic-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [],
+		"tags": [
+			"tonic",
+			"ice cubes",
+			"lime"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -465,7 +500,13 @@
 		"ebook": 2022,
 		"thumbnail": "recipes/img/frozen-vanilla-thumbnail.jpg",
 		"author": "Marcin Kozicki",
-		"tags": [],
+		"tags": [
+			"milk",
+			"vanilla",
+			"ice cream",
+			"ice cubes",
+			"whipped cream"
+		],
 		"langs": {
 			"langDefault": "pl",
 			"pl": {
@@ -487,9 +528,7 @@
 		"thumbnail": "recipes/img/cafe-bombon-thumbnail.jpg",
 		"author": "Marcin Kozicki",
 		"tags": [
-			"cafe",
 			"bombon",
-			"espresso",
 			"milk"
 		],
 		"langs": {

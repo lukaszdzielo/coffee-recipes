@@ -19,10 +19,6 @@
         "en": "chocolate",
         "pl": "czekolada"
     },
-    "coffee": {
-        "en": "coffee",
-        "pl": "kawa"
-    },
     "cream": {
         "en": "cream",
         "pl": "śmietana"
@@ -70,5 +66,53 @@
     "vanilla": {
         "en": "vanilla",
         "pl": "wanilia"
+    },
+    "whipped cream": {
+        "en": "Whipped cream",
+        "pl": "Bita śmietana"
+    },
+    "ice cream": {
+        "en": "Ice cream",
+        "pl": "lody"
+    },
+    "ice cubes": {
+        "en": "Ice cubes",
+        "pl": "Kostki lodu"
+    },
+    "tonic": {
+        "en": "Tonic",
+        "pl": "Tonik"
+    },
+    "lime": {
+        "en": "Lime",
+        "pl": "Limonka"
+    },
+    "cacao": {
+        "en": "Cacao",
+        "pl": "Kakao"
+    },
+    "mousse": {
+        "en": "Mousse",
+        "pl": "Mus"
+    },
+    "lavender": {
+        "en": "Lavender",
+        "pl": "Lawenda"
+    },
+    "rose petals": {
+        "en": "Rose petals",
+        "pl": "Płatków róż"
+    },
+    "sugar": {
+        "en": "Sugar",
+        "pl": "Cukier"
+    },
+    "butter": {
+        "en": "Butter",
+        "pl": "Masło"
+    },
+    "salt": {
+        "en": "Salt",
+        "pl": "Sól"
     }
 }
