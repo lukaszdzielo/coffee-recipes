@@ -47,9 +47,6 @@ export default {
             const searchedTags: string[] = [...this.searchedTags];
             const { minOneIngredient } = this.searchTagObj;
 
-            console.log('?', searchedTags);
-
-
             for (const name in this.recipes) {
                 const recipe: any = this.recipes[name];
                 const tags: string[] = [...recipe.tags];
