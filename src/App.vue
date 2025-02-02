@@ -32,7 +32,7 @@ export default {
 
 			searchObj: {
 				tags: [] as string[],
-				minOneIngredient: true as Boolean,
+				minOneIngredient: false as Boolean,
 			}
 		}
 	},
@@ -75,9 +75,10 @@ export default {
 			}
 
 			const minOneIngredient = 'minOneIngredient';
-			console.log('??', this.urlParams.has(minOneIngredient));
 			if (this.urlParams.has(minOneIngredient)) {
 				console.log('????? -- minOneIngredient');
+				console.log('?', this.searchObj.minOneIngredient);
+				this.searchObj.minOneIngredient = !!this.urlParams.get(minOneIngredient)
 			}
 		},
 		updateUrlParam() {
