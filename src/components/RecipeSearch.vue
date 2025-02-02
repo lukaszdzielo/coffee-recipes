@@ -1,7 +1,7 @@
 <template>
 	<div class="customSelect">
 		<div class="customSelect">
-			<select @input="tagChange($event)" v-model="selectedOption">
+			<select @input="tagsChange($event)" v-model="selectedOption">
 				<option value="">Wybierz składnik...</option>
 				<option v-for="(value, key) in notSelectedIngredientTags" :key="key" :value="key">{{
 					value?.[lang.current]
@@ -16,8 +16,7 @@
 		</div>
 	</div>
 	<div>
-
-		<input type="checkbox" id="search" v-model="searchObj.minOneIngredient">
+		<input type="checkbox" id="search" @input="inputChange($event)" v-model="searchObj.minOneIngredient">
 		<label for="search">{{ translation?.search_minOneIngredient?.[lang.current] }}</label>
 	</div>
 </template>
@@ -57,7 +56,7 @@ export default {
 				return {}
 			}
 		},
-		tagChange(e: any) {
+		tagsChange(e: any) {
 			const isEmpty = e?.target?.value.trim() === '';
 			if (isEmpty) return;
 			this.searchedTags.push(e?.target?.value);
@@ -68,6 +67,15 @@ export default {
 
 			this.selectedOption = '';
 		},
+		inputChange(e: any) {
+			if (e.target.checked) {
+				this.urlParam.params.set('minOneIngredient', true);
+			} else {
+				this.urlParam.delete('minOneIngredient');
+			}
+
+			this.urlParam.update();
+		}
 	}
 }
 </script>
