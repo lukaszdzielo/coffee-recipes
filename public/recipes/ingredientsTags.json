@@ -11,7 +11,7 @@
         "en": "cherry",
         "pl": "wiśnia"
     },
-    "chili": {
+    "chilli": {
         "en": "chilli",
         "pl": "chili"
     },
@@ -114,5 +114,41 @@
     "salt": {
         "en": "Salt",
         "pl": "Sól"
+    },
+    "matcha": {
+        "en": "Matcha",
+        "pl": "Matcha"
+    },
+    "juice": {
+        "en": "Juice",
+        "pl": "Sok"
+    },
+    "cloves": {
+        "en": "Cloves",
+        "pl": "Goździki"
+    },
+    "nutmeg": {
+        "en": "Nutmeg",
+        "pl": "Gałka muszkatołowa"
+    },
+    "cardamom": {
+        "en": "Cardamom",
+        "pl": "Kardamon"
+    },
+    "water": {
+        "en": "Water",
+        "pl": "Woda"
+    },
+    "infusion": {
+        "en": "Infusion",
+        "pl": "Napar"
+    },
+    "sauce": {
+        "en": "Sauce",
+        "pl": "Sos"
+    },
+    "molasses": {
+        "en": "Molasses",
+        "pl": "Melasa"
     }
 }
