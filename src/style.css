@@ -226,6 +226,35 @@ select {
 	}
 }
 
+.customCheckbox {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+
+	input {
+		width: 20px;
+		height: 20px;
+		margin: 0;
+		appearance: none;
+	}
+
+	input {
+		&:not(:disabled) {
+			&:not(:checked) {
+				background-color: blue;
+			}
+
+			&:checked {
+				background-color: green;
+			}
+		}
+
+		&:disabled {
+			background-color: gray;
+		}
+	}
+}
+
 .btn {
 	border: 1px solid;
 	border-color: var(--borderColor);

@@ -2,7 +2,7 @@
 	<div class="customSelect">
 		<div class="customSelect">
 			<select @input="tagsChange($event)" v-model="selectedOption">
-				<option value="">Wybierz składnik...</option>
+				<option value="">{{ translation?.search_selectIngredient?.[lang.current] }}</option>
 				<option v-for="(value, key) in notSelectedIngredientTags" :key="key" :value="key">{{
 					value?.[lang.current]
 				}}
@@ -15,7 +15,7 @@
 			</svg>
 		</div>
 	</div>
-	<div>
+	<div class="customCheckbox">
 		<input type="checkbox" id="search" @input="inputChange($event)" v-model="searchObj.minOneIngredient">
 		<label for="search">{{ translation?.search_minOneIngredient?.[lang.current] }}</label>
 	</div>
@@ -79,3 +79,9 @@ export default {
 	}
 }
 </script>
+
+<style scoped>
+.customCheckbox {
+	margin-top: 8px;
+}
+</style>

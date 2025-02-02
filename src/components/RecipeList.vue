@@ -5,7 +5,8 @@
     </div>
     <div v-else class="recipeList recipeList--empty">{{ translation?.noRecipeMatchingSearch?.[lang.current] }}</div>
 
-    <div v-if="searchedTags.length" style="margin-top: 1rem;">Pozostałe przepisy</div>
+    <div v-if="searchedTags.length" style="margin-top: 1rem;">{{ translation?.recipeList_otherRecipes?.[lang.current] }}
+    </div>
     <div v-if="searchedTags.length" class="recipeList recipeList--list">
         <RecipeCard v-for="(recipe, slug) in filteredNotMatchedRecipes" :data="recipe" :slug="slug" @open="openModal"
             @openRecipeModal="openModal" />
