@@ -4,9 +4,11 @@
 I searched through the pdfs I received for signing up to the newsletter several times, and then searched them for a specific recipe. That's where the idea came from to create an application with recipes on GitHub Pages.
 
 **Result**
+
 Now I always have them at hand, under one link saved in bookmarks. It was also a great opportunity to learn **VUE** and practice **TypeScript** (I tried to use any `as` rarely as possible ;)). I am very pleased because I did not use any tutorial or instructions titled "how to make an application with recipes...". I also consider my code to be my own and time well spent learning :)
 
 **Things to implement that I would like to have in the application:**
+
 - Hidden in settings:
 	- [x] light and dark modes and the ability to change them to your own preferences,
 	- [x] language support in the browser. Mainly PL language but let the application allow ENG if the recipe has one in JSON,
