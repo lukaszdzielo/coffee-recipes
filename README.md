@@ -6,7 +6,7 @@ I searched through the pdfs I received for signing up to the newsletter several 
 
 **Result**
 
-Now I always have them at hand, under one link saved in bookmarks. It was also a great opportunity to learn **VUE** and practice **TypeScript** (I tried to use any `as` rarely as possible ;)). I am very pleased because I did not use any tutorial or instructions titled "how to make an application with recipes...". I also consider my code to be my own and time well spent learning :)
+Now I always have them at hand, under one link saved in bookmarks. It was also a great opportunity to learn **VUE** and practice **TypeScript** (I tried to use `any` type as rarely as possible ;)). I am very pleased because I did not use any tutorial or instructions titled "how to make an application with recipes...". I also consider my code to be my own and time well spent learning :)
 
 **Things to implement that I would like to have in the application:**
 
